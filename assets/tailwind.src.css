@@ -1,0 +1,5 @@
+/* Tailwind 的入口。生成物是 assets/tailwind.css，由 build_site.py 调用
+ * tools/tailwindcss.exe 产出。页面只引生成物，不引这个文件。 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

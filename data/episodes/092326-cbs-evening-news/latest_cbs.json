@@ -1,0 +1,1876 @@
+{
+  "slug": "092326-cbs-evening-news",
+  "video": {
+    "slug": "092326-cbs-evening-news",
+    "video_id": "00aaf3ed-ddc9-493e-9108-2a4b5332affa",
+    "title": "9/23: CBS Evening News",
+    "duration": 1198,
+    "upload_date": "2026-09-23T18:30:00-0400",
+    "channel": "CBS Evening News",
+    "webpage_url": "https://www.cbsnews.com/video/092326-cbs-evening-news/",
+    "hls_master": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4843993_hls/master.m3u8",
+    "hls_subs": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4843993_hls/subs_en.m3u8",
+    "audio_file": "audio.mp3",
+    "audio_size_mb": 4.57,
+    "audio_format": "16000Hz 32k mono mp3",
+    "local_video": "video.mp4",
+    "video_size_mb": 440.7,
+    "local_subs": "subs_en.vtt"
+  },
+  "vocabulary": [
+    {
+      "word": "brace for",
+      "level": "B2",
+      "meaning": "v. 准备应对（危险、困难等）"
+    },
+    {
+      "word": "nor'easter",
+      "level": "C1",
+      "meaning": "n. 东北风暴（美国东海岸强风暴）"
+    },
+    {
+      "word": "barrage",
+      "level": "C1",
+      "meaning": "n. 一连串；连续猛攻"
+    },
+    {
+      "word": "bombshell",
+      "level": "C1",
+      "meaning": "n. 爆炸性消息；令人震惊的事"
+    },
+    {
+      "word": "restraining order",
+      "level": "C1",
+      "meaning": "n. 限制令；禁制令"
+    },
+    {
+      "word": "at odds",
+      "level": "C1",
+      "meaning": "意见不合；有分歧"
+    },
+    {
+      "word": "fawn over",
+      "level": "C2",
+      "meaning": "讨好；奉承"
+    },
+    {
+      "word": "dial back",
+      "level": "C1",
+      "meaning": "降低；收敛"
+    },
+    {
+      "word": "upper hand",
+      "level": "C1",
+      "meaning": "优势；上风"
+    },
+    {
+      "word": "deployment",
+      "level": "C1",
+      "meaning": "（军事）部署，调度"
+    },
+    {
+      "word": "nosedive",
+      "level": "C2",
+      "meaning": "（飞机）俯冲；急剧下跌"
+    },
+    {
+      "word": "cover up",
+      "level": "C1",
+      "meaning": "掩盖，遮掩（罪行等）"
+    },
+    {
+      "word": "stage",
+      "level": "C1",
+      "meaning": "伪造（现场），策划（事件）"
+    },
+    {
+      "word": "extort",
+      "level": "C1",
+      "meaning": "勒索，敲诈"
+    },
+    {
+      "word": "unhinged",
+      "level": "C2",
+      "meaning": "精神失常的，错乱的"
+    },
+    {
+      "word": "take (something) out of context",
+      "level": "C1",
+      "meaning": "断章取义；脱离语境去理解"
+    },
+    {
+      "word": "traumatic brain injury",
+      "level": "C1",
+      "meaning": "n. 创伤性脑损伤"
+    },
+    {
+      "word": "ventilator",
+      "level": "C1",
+      "meaning": "n. 呼吸机"
+    },
+    {
+      "word": "pending",
+      "level": "C1",
+      "meaning": "adj. 未决的；待定的"
+    },
+    {
+      "word": "home run",
+      "level": "C1",
+      "meaning": "（棒球）本垒打"
+    }
+  ],
+  "subtitles": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.14,
+      "en": "Good to be with you.",
+      "zh": "欢迎收看。"
+    },
+    {
+      "index": 1,
+      "start": 1.14,
+      "end": 1.94,
+      "en": "I'm Tony Dokoupil.",
+      "zh": "我是 Tony Dokoupil。"
+    },
+    {
+      "index": 2,
+      "start": 1.94,
+      "end": 5.0,
+      "en": "The breaking news right now.",
+      "zh": "现在来看突发新闻。"
+    },
+    {
+      "index": 3,
+      "start": 5.0,
+      "end": 19.72,
+      "en": "Double trouble-- millions bracing for dangerous weather on both coasts as a nor'easter could slam the East Coast with tropical-storm-force winds and heavy rain as Hurricane Polo spins out there in the Pacific, turning into one of the strongest storms ever.",
+      "zh": "双重麻烦——数百万人正在为两海岸的危险天气做准备，因为一场东北风暴可能以热带风暴级强风和暴雨袭击东海岸，而太平洋上的飓风 Polo 正在旋转增强，成为有史以来最强风暴之一。"
+    },
+    {
+      "index": 4,
+      "start": 19.72,
+      "end": 22.48,
+      "en": "Rob Marciano in the storm zone.",
+      "zh": "Rob Marciano 在风暴区做报道。"
+    },
+    {
+      "index": 5,
+      "start": 22.48,
+      "end": 28.48,
+      "en": "Also developing tonight President Trump's highly anticipated summit with China's Xi Jinping.",
+      "zh": "今晚还有进展：特朗普总统与习近平备受期待的峰会。"
+    },
+    {
+      "index": 6,
+      "start": 28.48,
+      "end": 38.1,
+      "en": "Another military fighter jet crashes during a training mission-- the condition of the pilots tonight, the crew safely ejecting before it slams to the ground.",
+      "zh": "又一架军用战斗机在训练任务中坠毁——飞行员目前状况如何，机组人员在飞机撞地前已安全弹射。"
+    },
+    {
+      "index": 7,
+      "start": 38.1,
+      "end": 39.92,
+      "en": "What went wrong?",
+      "zh": "到底哪里出了问题？"
+    },
+    {
+      "index": 8,
+      "start": 39.92,
+      "end": 48.74,
+      "en": "Bombshell testimony at the murder trial of that former American Idol contestant accused of killing his wife in their bed while their children slept nearby.",
+      "zh": "前《美国偶像》选手被控趁孩子们睡在旁边时，在床上杀害妻子；这起谋杀案庭审今天出现爆炸性证词。"
+    },
+    {
+      "index": 9,
+      "start": 48.74,
+      "end": 52.68,
+      "en": "What his former girlfriend said on the stand today.",
+      "zh": "他的前女友今天出庭作证说了什么。"
+    },
+    {
+      "index": 10,
+      "start": 52.68,
+      "end": 60.84,
+      "en": "And why Dolly Parton's manager has filed for a restraining order against the man who announced her death just weeks ago.",
+      "zh": "以及为什么 Dolly Parton 的经纪人要对几周前宣布她去世的那名男子申请限制令。"
+    },
+    {
+      "index": 11,
+      "start": 60.84,
+      "end": 69.08,
+      "en": "Rollercoaster lawsuits-- more than a hundred people say they suffered traumatic brain injuries from this California thrill ride.",
+      "zh": "过山车引发诉讼——一百多人称在加州这个刺激项目上受了创伤性脑损伤。"
+    },
+    {
+      "index": 12,
+      "start": 69.08,
+      "end": 74.64,
+      "en": "A close call on a Utah freeway, lightning nearly striking this truck.",
+      "zh": "犹他州高速公路上惊险一幕，闪电差点击中这辆卡车。"
+    },
+    {
+      "index": 13,
+      "start": 74.64,
+      "end": 80.0,
+      "en": "And the good stuff, the historic home run ball and the birthday girl, who threw it back.",
+      "zh": "接下来是暖心内容：那颗有历史意义的全垒打球，和把它扔回球场的过生日女孩。"
+    },
+    {
+      "index": 14,
+      "start": 80.0,
+      "end": 81.68,
+      "en": "COMMENTATOR: And throwing it back.",
+      "zh": "她把球扔了回去。"
+    },
+    {
+      "index": 15,
+      "start": 81.68,
+      "end": 83.58,
+      "en": "Oh my goodness.",
+      "zh": "哦我的天哪。"
+    },
+    {
+      "index": 16,
+      "start": 83.58,
+      "end": 92.39,
+      "en": "ANNOUNCER: From CBS News headquarters in New York, this is the CBS Evening News with Tony Dokoupil.",
+      "zh": "这里是纽约 CBS 新闻总部，您正在收看的是由 Tony Dokoupil 主持的 CBS 晚间新闻。"
+    },
+    {
+      "index": 17,
+      "start": 92.39,
+      "end": 93.02,
+      "en": "Good evening.",
+      "zh": "晚上好。"
+    },
+    {
+      "index": 18,
+      "start": 93.02,
+      "end": 94.98,
+      "en": "Great to have you with us on a Wednesday night.",
+      "zh": "很高兴在这个周三晚上与您相伴。"
+    },
+    {
+      "index": 19,
+      "start": 94.98,
+      "end": 98.72,
+      "en": "We begin with dual updates on a series of major storms off both coasts.",
+      "zh": "我们首先来看两海岸多场大风暴的最新双重进展。"
+    },
+    {
+      "index": 20,
+      "start": 98.72,
+      "end": 104.38,
+      "en": "In the Atlantic, high winds already whipping up the surf ahead of what is now expected to become a nor'easter.",
+      "zh": "大西洋方面，强风已经掀起大浪，随后预计会形成一场东北风暴。"
+    },
+    {
+      "index": 21,
+      "start": 104.38,
+      "end": 118.5,
+      "en": "Coastal flood alerts are already in place from the Carolinas up to the Jersey Shore ahead of landfall this weekend, while over in the Pacific, Hurricane Polo, a Category 4 storm, is expected to impact the California coast in the coming days.",
+      "zh": "从卡罗来纳一直到泽西海岸，在本周末登陆前已经发布了沿海洪水警报；而在太平洋，四级飓风 Polo 预计未来几天会影响加州海岸。"
+    },
+    {
+      "index": 22,
+      "start": 118.5,
+      "end": 128.48,
+      "en": "And for Hawaii's Big Island, forecasters are warning of the potential for catastrophic flooding and mudslides from what's expected to become another major hurricane.",
+      "zh": "至于夏威夷大岛，预报员警告，预计将形成的另一场大型飓风可能带来灾难性洪水和泥石流。"
+    },
+    {
+      "index": 23,
+      "start": 128.48,
+      "end": 133.26,
+      "en": "Rob Marciano tracking it all, as always, starting with the conditions off the East Coast right now.",
+      "zh": "Rob Marciano 像往常一样全面追踪，先来看东海岸目前的情况。"
+    },
+    {
+      "index": 24,
+      "start": 133.26,
+      "end": 136.07,
+      "en": "Rob, how's it looking?",
+      "zh": "Rob，现场情况怎么样？"
+    },
+    {
+      "index": 25,
+      "start": 136.07,
+      "end": 142.5,
+      "en": "Hey, Tony, well, pretty much the same it's been all day, which is a relentlessly consistent barrage of wind and water.",
+      "zh": "嘿，Tony，和全天的情况差不多，一直是持续不断的风雨猛攻。"
+    },
+    {
+      "index": 26,
+      "start": 142.5,
+      "end": 143.62,
+      "en": "I mean, look at that ocean.",
+      "zh": "你看看那片海。"
+    },
+    {
+      "index": 27,
+      "start": 143.62,
+      "end": 145.66,
+      "en": "It just looks like an absolute washing machine.",
+      "zh": "简直就像一台大型洗衣机。"
+    },
+    {
+      "index": 28,
+      "start": 145.66,
+      "end": 152.14,
+      "en": "It's been pummeling this coastline all day long in Virginia, North Carolina, where they lost a lot of real estate with the storms last year.",
+      "zh": "弗吉尼亚、北卡罗来纳的海岸线整天被猛烈拍打，去年风暴已让那里损失了不少土地。"
+    },
+    {
+      "index": 29,
+      "start": 152.14,
+      "end": 157.12,
+      "en": "And this coastal storm is now just beginning to strengthen.",
+      "zh": "而现在这场沿海风暴才刚刚开始增强。"
+    },
+    {
+      "index": 30,
+      "start": 157.12,
+      "end": 167.18,
+      "en": "Pounding surf pummeled Virginia Beach today, powered by winds reaching 45 miles per hour, bending trees, and whipping through this nearly deserted beach town.",
+      "zh": "今天弗吉尼亚海滩巨浪拍岸，风速高达每小时 45 英里，树木被吹弯，强风扫过这个几乎无人的海滨小镇。"
+    },
+    {
+      "index": 31,
+      "start": 167.18,
+      "end": 172.9,
+      "en": "Nearby Norfolk, home to the largest US Naval base in the world, they're dealing with storm tide flooding.",
+      "zh": "附近的诺福克拥有世界上最大的美国海军基地，当地正在应对风暴潮洪水。"
+    },
+    {
+      "index": 32,
+      "start": 172.9,
+      "end": 176.98,
+      "en": "A lot of the floodgates here in Norfolk have been closed out ahead of this storm.",
+      "zh": "诺福克这里的很多防洪闸门已经在这场风暴到来前关闭。"
+    },
+    {
+      "index": 33,
+      "start": 176.98,
+      "end": 186.36,
+      "en": "For the water that does actually seep into the city, that's one of 14 pumping stations that they have to get water back out into the river.",
+      "zh": "对于确实渗入城市的水，他们有 14 个泵站，这是其中之一，负责把水排回河里。"
+    },
+    {
+      "index": 34,
+      "start": 186.36,
+      "end": 191.02,
+      "en": "This slow-moving storm is expected to pack a one-two punch as it churns up the coast.",
+      "zh": "这场移动缓慢的风暴在沿海北上时，预计会带来连续两波冲击。"
+    },
+    {
+      "index": 35,
+      "start": 191.02,
+      "end": 197.38,
+      "en": "Strong winds and full moon tides have the potential to bring coastal flooding and severe beach erosion.",
+      "zh": "强风和满月潮汐可能引发沿海洪水和严重的海滩侵蚀。"
+    },
+    {
+      "index": 36,
+      "start": 197.38,
+      "end": 198.3,
+      "en": "That's good.",
+      "zh": "好的。"
+    },
+    {
+      "index": 37,
+      "start": 198.3,
+      "end": 198.9,
+      "en": "Go ahead.",
+      "zh": "请继续。"
+    },
+    {
+      "index": 38,
+      "start": 198.9,
+      "end": 202.18,
+      "en": "ROB MARCIANO: Residents in Massachusetts are preparing for the onslaught.",
+      "zh": "马萨诸塞州居民正在为这场猛烈冲击做准备。"
+    },
+    {
+      "index": 39,
+      "start": 202.18,
+      "end": 204.62,
+      "en": "Sometimes these storms take a turn for the worst.",
+      "zh": "这类风暴有时会突然恶化。"
+    },
+    {
+      "index": 40,
+      "start": 204.62,
+      "end": 215.24,
+      "en": "ROB MARCIANO: Meanwhile, several states along the Pacific are on high alert as Hurricane Polo spins, one of the strongest ever recorded, fueled by the epic El Niño.",
+      "zh": "与此同时，随着飓风 Polo 旋转增强，太平洋沿岸多个州高度戒备；它是有记录以来最强风暴之一，受史诗级厄尔尼诺现象的推动。"
+    },
+    {
+      "index": 41,
+      "start": 215.24,
+      "end": 226.28,
+      "en": "This was the view from inside the eye of this now Category 4 storm, part of its moisture streaming into the Southwest, now causing dangerous inland flooding in New Mexico.",
+      "zh": "这是目前四级风暴风眼内部的画面，其部分水汽正在向西南地区输送，现已在新墨西哥州引发危险的内陆洪水。"
+    },
+    {
+      "index": 42,
+      "start": 226.28,
+      "end": 231.72,
+      "en": "Back in Virginia Beach, Trey Coates and his family are in town for this weekend's Neptune Festival.",
+      "zh": "回到弗吉尼亚海滩，Trey Coates 和家人来镇上参加本周末的海王星节。"
+    },
+    {
+      "index": 43,
+      "start": 231.72,
+      "end": 233.82,
+      "en": "They say they're not going anywhere.",
+      "zh": "他们说不会离开。"
+    },
+    {
+      "index": 44,
+      "start": 233.82,
+      "end": 237.14,
+      "en": "We've been battling the conditions, honestly.",
+      "zh": "老实说，我们一直在和这种天气斗争。"
+    },
+    {
+      "index": 45,
+      "start": 237.14,
+      "end": 242.2,
+      "en": "I had to hold the door open, almost flew-- I got sand all over my face.",
+      "zh": "我不得不使劲拉住门，人都差点被吹飞——满脸都是沙子。"
+    },
+    {
+      "index": 46,
+      "start": 242.2,
+      "end": 250.62,
+      "en": "And just as we speak, the last few minutes, some of those vendors from that festival for the weekend beginning to build their structures, hoping it will hold on to this wind or this wind will die.",
+      "zh": "就在我们说话的这几分钟，参加周末节日的摊贩们已经开始搭建摊棚，希望能顶住这股风，要么就盼着风停下来。"
+    },
+    {
+      "index": 47,
+      "start": 250.62,
+      "end": 252.38,
+      "en": "But it shows no signs of doing that.",
+      "zh": "但风没有一点要停的迹象。"
+    },
+    {
+      "index": 48,
+      "start": 252.38,
+      "end": 254.46,
+      "en": "The water now coming up and covering this beach.",
+      "zh": "海水现在正在上涨，淹没了这片海滩。"
+    },
+    {
+      "index": 49,
+      "start": 254.46,
+      "end": 256.98,
+      "en": "And that's going to be the calling card, at least here in the Mid-Atlantic.",
+      "zh": "而且这将是这场风暴的标志性影响，至少在中大西洋地区是这样。"
+    },
+    {
+      "index": 50,
+      "start": 256.98,
+      "end": 262.78,
+      "en": "And that is coastal flooding all the way up to Delmarva, into New Jersey, and potentially much of the Northeast as well.",
+      "zh": "也就是沿海洪水会一直延伸到德尔马瓦、新泽西，甚至可能波及东北大部分地区。"
+    },
+    {
+      "index": 51,
+      "start": 262.78,
+      "end": 268.1,
+      "en": "That on top of waves that could be 6 to 12 feet, winds 50 miles an hour or better.",
+      "zh": "除此之外，海浪可能高达 6 到 12 英尺，风速至少在每小时 50 英里以上。"
+    },
+    {
+      "index": 52,
+      "start": 268.1,
+      "end": 269.57,
+      "en": "And there, you see your warnings.",
+      "zh": "那就是你所看到的各类警报。"
+    },
+    {
+      "index": 53,
+      "start": 269.57,
+      "end": 279.58,
+      "en": "As far as what we think this storm is going to do-- it will strengthen and expand over the next 24 hours, then ride parallel up the Jersey coastline, impacting Long Island and then New England.",
+      "zh": "至于我们预计这场风暴接下来的路径——未来 24 小时内会增强并扩大，然后沿泽西海岸平行北上，影响长岛，再影响新英格兰。"
+    },
+    {
+      "index": 54,
+      "start": 279.58,
+      "end": 283.66,
+      "en": "Rain, yes, a big surge of water, and wind that could be damaging.",
+      "zh": "会有降雨，是的，还有大浪增水和可能造成破坏的大风。"
+    },
+    {
+      "index": 55,
+      "start": 283.66,
+      "end": 289.18,
+      "en": "But if it takes the other model, the GFS solution, it would be a lesser blow, at least to New York City.",
+      "zh": "但如果它走另一个模式，也就是 GFS 模型的路径，那至少对纽约市的冲击会小一些。"
+    },
+    {
+      "index": 56,
+      "start": 289.18,
+      "end": 290.34,
+      "en": "We're certainly hoping for that.",
+      "zh": "我们当然希望是那样。"
+    },
+    {
+      "index": 57,
+      "start": 290.34,
+      "end": 292.42,
+      "en": "But Eastern New England looks to be getting it.",
+      "zh": "但新英格兰东部看起来会受到冲击。"
+    },
+    {
+      "index": 58,
+      "start": 292.42,
+      "end": 295.66,
+      "en": "Polo, big-time storm in the Pacific.",
+      "zh": "Polo 是太平洋上的大风暴。"
+    },
+    {
+      "index": 59,
+      "start": 295.66,
+      "end": 297.42,
+      "en": "But now we have Nolo.",
+      "zh": "但现在我们又来了个 Nolo。"
+    },
+    {
+      "index": 60,
+      "start": 297.42,
+      "end": 304.58,
+      "en": "And that is going to threaten Hawaii, not just that, probably hit the Big Island over the weekend with potentially Category 2 or 3 winds.",
+      "zh": "而且这还会威胁到夏威夷，不只如此，可能在这个周末就会袭击大岛，风力可能达到二级或三级飓风。"
+    },
+    {
+      "index": 61,
+      "start": 304.58,
+      "end": 308.86,
+      "en": "And, Tony, they are still recovering from a big hurricane just a little over a month ago.",
+      "zh": "而且，Tony，他们刚在一个多月前遭遇一场大飓风，现在还在恢复。"
+    },
+    {
+      "index": 62,
+      "start": 308.86,
+      "end": 310.15,
+      "en": "Not what they need in Hawaii.",
+      "zh": "这可不是夏威夷现在需要的。"
+    },
+    {
+      "index": 63,
+      "start": 310.15,
+      "end": 310.86,
+      "en": "No, not at all.",
+      "zh": "是啊，完全不是。"
+    },
+    {
+      "index": 64,
+      "start": 310.86,
+      "end": 312.4,
+      "en": "Rob, thank you very much.",
+      "zh": "Rob，非常感谢。"
+    },
+    {
+      "index": 65,
+      "start": 312.4,
+      "end": 318.5,
+      "en": "Now to something that hasn't happened in more than a decade-- an official state visit to the White House from Chinese leader, Xi Jinping.",
+      "zh": "现在来看一件十多年来都没有发生过的事——中国领导人习近平对白宫进行一次正式国事访问。"
+    },
+    {
+      "index": 66,
+      "start": 318.5,
+      "end": 323.77,
+      "en": "And there is much for the two leaders to cover, from AI regulation to the wars in Ukraine and the Middle East.",
+      "zh": "两位领导人要谈的事情很多，从人工智能监管到乌克兰和中东的战争。"
+    },
+    {
+      "index": 67,
+      "start": 323.77,
+      "end": 327.18,
+      "en": "But how much of it we're going to see-- that is an open question tonight.",
+      "zh": "但我们将能看到多少会谈内容，今晚还是个未知数。"
+    },
+    {
+      "index": 68,
+      "start": 327.18,
+      "end": 329.41,
+      "en": "Nancy Cordes has the latest.",
+      "zh": "Nancy Cordes 带来最新报道。"
+    },
+    {
+      "index": 69,
+      "start": 329.41,
+      "end": 338.04,
+      "en": "NANCY CORDES: Not content to wait at the White House, President Trump choppered to Joint Base Andrews this afternoon to greet Chinese President Xi Jinping.",
+      "zh": "NANCY CORDES：特朗普总统不愿在白宫干等，今天下午乘直升机前往安德鲁斯联合基地迎接中国国家主席习近平。"
+    },
+    {
+      "index": 70,
+      "start": 338.04,
+      "end": 345.24,
+      "en": "It's the first time a US president has made that gesture for a foreign head of state since 1962.",
+      "zh": "这是自1962年以来，美国总统首次对外国领导人做出这种姿态。"
+    },
+    {
+      "index": 71,
+      "start": 345.24,
+      "end": 346.74,
+      "en": "We're doing very well with China.",
+      "zh": "我们和中国处得很好。"
+    },
+    {
+      "index": 72,
+      "start": 346.74,
+      "end": 349.52,
+      "en": "And President Xi and I have a good relationship.",
+      "zh": "习主席和我关系很好。"
+    },
+    {
+      "index": 73,
+      "start": 349.52,
+      "end": 356.0,
+      "en": "NANCY CORDES: The US and China are at odds over AI, trade, and most importantly, Iran.",
+      "zh": "NANCY CORDES：美国和中国在人工智能、贸易，以及最重要的伊朗问题上存在分歧。"
+    },
+    {
+      "index": 74,
+      "start": 356.0,
+      "end": 359.08,
+      "en": "Trump, stop fawning over strongmen.",
+      "zh": "特朗普，别再讨好强人了。"
+    },
+    {
+      "index": 75,
+      "start": 359.08,
+      "end": 361.46,
+      "en": "Stop calling Xi a great gentleman.",
+      "zh": "别再把习称为一位伟大的绅士了。"
+    },
+    {
+      "index": 76,
+      "start": 361.46,
+      "end": 366.63,
+      "en": "NANCY CORDES: Lawmakers from both sides urged Trump to dial back the warm welcome.",
+      "zh": "NANCY CORDES：两党议员都敦促特朗普降低这种热情接待的调子。"
+    },
+    {
+      "index": 77,
+      "start": 366.63,
+      "end": 371.67,
+      "en": "His guest is a brutal, unelected, and oppressive dictator.",
+      "zh": "他的客人是一位残暴、未经选举且压迫人民的独裁者。"
+    },
+    {
+      "index": 78,
+      "start": 371.67,
+      "end": 386.83,
+      "en": "NANCY CORDES: The two men are set to sit down tomorrow, but video of the historic meeting may be sparse, as the five US TV networks continue to hold off on providing pooled coverage after Trump banned three major outlets from the White House.",
+      "zh": "NANCY CORDES：两人定于明天坐下来会谈，但这次历史性会晤的视频可能很少，因为在特朗普禁止三家主要媒体进入白宫后，美国五家电视网继续暂不提供联合报道。"
+    },
+    {
+      "index": 79,
+      "start": 386.83,
+      "end": 387.89,
+      "en": "They're fake news.",
+      "zh": "它们是假新闻。"
+    },
+    {
+      "index": 80,
+      "start": 387.89,
+      "end": 399.11,
+      "en": "NANCY CORDES: In an emergency hearing this afternoon, Federal Judge Timothy Kelly said, quote, \"I think it's fair to say that the process laid out for the White House in previous cases wasn't followed here.\"",
+      "zh": "NANCY CORDES：在今天下午的紧急听证会上，联邦法官蒂莫西·凯利说：‘我认为可以说，以往案件中为白宫规定的程序在这里没有被遵守。’"
+    },
+    {
+      "index": 81,
+      "start": 399.11,
+      "end": 404.15,
+      "en": "I think the judge was very skeptical of the Trump administration's arguments here.",
+      "zh": "我认为法官对特朗普政府的论点非常怀疑。"
+    },
+    {
+      "index": 82,
+      "start": 404.15,
+      "end": 406.89,
+      "en": "NANCY CORDES: CBS News Legal Analyst Jessica Levinson.",
+      "zh": "NANCY CORDES：CBS新闻法律分析师杰西卡·莱文森。"
+    },
+    {
+      "index": 83,
+      "start": 406.89,
+      "end": 424.23,
+      "en": "This is a case where there's a lot of evidence to indicate that the Trump administration is doing exactly what the First Amendment protects against, which is the government picking winners and losers based on who they like and whose speech they like and who they don't.",
+      "zh": "这个案子有大量证据表明，特朗普政府所做的恰恰是第一修正案要防止的事情，也就是政府根据自己喜欢谁、喜欢谁的言论、不喜欢谁来挑选赢家和输家。"
+    },
+    {
+      "index": 84,
+      "start": 424.23,
+      "end": 434.57,
+      "en": "NANCY CORDES: The judge is expected to make a decision within the next few days about whether to let these three outlets back onto White House grounds temporarily as the case plays out.",
+      "zh": "NANCY CORDES：预计法官将在未来几天内决定，是否在案件审理期间临时允许这三家媒体回到白宫场地。"
+    },
+    {
+      "index": 85,
+      "start": 434.57,
+      "end": 435.07,
+      "en": "Tony?",
+      "zh": "Tony？"
+    },
+    {
+      "index": 86,
+      "start": 435.07,
+      "end": 436.11,
+      "en": "We'll keep covering it.",
+      "zh": "我们会继续报道。"
+    },
+    {
+      "index": 87,
+      "start": 436.11,
+      "end": 436.87,
+      "en": "Nancy, thank you.",
+      "zh": "Nancy，谢谢。"
+    },
+    {
+      "index": 88,
+      "start": 436.87,
+      "end": 440.79,
+      "en": "Now let's bring in Face the Nation moderator and chief foreign affairs correspondent, Margaret Brennan.",
+      "zh": "现在有请《面对全国》主持人兼首席外交事务记者玛格丽特·布伦南。"
+    },
+    {
+      "index": 89,
+      "start": 440.79,
+      "end": 442.13,
+      "en": "Margaret, great to have you here.",
+      "zh": "Margaret，很高兴你能来。"
+    },
+    {
+      "index": 90,
+      "start": 442.13,
+      "end": 447.51,
+      "en": "So the president is rolling out the red carpet for the Chinese president, some say a little bit too much red carpet.",
+      "zh": "总统给中国领导人铺开了红地毯，有人说这红地毯有点铺得过头了。"
+    },
+    {
+      "index": 91,
+      "start": 447.51,
+      "end": 448.77,
+      "en": "But what are you expecting?",
+      "zh": "那你预计会发生什么？"
+    },
+    {
+      "index": 92,
+      "start": 448.77,
+      "end": 456.29,
+      "en": "Well, Tony, whenever the two most powerful men in the world meet, there's typically a lot of picture-rich choreography.",
+      "zh": "嗯，Tony，每当世界上最有权势的两个人会面时，通常会有大量画面感十足的精心安排。"
+    },
+    {
+      "index": 93,
+      "start": 456.29,
+      "end": 458.03,
+      "en": "China's media state's controlled.",
+      "zh": "中国的媒体是国家控制的。"
+    },
+    {
+      "index": 94,
+      "start": 458.03,
+      "end": 458.83,
+      "en": "They want this.",
+      "zh": "他们想要这样的画面。"
+    },
+    {
+      "index": 95,
+      "start": 458.83,
+      "end": 460.27,
+      "en": "But this time, it's different.",
+      "zh": "但这次不一样。"
+    },
+    {
+      "index": 96,
+      "start": 460.27,
+      "end": 464.68,
+      "en": "The pictures won't be, as Nancy just told you, beamed around the world in the same way.",
+      "zh": "正如 Nancy 刚才告诉你的，这些画面不会像以往那样被传送到世界各地。"
+    },
+    {
+      "index": 97,
+      "start": 464.68,
+      "end": 477.13,
+      "en": "And that's of concern to some of the Chinese officials I spoke with, in part because Xi Jinping lands here feeling he has the upper hand in the competition with the US, according to multiple Asian diplomats.",
+      "zh": "这让我交谈过的一些中国官员感到担忧，部分原因是，据多位亚洲外交官说，习近平抵达这里时觉得自己在与美国的竞争中占上风。"
+    },
+    {
+      "index": 98,
+      "start": 477.13,
+      "end": 480.23,
+      "en": "Trump needs China to stop buying Iranian oil.",
+      "zh": "特朗普需要中国停止购买伊朗石油。"
+    },
+    {
+      "index": 99,
+      "start": 480.23,
+      "end": 484.25,
+      "en": "He wants them to stop providing intelligence to Tehran.",
+      "zh": "他希望中国停止向德黑兰提供情报。"
+    },
+    {
+      "index": 100,
+      "start": 484.25,
+      "end": 490.43,
+      "en": "China has also cornered the market on a really critical set of ingredients for US-made weapons and technology.",
+      "zh": "中国还垄断了一批对美国制造的武器和技术至关重要的原料市场。"
+    },
+    {
+      "index": 101,
+      "start": 490.43,
+      "end": 498.82,
+      "en": "On the other hand, the question for Trump is whether he wants to extend, and for how long, the trade truce with China.",
+      "zh": "另一方面，特朗普面临的问题是，他是否想延长与中国的贸易休战，以及延长多久。"
+    },
+    {
+      "index": 102,
+      "start": 498.82,
+      "end": 501.91,
+      "en": "And, of course, there are two Americans being wrongfully detained.",
+      "zh": "当然，还有两名美国人被不当拘留。"
+    },
+    {
+      "index": 103,
+      "start": 501.91,
+      "end": 503.23,
+      "en": "You mentioned Iran there.",
+      "zh": "你刚才提到了伊朗。"
+    },
+    {
+      "index": 104,
+      "start": 503.23,
+      "end": 510.23,
+      "en": "Another extraordinary moment at the UN today-- the Iranian president here, at war with the US, and yet, here on US soil, giving a speech.",
+      "zh": "今天在联合国还有另一个非同寻常的时刻——伊朗总统在这里，尽管与美国处于战争状态，却站在美国国土上发表演讲。"
+    },
+    {
+      "index": 105,
+      "start": 510.23,
+      "end": 511.65,
+      "en": "What stood out to you?",
+      "zh": "什么让你印象最深？"
+    },
+    {
+      "index": 106,
+      "start": 511.65,
+      "end": 517.55,
+      "en": "Well, just a few months ago, he was in a bunker, sheltering from US airstrikes, and now he's standing in the middle of New York City.",
+      "zh": "嗯，就在几个月前，他还躲在地堡里躲避美国空袭，现在却站在纽约市中心。"
+    },
+    {
+      "index": 107,
+      "start": 517.55,
+      "end": 519.64,
+      "en": "That, in and of itself, is extraordinary.",
+      "zh": "这本身就非同寻常。"
+    },
+    {
+      "index": 108,
+      "start": 519.64,
+      "end": 525.31,
+      "en": "Also extraordinary, President Trump's language yesterday when he said he wants to possibly annihilate Iran.",
+      "zh": "同样非同寻常的，还有特朗普总统昨天的措辞，他说他可能想彻底摧毁伊朗。"
+    },
+    {
+      "index": 109,
+      "start": 525.31,
+      "end": 528.17,
+      "en": "This is an institution built to avoid war.",
+      "zh": "联合国这个机构就是为了避免战争而建立的。"
+    },
+    {
+      "index": 110,
+      "start": 528.17,
+      "end": 532.47,
+      "en": "But Iran's president took to the podium, and he had similar bluster.",
+      "zh": "但伊朗总统走上讲台，也发表了类似的强硬言论。"
+    },
+    {
+      "index": 111,
+      "start": 532.47,
+      "end": 535.99,
+      "en": "He said Iran will never surrender its civilian nuclear program.",
+      "zh": "他说伊朗永远不会放弃其民用核计划。"
+    },
+    {
+      "index": 112,
+      "start": 535.99,
+      "end": 543.03,
+      "en": "He also held up pictures of about what he said were 150 children killed there in airstrikes in the beginning of the war.",
+      "zh": "他还举起了照片，说那是战争初期在空袭中丧生的大约150名儿童。"
+    },
+    {
+      "index": 113,
+      "start": 543.03,
+      "end": 547.63,
+      "en": "But behind the scenes, I'm told both sides still are trying to find a way to negotiate.",
+      "zh": "但据我所知，在幕后，双方仍在努力寻找谈判的途径。"
+    },
+    {
+      "index": 114,
+      "start": 547.63,
+      "end": 550.01,
+      "en": "They said there was a good meeting, is how the president characterized it.",
+      "zh": "总统的说法是，他们进行了一次很好的会晤。"
+    },
+    {
+      "index": 115,
+      "start": 550.01,
+      "end": 550.75,
+      "en": "Margaret, great to have you here.",
+      "zh": "Margaret，非常感谢你来到节目。"
+    },
+    {
+      "index": 116,
+      "start": 550.75,
+      "end": 551.33,
+      "en": "Appreciate it.",
+      "zh": "谢谢。"
+    },
+    {
+      "index": 117,
+      "start": 551.33,
+      "end": 554.05,
+      "en": "And we'll see you this Sunday, of course, on Face the Nation.",
+      "zh": "当然，我们周日《面对全国》节目见。"
+    },
+    {
+      "index": 118,
+      "start": 554.05,
+      "end": 561.39,
+      "en": "And there's news tonight about the USS Lincoln strike group, which recently left the war zone in the Middle East after a marathon deployment there.",
+      "zh": "今晚还有关于林肯号航母打击群的消息，该打击群在中东进行马拉松式部署后，最近离开了战区。"
+    },
+    {
+      "index": 119,
+      "start": 561.39,
+      "end": 565.33,
+      "en": "We previously reported on concerns about the mental health of the sailors.",
+      "zh": "我们此前报道过对这些水兵心理健康的担忧。"
+    },
+    {
+      "index": 120,
+      "start": 565.33,
+      "end": 567.59,
+      "en": "And our Charlie D'Agata is here with an update.",
+      "zh": "我们的查理·达加塔在这里带来最新消息。"
+    },
+    {
+      "index": 121,
+      "start": 567.59,
+      "end": 569.13,
+      "en": "Charlie, good evening.",
+      "zh": "查理，晚上好。"
+    },
+    {
+      "index": 122,
+      "start": 569.13,
+      "end": 570.07,
+      "en": "Good evening, Tony.",
+      "zh": "晚上好，托尼。"
+    },
+    {
+      "index": 123,
+      "start": 570.07,
+      "end": 581.51,
+      "en": "So, according to a letter from the Navy's acting secretary, there were eight suicide attempts by sailors aboard the USS Abraham Lincoln strike group during that long 10-month deployment.",
+      "zh": "那么，根据海军代理部长的一封信，在亚伯拉罕·林肯号航母打击群那次长达10个月的部署期间，有8名水兵试图自杀。"
+    },
+    {
+      "index": 124,
+      "start": 581.51,
+      "end": 584.39,
+      "en": "Now, that strike group includes multiple ships.",
+      "zh": "那个打击群包括多艘舰船。"
+    },
+    {
+      "index": 125,
+      "start": 584.39,
+      "end": 589.23,
+      "en": "And, notably, they were taking part in combat operations against Iran for much of that time.",
+      "zh": "而且，值得注意的是，那段时间大部分时候他们都在参与对伊朗的作战行动。"
+    },
+    {
+      "index": 126,
+      "start": 589.23,
+      "end": 594.41,
+      "en": "Now, as you said, you'll recall the Lincoln was plagued by supply issues during its deployment.",
+      "zh": "就像你说的，大家还记得，林肯号在这次部署中一直被补给问题困扰。"
+    },
+    {
+      "index": 127,
+      "start": 594.41,
+      "end": 602.21,
+      "en": "Family members also raised the alarm about morale and mental health of the sailors because of that time on board without a break.",
+      "zh": "家属们也对水兵们的士气和心理健康发出了警报，因为他们长时间待在船上，没有休息。"
+    },
+    {
+      "index": 128,
+      "start": 602.21,
+      "end": 608.39,
+      "en": "So in that letter, the acting Navy secretary wrote that no service members killed themselves during the deployment.",
+      "zh": "所以在那封信里，代理海军部长写道，部署期间没有军人自杀身亡。"
+    },
+    {
+      "index": 129,
+      "start": 608.39,
+      "end": 608.89,
+      "en": "Tony?",
+      "zh": "托尼？"
+    },
+    {
+      "index": 130,
+      "start": 608.89,
+      "end": 609.67,
+      "en": "Well, that's good news.",
+      "zh": "嗯，这是个好消息。"
+    },
+    {
+      "index": 131,
+      "start": 609.67,
+      "end": 611.11,
+      "en": "Charlie, thank you very much.",
+      "zh": "查理，非常感谢。"
+    },
+    {
+      "index": 132,
+      "start": 611.11,
+      "end": 616.27,
+      "en": "For the third time now, all in less than a week, a military fighter jet has crashed during a training mission.",
+      "zh": "这是不到一周内，第三次有军用战斗机在训练任务中坠毁。"
+    },
+    {
+      "index": 133,
+      "start": 616.27,
+      "end": 621.39,
+      "en": "Today it was a British Royal Air Force jet that went down in Wales, narrowly missing buildings there.",
+      "zh": "今天是一架英国皇家空军飞机在威尔士坠毁，险些撞上那里的建筑。"
+    },
+    {
+      "index": 134,
+      "start": 621.39,
+      "end": 625.29,
+      "en": "And it follows recent crashes of two US F-16s.",
+      "zh": "此前最近还有两架美国F-16坠毁。"
+    },
+    {
+      "index": 135,
+      "start": 625.29,
+      "end": 628.54,
+      "en": "Leigh Kiniry is following this from our London Bureau.",
+      "zh": "莉·金尼里从我们伦敦记者站带来报道。"
+    },
+    {
+      "index": 136,
+      "start": 628.54,
+      "end": 634.55,
+      "en": "LEIGH KINIRY: Tony, you can see the Hawk 2 jet struggling to gain altitude in this video posted on social media.",
+      "zh": "莉·金尼里：托尼，从社交媒体上发布的这段视频里，你可以看到这架“鹰式2型”喷气式飞机正在艰难爬升。"
+    },
+    {
+      "index": 137,
+      "start": 634.55,
+      "end": 637.53,
+      "en": "Moments later, the two pilots eject from the cockpit.",
+      "zh": "片刻之后，两名飞行员从座舱弹射出来。"
+    },
+    {
+      "index": 138,
+      "start": 637.53,
+      "end": 643.55,
+      "en": "And less than 20 seconds after that, the plane nosedives into a field, exploding into a fireball.",
+      "zh": "此后不到20秒，飞机径直俯冲进一片田地，爆炸成一个火球。"
+    },
+    {
+      "index": 139,
+      "start": 643.55,
+      "end": 645.99,
+      "en": "It narrowly missed nearby homes.",
+      "zh": "它险些砸中附近的房屋。"
+    },
+    {
+      "index": 140,
+      "start": 645.99,
+      "end": 652.95,
+      "en": "Witnesses said they noticed trouble from the start, describing fire coming from the jet, but the two airmen landed safely nearby.",
+      "zh": "目击者说，他们从一开始就发现不对劲，说飞机在冒火，但两名飞行员在附近安全着陆。"
+    },
+    {
+      "index": 141,
+      "start": 652.95,
+      "end": 657.33,
+      "en": "They were treated just for minor injuries, and no one else was hurt in the crash.",
+      "zh": "他们只受了轻伤，坠机没有造成其他人受伤。"
+    },
+    {
+      "index": 142,
+      "start": 657.33,
+      "end": 660.83,
+      "en": "The Royal Air Force have not yet said what they believe went wrong.",
+      "zh": "皇家空军尚未说明他们认为问题出在哪里。"
+    },
+    {
+      "index": 143,
+      "start": 660.83,
+      "end": 663.39,
+      "en": "But the Hawk T2 is used to train fighter pilots.",
+      "zh": "不过，“鹰式T2”用于训练战斗机飞行员。"
+    },
+    {
+      "index": 144,
+      "start": 663.39,
+      "end": 666.53,
+      "en": "It can reach speeds of up to 650 miles an hour.",
+      "zh": "它的时速最高可达650英里。"
+    },
+    {
+      "index": 145,
+      "start": 666.53,
+      "end": 672.01,
+      "en": "Tonight, the Hawk jets are temporarily grounded while the Royal Air Force investigates this crash.",
+      "zh": "今晚，在皇家空军调查这起坠机事故期间，鹰式喷气机暂时停飞。"
+    },
+    {
+      "index": 146,
+      "start": 672.01,
+      "end": 672.7,
+      "en": "Tony?",
+      "zh": "托尼？"
+    },
+    {
+      "index": 147,
+      "start": 672.7,
+      "end": 673.91,
+      "en": "Leigh, thank you very much.",
+      "zh": "莉，非常感谢。"
+    },
+    {
+      "index": 148,
+      "start": 673.91,
+      "end": 678.97,
+      "en": "We turn now to Ohio and the trial of a former American Idol contestant accused of murdering his wife.",
+      "zh": "我们现在转向俄亥俄州，关注一名被控谋杀妻子的前《美国偶像》选手的审判。"
+    },
+    {
+      "index": 149,
+      "start": 678.97,
+      "end": 684.15,
+      "en": "On the stand today, his former girlfriend-- and it did not seem to go well for the defense.",
+      "zh": "今天他的前女友出庭作证——而且对辩方来说似乎不太妙。"
+    },
+    {
+      "index": 150,
+      "start": 684.15,
+      "end": 686.41,
+      "en": "CBS's Ian Lee has the update.",
+      "zh": "CBS的伊恩·李带来最新报道。"
+    },
+    {
+      "index": 151,
+      "start": 686.41,
+      "end": 694.53,
+      "en": "IAN LEE: Today, 24-year-old Alleigha Botner, a former church intern and Caleb Flynn's one-time lover, took the stand.",
+      "zh": "伊恩·李：今天，24岁的阿丽娅·博特纳，曾是一名教会实习生，也是凯莱布·弗林曾经的情人，出庭作证。"
+    },
+    {
+      "index": 152,
+      "start": 694.53,
+      "end": 696.21,
+      "en": "I hate him.",
+      "zh": "我恨他。"
+    },
+    {
+      "index": 153,
+      "start": 696.21,
+      "end": 703.73,
+      "en": "IAN LEE: Prosecutors had Botner read aloud some of the more than 100,000 messages between the two during their affair.",
+      "zh": "伊恩·李：检方让博特纳大声朗读了两人在婚外情期间互发的10万多条信息中的一部分。"
+    },
+    {
+      "index": 154,
+      "start": 703.73,
+      "end": 705.75,
+      "en": "At first, it was, I want her dead.",
+      "zh": "一开始，是“我想让她死”。"
+    },
+    {
+      "index": 155,
+      "start": 705.75,
+      "end": 706.79,
+      "en": "I wish she was gone.",
+      "zh": "“我希望她消失”。"
+    },
+    {
+      "index": 156,
+      "start": 706.79,
+      "end": 711.81,
+      "en": "And then it was, if I could kill her and not go to jail, I would.",
+      "zh": "然后是“如果我能杀了她还不坐牢，我会做的”。"
+    },
+    {
+      "index": 157,
+      "start": 711.81,
+      "end": 719.29,
+      "en": "IAN LEE: The prosecution says Flynn's affair with Botner drove him to murder his wife, Ashley, a charge he denies.",
+      "zh": "伊恩·李：检方称，弗林与博特纳的婚外情驱使他谋杀了妻子阿什莉，他对这一指控予以否认。"
+    },
+    {
+      "index": 158,
+      "start": 719.29,
+      "end": 724.89,
+      "en": "Prosecutors also showed a video Flynn sent to Botner, highlighting his obsession with her.",
+      "zh": "检方还播放了弗林发给博特纳的一段视频，突出了他对她的痴迷。"
+    },
+    {
+      "index": 159,
+      "start": 724.89,
+      "end": 728.93,
+      "en": "CALEB FLYNN: Anybody who's listening, I love Aaliyah Botner.",
+      "zh": "凯莱布·弗林：任何在听的人，我爱阿丽娅·博特纳。"
+    },
+    {
+      "index": 160,
+      "start": 728.93,
+      "end": 733.86,
+      "en": "IAN LEE: On the stand, Botner recalled the moment she learned of Ashley Flynn's death.",
+      "zh": "伊恩·李：在证人席上，博特纳回忆起她得知阿什莉·弗林死讯的那一刻。"
+    },
+    {
+      "index": 161,
+      "start": 733.86,
+      "end": 735.03,
+      "en": "My heart started pounding.",
+      "zh": "我的心开始狂跳。"
+    },
+    {
+      "index": 162,
+      "start": 735.03,
+      "end": 743.55,
+      "en": "And in my mind, it seemed like too much of a coincidence that the day he's divorcing her, she's just dead, all of a sudden.",
+      "zh": "在我脑子里，这太巧了：他当天正在跟她离婚，她就突然死了。"
+    },
+    {
+      "index": 163,
+      "start": 743.55,
+      "end": 755.45,
+      "en": "IAN LEE: The former American Idol contestant and pastor is accused of shooting his wife twice while she slept in their Ohio home in February and attempted to cover up the killing by staging a burglary.",
+      "zh": "伊恩·李：这名前《美国偶像》选手兼牧师被控于2月在俄亥俄州的家中，趁妻子睡觉时向她开了两枪，并试图通过伪造入室盗窃来掩盖杀人事实。"
+    },
+    {
+      "index": 164,
+      "start": 755.45,
+      "end": 757.47,
+      "en": "A gun was never recovered.",
+      "zh": "枪始终没有找到。"
+    },
+    {
+      "index": 165,
+      "start": 757.47,
+      "end": 763.37,
+      "en": "Investigators became suspicious of his claim by the lack of outside damage to a garage door.",
+      "zh": "调查人员因为车库门外部没有损坏，对他的说法起了疑心。"
+    },
+    {
+      "index": 166,
+      "start": 763.37,
+      "end": 770.61,
+      "en": "It wasn't what I would expect to see on a forced entry type of scenario.",
+      "zh": "这不是我在强行闯入场景中会看到的情况。"
+    },
+    {
+      "index": 167,
+      "start": 770.61,
+      "end": 774.23,
+      "en": "IAN LEE: Flynn claims he was in another room when his wife was murdered.",
+      "zh": "伊恩·李：弗林声称妻子被谋杀时他在另一个房间。"
+    },
+    {
+      "index": 168,
+      "start": 774.23,
+      "end": 783.47,
+      "en": "But there are questions around why the couple's two dogs, known for being highly energetic, remains silent with an alleged intruder inside the house.",
+      "zh": "但仍有疑问：这对夫妇的两只狗以精力旺盛著称，家里据称有闯入者时却一直很安静。"
+    },
+    {
+      "index": 169,
+      "start": 783.47,
+      "end": 784.09,
+      "en": "Tony?",
+      "zh": "托尼？"
+    },
+    {
+      "index": 170,
+      "start": 784.09,
+      "end": 785.31,
+      "en": "Ian, thank you.",
+      "zh": "伊恩，谢谢。"
+    },
+    {
+      "index": 171,
+      "start": 785.31,
+      "end": 794.73,
+      "en": "Dolly Parton's nephew, the one who informed all of us about her death, is now under a court order to stay out of the majority of the business dealings she left behind.",
+      "zh": "多莉·帕顿的侄子，就是那个告诉我们所有人她去世消息的人，现在被法院命令不得插手她留下的大部分生意。"
+    },
+    {
+      "index": 172,
+      "start": 794.73,
+      "end": 798.55,
+      "en": "Nicole Valdes is in Nashville with the new allegations.",
+      "zh": "妮可·瓦尔德斯在纳什维尔带来这些新指控。"
+    },
+    {
+      "index": 173,
+      "start": 798.55,
+      "end": 803.98,
+      "en": "This video announcement is something Dolly asked of me years ago, before I fully absorbed it as a future reality.",
+      "zh": "这段视频公告是多莉多年前要我做的，那时我还没完全把它当作未来的现实来接受。"
+    },
+    {
+      "index": 174,
+      "start": 803.98,
+      "end": 811.97,
+      "en": "NICOLE VALDES: The man who told the world that Dolly Parton died, her nephew, Bryan Seaver, is now at the heart of a messy legal battle.",
+      "zh": "妮可·瓦尔德斯：那个告诉全世界多莉·帕顿去世的人，她的侄子布莱恩·西弗，如今成了一场混乱法律纠纷的核心人物。"
+    },
+    {
+      "index": 175,
+      "start": 811.97,
+      "end": 824.85,
+      "en": "Parton's longtime manager, Danny Nozell, and the LLC that manages many of Parton's businesses, claims Seaver, who headed Parton's security, had become, quote, \"emboldened and relentless.\"",
+      "zh": "帕顿的长期经纪人丹尼·诺泽尔，以及管理帕顿许多业务的有限责任公司，称曾负责帕顿安保工作的西弗变得，原话是，“有恃无恐、纠缠不休”。"
+    },
+    {
+      "index": 176,
+      "start": 824.85,
+      "end": 846.2,
+      "en": "The legal filings accuse him of trying to extort Parton's estate and making \"terroristic threats, harassment, and intimidation\" and sending threatening texts to Nozell and staff members, saying things like, \"I'm going to destroy the entire brand,\" and \"I'm going to set up a podcast dedicated to ruining Dolly's brand partnerships.\"",
+      "zh": "法律文件指控他试图勒索帕顿的遗产，并做出“恐怖主义威胁、骚扰和恐吓”，还向诺泽尔和工作人员发送威胁短信，说“我要毁掉整个品牌”，“我要开一个播客，专门毁掉多莉的品牌合作。”"
+    },
+    {
+      "index": 177,
+      "start": 846.2,
+      "end": 850.71,
+      "en": "I mean, they literally call him a terrorist in this complaint.",
+      "zh": "我的意思是，他们在这份诉状里真的把他叫作恐怖分子。"
+    },
+    {
+      "index": 178,
+      "start": 850.71,
+      "end": 858.81,
+      "en": "The text messages that they've provided do paint a picture, a very scary picture, of, really, an unhinged person.",
+      "zh": "他们提供的那些短信确实描绘了一个非常可怕的、精神失常的人的形象。"
+    },
+    {
+      "index": 179,
+      "start": 858.81,
+      "end": 863.4,
+      "en": "However, I will say that it's light on the technical legal details.",
+      "zh": "不过，我得说，在法律技术细节方面，它还比较薄弱。"
+    },
+    {
+      "index": 180,
+      "start": 863.4,
+      "end": 871.33,
+      "en": "NICOLE VALDES: According to court documents, Nozell says Seaver was terminated last week and Parton's team cut ties with his security company.",
+      "zh": "根据法庭文件，诺泽尔称西弗上周被解雇，帕顿的团队也与他的安保公司断了关系。"
+    },
+    {
+      "index": 181,
+      "start": 871.33,
+      "end": 877.49,
+      "en": "One of the threats Seaver's accused of making says, quote, \"I'm not an entertainment person, I'm a killer.\"",
+      "zh": "西弗被控发出的威胁之一写道：“我不是娱乐圈的人，我是个杀手。”"
+    },
+    {
+      "index": 182,
+      "start": 877.49,
+      "end": 885.05,
+      "en": "Late today, a Nashville judge granted the restraining order Nozell and the LLC requested against Seaver.",
+      "zh": "今天晚些时候，纳什维尔一名法官批准了诺泽尔和该有限责任公司针对西弗申请的禁制令。"
+    },
+    {
+      "index": 183,
+      "start": 885.05,
+      "end": 889.19,
+      "en": "And CBS News has reached out to Dolly's estate, Nozell, and Seaver.",
+      "zh": "CBS新闻已联系多莉的遗产管理方、诺泽尔和西弗。"
+    },
+    {
+      "index": 184,
+      "start": 889.19,
+      "end": 890.51,
+      "en": "None have responded.",
+      "zh": "目前无人回应。"
+    },
+    {
+      "index": 185,
+      "start": 890.51,
+      "end": 901.11,
+      "en": "But according to multiple reports, including one from TMZ, Seaver denies the claims in this petition, saying his messages were taken out of context, that they were not threats.",
+      "zh": "但据包括TMZ在内的多家媒体报道，西弗否认这份申诉中的说法，称他的信息被断章取义，并不是威胁。"
+    },
+    {
+      "index": 186,
+      "start": 901.11,
+      "end": 905.25,
+      "en": "But he did add, quote, \"Most of the comments, I stand by.\"",
+      "zh": "但他确实补充说：“大部分说法，我都坚持。”"
+    },
+    {
+      "index": 187,
+      "start": 905.25,
+      "end": 910.85,
+      "en": "Meanwhile, Dolly's new hotel and museum here in Nashville are set to open next week.",
+      "zh": "与此同时，多莉在纳什维尔的新酒店和博物馆定于下周开业。"
+    },
+    {
+      "index": 188,
+      "start": 910.85,
+      "end": 911.57,
+      "en": "Tony?",
+      "zh": "托尼？"
+    },
+    {
+      "index": 189,
+      "start": 911.57,
+      "end": 912.07,
+      "en": "All right.",
+      "zh": "好的。"
+    },
+    {
+      "index": 190,
+      "start": 912.07,
+      "end": 913.41,
+      "en": "Nicole, thank you.",
+      "zh": "妮可，谢谢。"
+    },
+    {
+      "index": 191,
+      "start": 913.41,
+      "end": 921.47,
+      "en": "Still ahead on the broadcast tonight, the dozens of people who claim they rode a Six Flags roller coaster and walked away with life-altering brain injuries.",
+      "zh": "今晚节目稍后继续：数十人声称他们乘坐六旗过山车后，落下了改变人生的脑损伤。"
+    },
+    {
+      "index": 192,
+      "start": 927.41,
+      "end": 935.85,
+      "en": "California's Six Flags Magic Mountain describes its X2 roller coaster as a ride for the ultimate daredevil and, quote, \"downright scary.\"",
+      "zh": "加州的六旗魔术山把X2过山车形容为专为终极胆大者打造的设施，原话说“简直吓人”。"
+    },
+    {
+      "index": 193,
+      "start": 935.85,
+      "end": 937.27,
+      "en": "But is it also dangerous?",
+      "zh": "但它是否也危险？"
+    },
+    {
+      "index": 194,
+      "start": 937.27,
+      "end": 942.37,
+      "en": "Lawyers for more than a hundred people say the coaster left them with traumatic brain injuries.",
+      "zh": "一百多人的律师表示，这列过山车给他们造成了创伤性脑损伤。"
+    },
+    {
+      "index": 195,
+      "start": 942.37,
+      "end": 946.53,
+      "en": "Our Carter Evans reports.",
+      "zh": "卡特·埃文斯报道。"
+    },
+    {
+      "index": 196,
+      "start": 946.53,
+      "end": 958.54,
+      "en": "CARTER EVANS: Reaching speeds up to 76 miles per hour with seats that spin 360 degrees, the X2 is Six Flags Magic Mountain's signature roller coaster.",
+      "zh": "X2最高时速可达76英里，座椅能360度旋转，是六旗魔术山的招牌过山车。"
+    },
+    {
+      "index": 197,
+      "start": 958.54,
+      "end": 964.08,
+      "en": "But for Naomi Greer-Wilkinson, that thrill may have come at a devastating cost.",
+      "zh": "但对娜奥米·格里尔-威尔金森来说，那份刺激可能让她付出了毁灭性的代价。"
+    },
+    {
+      "index": 198,
+      "start": 964.08,
+      "end": 967.98,
+      "en": "When we got there, they told us to prepare for end of life.",
+      "zh": "我们到那里时，他们让我们做好临终准备。"
+    },
+    {
+      "index": 199,
+      "start": 967.98,
+      "end": 974.48,
+      "en": "CARTER EVANS: Her parents allege that Naomi's ride on the X2 in July landed her in the hospital with a traumatic brain injury.",
+      "zh": "她的父母称，娜奥米七月乘坐X2后因创伤性脑损伤住进了医院。"
+    },
+    {
+      "index": 200,
+      "start": 974.48,
+      "end": 976.4,
+      "en": "She's still on a ventilator.",
+      "zh": "她仍在使用呼吸机。"
+    },
+    {
+      "index": 201,
+      "start": 976.4,
+      "end": 983.43,
+      "en": "Naomi had no idea that she was signing up for something that could potentially rip the veins in her skull.",
+      "zh": "娜奥米完全不知道，她参与的这个项目可能会撕裂她颅内的血管。"
+    },
+    {
+      "index": 202,
+      "start": 983.43,
+      "end": 999.14,
+      "en": "CARTER EVANS: The Dordick law corporation represents more than 100 people who say they've suffered traumatic brain injuries after riding the X2, including Michael Wilk, an attorney who said he underwent two brain surgeries to stop the internal bleeding.",
+      "zh": "多迪克法律公司代理了100多人，他们表示乘坐X2后遭受了创伤性脑损伤，其中包括律师迈克尔·威尔克。他说自己接受了两次脑部手术来止住内出血。"
+    },
+    {
+      "index": 203,
+      "start": 999.14,
+      "end": 1001.22,
+      "en": "I struggle for words.",
+      "zh": "我说话很费劲。"
+    },
+    {
+      "index": 204,
+      "start": 1001.22,
+      "end": 1004.85,
+      "en": "I don't necessarily think clearly.",
+      "zh": "我脑子也不一定清楚。"
+    },
+    {
+      "index": 205,
+      "start": 1004.85,
+      "end": 1011.88,
+      "en": "CARTER EVANS: As a result of his injuries, Wilk says he's on disability and doesn't know if he'll ever be able to practice law again.",
+      "zh": "由于受伤，威尔克说自己现在靠残疾补助生活，不知道是否还能再从事法律工作。"
+    },
+    {
+      "index": 206,
+      "start": 1011.88,
+      "end": 1023.35,
+      "en": "I didn't think take a ride in a roller coaster at a legitimate theme park and end up with brain bleed and multiple surgeries in your head.",
+      "zh": "我没想到在一个正规主题公园坐一次过山车，最后会脑出血、脑袋动好几次手术。"
+    },
+    {
+      "index": 207,
+      "start": 1023.35,
+      "end": 1024.6,
+      "en": "And you're not the only one.",
+      "zh": "你不是唯一一个。"
+    },
+    {
+      "index": 208,
+      "start": 1024.6,
+      "end": 1025.94,
+      "en": "And I'm not the only one.",
+      "zh": "我也不是唯一一个。"
+    },
+    {
+      "index": 209,
+      "start": 1025.94,
+      "end": 1031.62,
+      "en": "CARTER EVANS: In 2022, 22-year-old Christopher Hawley died after riding the X2.",
+      "zh": "2022年，22岁的克里斯托弗·霍利在乘坐X2后死亡。"
+    },
+    {
+      "index": 210,
+      "start": 1031.62,
+      "end": 1035.9,
+      "en": "His family settled a lawsuit with the amusement park earlier this year.",
+      "zh": "他的家人今年早些时候与游乐园就诉讼达成了和解。"
+    },
+    {
+      "index": 211,
+      "start": 1035.9,
+      "end": 1037.44,
+      "en": "That's what makes me angry.",
+      "zh": "这就是让我生气的地方。"
+    },
+    {
+      "index": 212,
+      "start": 1037.44,
+      "end": 1041.76,
+      "en": "They had been sued at least a year before I was injured.",
+      "zh": "至少在我受伤的一年前，他们就已经被别人告过了。"
+    },
+    {
+      "index": 213,
+      "start": 1041.76,
+      "end": 1044.04,
+      "en": "They knew.",
+      "zh": "他们早就知道。"
+    },
+    {
+      "index": 214,
+      "start": 1044.04,
+      "end": 1050.42,
+      "en": "CARTER EVANS: Now, Wilk told me the force of the roller coaster slammed his head against the headrest, causing severe pain.",
+      "zh": "威尔克告诉我，过山车的力量使他的头撞在头枕上，造成剧烈疼痛。"
+    },
+    {
+      "index": 215,
+      "start": 1050.42,
+      "end": 1052.0,
+      "en": "That's X2 behind me.",
+      "zh": "我身后就是X2。"
+    },
+    {
+      "index": 216,
+      "start": 1052.0,
+      "end": 1054.0,
+      "en": "Six Flags closed it in July.",
+      "zh": "六旗在七月关闭了它。"
+    },
+    {
+      "index": 217,
+      "start": 1054.0,
+      "end": 1057.74,
+      "en": "And today, the company declined to comment on the pending lawsuits.",
+      "zh": "今天，该公司拒绝对这些未决诉讼置评。"
+    },
+    {
+      "index": 218,
+      "start": 1057.74,
+      "end": 1058.38,
+      "en": "Tony?",
+      "zh": "托尼？"
+    },
+    {
+      "index": 219,
+      "start": 1058.38,
+      "end": 1059.52,
+      "en": "Carter, thank you.",
+      "zh": "卡特，谢谢。"
+    },
+    {
+      "index": 220,
+      "start": 1059.52,
+      "end": 1063.44,
+      "en": "Coming up next, the close-call lightning strike caught on camera.",
+      "zh": "接下来的内容：被摄像机拍下的惊险雷击瞬间。"
+    },
+    {
+      "index": 221,
+      "start": 1069.26,
+      "end": 1077.12,
+      "en": "A lightning bolt hit interstate 84 in Utah last night, the moment captured on dashcam video from a driver, who said it was louder than you can imagine.",
+      "zh": "昨晚一道闪电击中犹他州84号州际公路，这一瞬间被一位司机的行车记录仪拍下，他说响声大得超乎想象。"
+    },
+    {
+      "index": 222,
+      "start": 1077.12,
+      "end": 1080.36,
+      "en": "And it nearly zapped a box truck just ahead of him.",
+      "zh": "闪电差点击中他前方的一辆厢式货车。"
+    },
+    {
+      "index": 223,
+      "start": 1080.36,
+      "end": 1085.9,
+      "en": "What the driver of that truck said when it happened-- probably not safe for TV.",
+      "zh": "那位货车司机事情发生时说的话——可能不适合在电视上播。"
+    },
+    {
+      "index": 224,
+      "start": 1085.9,
+      "end": 1092.6,
+      "en": "A golden retriever puppy in Northern California showed off some leadership skills recently, taking this horse for a little walk.",
+      "zh": "北加州一只金毛幼犬最近秀了一把领导力，牵着这匹马小走了一圈。"
+    },
+    {
+      "index": 225,
+      "start": 1092.6,
+      "end": 1100.58,
+      "en": "The horse didn't resist a bit, possibly because it thinks of itself as just a big dog, which may be what the puppy is thinking too.",
+      "zh": "这匹马一点也不抗拒，可能它觉得自己就是只大狗，而那只小狗可能也这么想。"
+    },
+    {
+      "index": 226,
+      "start": 1100.58,
+      "end": 1106.16,
+      "en": "Up next, a historic home run ball and the birthday girl who appreciated it for what it was.",
+      "zh": "接下来：一颗历史性本垒打球，以及一位懂得它本来用途的生日女孩。"
+    },
+    {
+      "index": 227,
+      "start": 1111.33,
+      "end": 1118.38,
+      "en": "We're back with the good stuff tonight, a reminder of both the innocence of children and the intended purpose of a baseball.",
+      "zh": "今晚我们继续为你带来暖心内容，它提醒我们孩子的天真，以及棒球本来的用途。"
+    },
+    {
+      "index": 228,
+      "start": 1118.38,
+      "end": 1127.82,
+      "en": "It comes courtesy of this historic home run last night off the bat of a Eugenio Suárez, now just the 10th active player with 350 homers or more.",
+      "zh": "这要感谢昨晚尤赫尼奥·苏亚雷斯击出的历史性本垒打，他现在成为现役球员中第10位打出350支以上本垒打的球员。"
+    },
+    {
+      "index": 229,
+      "start": 1127.82,
+      "end": 1134.82,
+      "en": "And somewhere out there in left field was a girl celebrating her sixth birthday, who ended up with that priceless souvenir.",
+      "zh": "而在左外野的某个地方，一个正在庆祝六岁生日的女孩，最终拿到了那颗无价的纪念球。"
+    },
+    {
+      "index": 230,
+      "start": 1134.82,
+      "end": 1143.98,
+      "en": "For a moment, it felt like the whole stadium was cheering for little Calia and probably thinking, wow, that ball has got to be worth some serious money.",
+      "zh": "有那么一瞬间，感觉整个体育场都在为小卡利亚欢呼，大家可能在想：哇，那颗球肯定值不少钱。"
+    },
+    {
+      "index": 231,
+      "start": 1143.98,
+      "end": 1146.38,
+      "en": "But what does a kid care about money?",
+      "zh": "但小孩子哪里在乎钱呢？"
+    },
+    {
+      "index": 232,
+      "start": 1146.38,
+      "end": 1149.54,
+      "en": "A baseball, after all, is intended to be thrown.",
+      "zh": "毕竟，棒球本来就是用来扔的。"
+    },
+    {
+      "index": 233,
+      "start": 1149.54,
+      "end": 1153.98,
+      "en": "COMMENTATOR: Eugenio Suárez's 350th career home run-- and throwing it back.",
+      "zh": "尤赫尼奥·苏亚雷斯职业生涯第350支本垒打——她把球扔了回去。"
+    },
+    {
+      "index": 234,
+      "start": 1153.98,
+      "end": 1155.04,
+      "en": "Oh my goodness.",
+      "zh": "哦，我的天哪。"
+    },
+    {
+      "index": 235,
+      "start": 1155.04,
+      "end": 1158.8,
+      "en": "CARTER EVANS: The Braves broadcast crew rushed out to see what she was thinking.",
+      "zh": "勇士队的转播团队赶过去看她是怎么想的。"
+    },
+    {
+      "index": 236,
+      "start": 1158.8,
+      "end": 1161.2,
+      "en": "And her answer here is just perfect.",
+      "zh": "她的回答简直完美。"
+    },
+    {
+      "index": 237,
+      "start": 1161.2,
+      "end": 1162.62,
+      "en": "Why did you throw it back?",
+      "zh": "你为什么把它扔回去？"
+    },
+    {
+      "index": 238,
+      "start": 1162.62,
+      "end": 1163.64,
+      "en": "I don't know.",
+      "zh": "我不知道。"
+    },
+    {
+      "index": 239,
+      "start": 1163.64,
+      "end": 1166.74,
+      "en": "I just want to throw it.",
+      "zh": "我就是想扔。"
+    },
+    {
+      "index": 240,
+      "start": 1166.74,
+      "end": 1168.48,
+      "en": "She just wanted to throw it.",
+      "zh": "她只是想把它扔出去。"
+    },
+    {
+      "index": 241,
+      "start": 1168.48,
+      "end": 1174.04,
+      "en": "You see, for all those cheering adults, the best part of catching a home run ball is keeping it or maybe selling it.",
+      "zh": "你看，对那些欢呼的大人来说，接到本垒打球最棒的部分就是留着它，或者把它卖掉。"
+    },
+    {
+      "index": 242,
+      "start": 1174.04,
+      "end": 1181.02,
+      "en": "But for a kid like Calia, after eight innings of watching other people play baseball, the best part was the game itself.",
+      "zh": "但对卡莉亚这样的小孩来说，看了八局别人打棒球之后，最棒的部分是比赛本身。"
+    },
+    {
+      "index": 243,
+      "start": 1181.02,
+      "end": 1184.94,
+      "en": "Finally, it was her turn to play.",
+      "zh": "终于轮到她上场了。"
+    },
+    {
+      "index": 244,
+      "start": 1184.94,
+      "end": 1186.44,
+      "en": "That's another day in America.",
+      "zh": "美国又一天结束了。"
+    },
+    {
+      "index": 245,
+      "start": 1186.44,
+      "end": 1187.46,
+      "en": "I'm Tony Dokoupil.",
+      "zh": "我是托尼·多库皮尔。"
+    },
+    {
+      "index": 246,
+      "start": 1187.46,
+      "end": 1190.44,
+      "en": "For all of us here at CBS News, thank you for watching.",
+      "zh": "我们 CBS 新闻的全体同仁感谢您的收看。"
+    },
+    {
+      "index": 247,
+      "start": 1190.44,
+      "end": 1192.1,
+      "en": "We'll see you right back here tomorrow.",
+      "zh": "我们明天同一时间再见。"
+    },
+    {
+      "index": 248,
+      "start": 1192.1,
+      "end": 1193.12,
+      "en": "Good night.",
+      "zh": "晚安。"
+    }
+  ],
+  "meta": {
+    "slug": "092326-cbs-evening-news",
+    "generated_at": "2026-09-25T11:54:42",
+    "claude_model": "claude-opus-5",
+    "transcript_source": "cbs-captions",
+    "transcript_detail": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4843993_hls/subs_en.m3u8",
+    "segment_count": 249,
+    "audio_duration": 1193.12
+  }
+}

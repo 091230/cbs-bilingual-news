@@ -1,0 +1,27 @@
+# 本地数据产物（重跑流水线可再生成）
+data/cbs.db
+data/episodes/*/video.mp4
+data/episodes/*/audio.mp3
+data/episodes/*/info.json
+data/episodes/*/captions_raw.json
+data/episodes/*/claude_raw.json
+data/episodes/*/whisper_raw.json
+
+# 用户个人笔记，不进仓库
+命令符.txt
+
+# Whisper 模型 / 本地工具二进制（不进仓库，README 有说明）
+models/
+tools/tailwindcss.exe
+
+# 构建产物（dist 发布到 gh-pages 分支，不进 main）
+dist/
+
+# 自检截图 / Python 缓存
+_shots/
+__pycache__/
+*.pyc
+
+# 凭证（绝不进仓库）
+.env
+*.env

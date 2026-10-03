@@ -25,3 +25,6 @@ __pycache__/
 # 凭证（绝不进仓库）
 .env
 *.env
+
+# 无关的临时输出文件
+mandelbrot_ascii.txt

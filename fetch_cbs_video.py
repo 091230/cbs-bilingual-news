@@ -85,9 +85,10 @@ CBS_HOST = "https://www.cbsnews.com"
 # 想连周末版一起收，把后面的 cbs-evening-news 换成 (cbs-evening-news|cbs-weekend-news)。
 EPISODE_SLUG_RE = re.compile(r"^\d{6}-cbs-evening-news$")
 
-# 时长窗口。官网完整版实测 19:58（"15min以上"按你说的取 900 秒）；
-# 片段类最长 3~4 分钟，所以 15 分钟这条线能把两者分开。
-MIN_DURATION = 15 * 60
+# 时长窗口。用户要求支持 10 分钟以上的视频（CBS 网页上的科技大佬采访片段
+# 常 9~10 分钟，如马斯克 9:51），所以下限取 9 分钟（540s）而不是原来的 15 分钟。
+# 完整版 Evening News 实测 20 分钟上下；上限 70 分钟防直播回放。
+MIN_DURATION = 9 * 60
 MAX_DURATION = 70 * 60
 MAX_CANDIDATES = 8   # 最多往下翻几个候选去找达标的单集
 

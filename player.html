@@ -4,14 +4,21 @@
 <meta charset="utf-8">
 <!-- viewport-fit=cover 是 env(safe-area-inset-*) 生效的前提，刘海屏横屏时需要 -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CBS Evening News · 双语精听</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%236366f1'/><path d='M9 7l8 5-8 5z' fill='white'/></svg>">
+<title>CBS Bilingual News · 双语精听</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%23c9955e'/><path d='M9 7l8 5-8 5z' fill='%230e0d0b'/></svg>">
 <!-- 本地预编译好的 Tailwind。原来是 cdn.tailwindcss.com —— 国内经常打不开，
      而且它是运行时 JIT，不适合上线。改完 HTML 跑 python build_site.py 重新生成。 -->
 <link rel="stylesheet" href="assets/tailwind.css">
 <!-- build_site.py 生成 dist/ 时把这一行整体换成 window.STATIC_SITE = true; -->
 <script>window.STATIC_SITE = window.STATIC_SITE || false;</script>
 <style>
+  /* ===== 暖色主题覆盖（与 index.html 统一：暖炭底 + 琥珀金强调）===== */
+  body { background: #0e0d0b !important; }
+  .sub-row.active { background: rgba(201,149,94,.16) !important; border-left-color: #c9955e !important; }
+  .sub-row.active .sub-en { color: #fff; }
+  ::-webkit-scrollbar-thumb { background: #3a342c !important; }
+  ::-webkit-scrollbar-thumb:hover { background: #4d453a !important; }
+
   html { height: 100%; }
   /* 手机上要让页面能正常滚（原来是 overflow-hidden，小屏等于下半截摸不到），
      所以这里只给 min-height，桌面的"刚好一屏不滚"交给 lg:h-full + lg:overflow-hidden */
@@ -79,7 +86,7 @@
     #stage-bar button, #stage-bar select {
       min-height: 44px; min-width: 44px; font-size: 12px;
     }
-    #stage-bar #btn-cc-zh, #stage-bar #btn-cc-en, #stage-bar #btn-cc-color {
+    #stage-bar #btn-cc-zh, #stage-bar #btn-cc-color {
       padding-left: .75rem; padding-right: .75rem;
     }
   }
@@ -172,26 +179,12 @@
         <span id="t-dur" class="flex-none text-xs tabular-nums text-slate-400 w-12">0:00</span>
 
         <div class="flex items-center gap-2.5 ml-auto">
-          <button id="btn-cc-zh" class="flex-none text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="画面内中文字幕开关（C）">中</button>
-          <button id="btn-cc-en" class="flex-none text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="原声英文字幕开关（V）">CC</button>
+          <button id="btn-cc-zh" class="flex-none text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="中文字幕开关（C）">中</button>
           <div id="cc-wrap" class="relative flex-none">
             <button id="btn-cc-color" class="text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="画面内字幕颜色"><span id="cc-swatch">字色</span><span class="text-slate-500 ml-0.5">▾</span></button>
             <div id="cc-panel" class="hidden absolute bottom-full right-0 mb-2 z-30 w-60 lg:w-52 rounded-xl bg-slate-900/95 ring-1 ring-slate-700 shadow-2xl p-3">
               <div class="text-[11px] text-slate-400 mb-2">画面内字幕颜色</div>
               <div id="cc-grid" class="grid grid-cols-6 gap-2 lg:gap-1.5"></div>
-            </div>
-          </div>
-          <div id="sync-wrap" class="relative flex-none">
-            <button id="btn-cc-sync" class="text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="字幕同步：微调画面字幕与视频的偏差">同步<span class="text-slate-500 ml-0.5">▾</span></button>
-            <div id="sync-panel" class="hidden absolute bottom-full right-0 mb-2 z-30 w-56 rounded-xl bg-slate-900/95 ring-1 ring-slate-700 shadow-2xl p-3">
-              <div class="text-[11px] text-slate-400 mb-2">字幕同步</div>
-              <div class="flex items-center gap-2">
-                <button id="sync-minus" class="flex-1 text-[11px] font-semibold px-2 py-1.5 rounded-md bg-slate-800 text-slate-200 ring-1 ring-slate-600 hover:bg-slate-700 transition" title="字幕提前 0.25 秒">−0.25s</button>
-                <span id="sync-val" class="flex-none w-12 text-center text-xs tabular-nums text-slate-300">+0.00s</span>
-                <button id="sync-plus" class="flex-1 text-[11px] font-semibold px-2 py-1.5 rounded-md bg-slate-800 text-slate-200 ring-1 ring-slate-600 hover:bg-slate-700 transition" title="字幕延后 0.25 秒">+0.25s</button>
-              </div>
-              <button id="sync-reset" class="mt-2 w-full text-[11px] font-semibold px-2 py-1.5 rounded-md bg-slate-800 text-slate-300 ring-1 ring-slate-600 hover:bg-slate-700 transition" title="清除偏移">重置</button>
-              <p class="text-[10px] text-slate-500 mt-1.5 leading-relaxed">字幕比画面慢 → 点 −（提前）<br>字幕比画面快 → 点 +（延后）</p>
             </div>
           </div>
           <button id="btn-fs" class="flex-none w-7 h-7 rounded-md bg-slate-800 text-slate-300 ring-1 ring-slate-700 hover:bg-slate-700 grid place-items-center transition" title="全屏（F）">
@@ -211,7 +204,7 @@
 
     <!-- 键盘快捷键对触屏没意义，手机上别占地方 -->
     <p class="hidden lg:block flex-none text-[11px] text-slate-600 px-1">
-      空格 播放/暂停 · ← → 快退/快进 5 秒 · C 中文字幕 · V 原声字幕 · F 全屏 · 同步 字幕微调 · 点字幕跳转
+      空格 播放/暂停 · ← → 快退/快进 5 秒 · C 中文字幕 · F 全屏 · 点字幕跳转
     </p>
   </section>
 
@@ -389,44 +382,59 @@ function initStreaming(src) {
       enableWorker: true,
       lowLatencyMode: false,
       backBufferLength: 90,
-      startLevel: -1,
-      // 到 CBS CDN 的单连接只有约 1.2 Mbps，而 1080p 要 3.19 Mbps，所以在线
-      // 播放实际只能稳在 432p 左右。这里把初始估计调高，让它先试高档、撑不住
-      // 再自动降；想固定某一档就用右边的选择器。
-      abrEwmaDefaultEstimate: 8e6,
-      // ⚠️ CBS 流自带字幕轨（WebVTT + CEA-608 隐藏字幕）。hls.js 默认会解析
-      // 并显示它们，渲染在画面底部，正好和页面挂的中文字幕叠在一起 —— 这就是
-      // "原视频字幕没消失、两层字幕重叠"的来源。两条全关，只用页面自己的轨。
-      enableWebVTT: false,
-      enableCEA608Captions: false,
+      // —— 卡顿修复 ——
+      // 到 CBS CDN 的单连接实测只有 ~1.2 Mbps，1080p 要 3 Mbps。之前 MANIFEST_PARSED
+      // 后强制 nextLevel=最高档，首段播 5~6 秒后下一段 1080p 分片下不完 → 硬卡。
+      // 改为：从低档（313p/570k）起播，让 ABR 实测带宽后自己往上爬；估计带宽别虚高。
+      startLevel: 1,
+      abrEwmaDefaultEstimate: 1.2e6,
+      // 多攒点缓冲再播，避免网络一抖就空；空了也别立刻慌
+      maxBufferLength: 30,
+      maxMaxBufferLength: 60,
+      maxBufferHole: 0.5,
+      // 分片加载失败自动重试（CBS CDN 偶尔抽风），别一次失败就判死
+      manifestLoadingMaxRetry: 6,
+      manifestLoadingRetryDelay: 1000,
+      levelLoadingMaxRetry: 6,
+      levelLoadingRetryDelay: 1000,
+      fragLoadingMaxRetry: 6,
+      fragLoadingRetryDelay: 1000,
+      // 保留 CBS 流内自带英文字幕（它准确跟随画面），中文由我们自己挂的轨叠在上方
+      enableWebVTT: true,
+      enableCEA608Captions: true,
     });
     hls.loadSource(src);
     hls.attachMedia(v);
-    enableForeignTrackMute();
     hls.on(Hls.Events.MANIFEST_PARSED, (_, d) => {
       console.log('[hls] 已解析，' + d.levels.length + ' 档画质');
-      hls.nextLevel = d.levels.length - 1;   // 先按最高档起播，之后交给 ABR
+      // 打开流内自带的官方英文字幕（和画面严格对齐）。hls.js 默认建轨但不选中。
+      if (hls.subtitleTracks && hls.subtitleTracks.length) {
+        hls.subtitleTrack = 0;
+        console.log('[hls] 流内字幕轨: ' + hls.subtitleTracks.length + ' 条，已选中第 0 条');
+      }
       setupQuality(hls);
     });
+    // 网络错误带退避重试，最多救 5 次，救不回来才报错
+    let netRetries = 0;
     hls.on(Hls.Events.ERROR, (_, data) => {
-      // 拖动进度条时 hls.js 会主动中断在途分片（aborted / bufferAppendNoProgress），
-      // 都是 fatal:false 的正常行为，别拿 error 级别刷屏。
       if (!data.fatal) { console.debug('[hls] 非致命:', data.details); return; }
-      console.error('[hls] 致命错误:', data);
+      console.error('[hls] 致命错误:', data.type, data.details);
       if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-        playerMsg('网络错误，正在重试…<br><span class="text-slate-500 text-xs">' + esc(data.details) + '</span>');
-        hls.startLoad();
+        if (netRetries++ < 5) {
+          playerMsg('网络波动，正在重连…<br><span class="text-slate-500 text-xs">第 ' + netRetries + ' 次重试</span>');
+          hls.startLoad();
+          return;
+        }
+        playerMsg('网络错误，视频流加载失败<br><span class="text-slate-500 text-xs">CBS CDN 可能暂时不可用，请稍后再试</span>');
       } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
         playerMsg('解码错误，正在恢复…');
         hls.recoverMediaError();
       } else {
-        playerMsg('播放失败：' + esc(data.details) +
-          '<br><span class="text-slate-500 text-xs">视频流地址可能已失效，请稍后重试或换一期看看</span>');
+        playerMsg('播放失败：' + esc(data.details));
       }
     });
   } else if (v.canPlayType('application/vnd.apple.mpegurl')) {
     v.src = src;                       // Safari 原生支持 HLS
-    enableForeignTrackMute();          // 原生播放也会把流内字幕带进来，一并按掉
     $('src-badge').textContent = '在线';
   } else {
     playerMsg('这个浏览器不支持 HLS 播放，换 Chrome / Edge / Safari 试试');
@@ -542,12 +550,12 @@ function attachPlayerEvents(onError) {
 }
 
 // ---------------------------------------------------------------- 字幕轨
-// 浏览器不认 mp4 里嵌的 mov_text，所以字幕得另挂 <track>。路径带期号，
+// 浏览器不认 mp4 里嵌的 mov_text，中文字幕另挂 <track>。路径带期号，
 // 只能等拿到 ?slug= 之后再建，所以这里用 JS 创建而不是写在 HTML 里。
-// 所有页面自己挂的 <track> 都登记进 ourTrackEls，muteForeignTracks 只认它。
-// ⚠️ 不能靠 label 判断"是不是自己的"：CBS 流内嵌的官方字幕轨 label 也叫
-// "English"（master.m3u8 里 NAME="English"），label 会撞名，按 label 放过
-// 会把流内字幕也放出来 —— 重叠就是这么修不掉的。
+//
+// 英文字幕直接用 CBS 流内自带的官方字幕轨（enableWebVTT:true，hls.js 自动加载，
+// 它和画面严格对齐），页面不再另挂 subs_en.vtt。我们只挂中文一条。
+// 布局：中文在画面上方（cue.line=1），英文在画面下方（流内默认），互不遮挡。
 const ourTrackEls = new Set();
 function addTrack(src, lang, label) {
   const t = document.createElement('track');
@@ -560,104 +568,19 @@ function addTrack(src, lang, label) {
   return t;
 }
 
-// 把流自带字幕轨（WebVTT / 608 隐藏字幕，hls.js 或 Safari 原生解析出来的）
-// 全部按掉，只留我们自己挂的中/英两条。CBS 流里嵌了官方英文字幕轨，
-// 不按掉的话会和页面字幕叠在一起：英文在上、中文在下就全乱了。
-// 字幕轨是流解析过程中**异步**加进 textTracks 的，所以这里用 addtrack 监听
-// 持续镇压，而不是只调一次；change 监听兜住浏览器把 mode 弹回 showing。
-let foreignTrackMuted = false;
-function muteForeignTracks() {
-  const v = $('video');
-  [...v.textTracks].forEach((t) => {
-    if (t.kind !== 'subtitles' && t.kind !== 'captions') return;
-    // 只有页面 addTrack 创建的 <track> 对应的 TextTrack 才算自己的
-    const isOurs = [...ourTrackEls].some((el) => el.track === t);
-    if (isOurs) return;
-    t.mode = 'disabled';
-    t.addEventListener('change', () => {
-      if (t.mode === 'showing' || t.mode === 'hidden') t.mode = 'disabled';
-    });
-  });
-}
-// 一次性挂上 addtrack 监听：任何新出现的非页面字幕轨立即按掉。
-function enableForeignTrackMute() {
-  if (foreignTrackMuted) return;
-  foreignTrackMuted = true;
-  const v = $('video');
-  v.textTracks.addEventListener('addtrack', muteForeignTracks);
-  v.addEventListener('loadedmetadata', muteForeignTracks);
-  muteForeignTracks();
-}
-
-// ------------------------------------------------------------ 字幕同步偏移
-// CBS 在线流与字幕轨的时间基准可能有固定偏差（实测约 0.2~0.8s 量级），
-// 页面挂的 <track> 渲染时逐条 cue 对齐，给每条 cue 的起止时间统一加偏移。
-// 偏移量持久化到 localStorage，下次打开还在。中英两条轨同移，保持互相对齐。
-let subOffset = +(localStorage.getItem('subOffset') || 0);
-let appliedOffset = 0;   // 已经施加到 cue 上的偏移，避免重复加
-
-function syncValText() {
-  return (subOffset >= 0 ? '+' : '') + subOffset.toFixed(2) + 's';
-}
-
-function applySubOffset() {
-  const delta = subOffset - appliedOffset;
-  if (!delta) return;
-  appliedOffset = subOffset;
-  [...ourTrackEls].forEach((el) => {
+// 中文 cue 统一钉到画面顶部（line:1）。流内英文字幕走默认底部位置。
+// VTTCue.line 可写：1 = 顶部第一行，-1 = 底部（默认）。
+function positionZhOnTop(el) {
+  const apply = () => {
     const tt = el.track;
-    if (!tt || !tt.cues || !tt.cues.length) return;
-    // cue 时间直接改 startTime 的话，个别浏览器不会自动重排 TextTrack 内部
-    // 的 cue 列表（active cue 匹配依赖按 startTime 排序）。先全部移除，
-    // 改完时间再按新 startTime 排序插回 —— 顺序永远正确。
-    const cues = [...tt.cues];
-    cues.forEach((cue) => tt.removeCue(cue));
-    cues.forEach((cue) => {
-      cue.startTime = Math.max(0, cue.startTime + delta);
-      cue.endTime = Math.max(0, cue.endTime + delta);
-    });
-    cues.sort((a, b) => a.startTime - b.startTime);
-    cues.forEach((cue) => tt.addCue(cue));
-  });
-  $('sync-val').textContent = syncValText();
-}
-
-function setSubOffset(v) {
-  subOffset = Math.max(-10, Math.min(10, v));     // 限制 ±10s，防手滑点过头
-  localStorage.setItem('subOffset', String(subOffset));
-  applySubOffset();
-}
-
-// 轨道是异步加载的，cue 可能还没解析完；加载完成后再施加偏移
-function applyOffsetOnLoad(el) {
-  const h = () => {
-    if (!el.track || !el.track.cues) return;
-    if (appliedOffset !== subOffset) applySubOffset();
+    if (!tt || !tt.cues) return;
+    [...tt.cues].forEach((cue) => { cue.line = 1; });
   };
-  el.addEventListener('load', h);
+  el.addEventListener('load', apply);
+  apply();
 }
 
-// 同步面板开关（与字色面板互斥）
-const syncPanelOpen = () => !$('sync-panel').classList.contains('hidden');
-function closeSyncPanel() { $('sync-panel').classList.add('hidden'); }
-
-$('btn-cc-sync').addEventListener('click', (e) => {
-  e.stopPropagation();
-  if (syncPanelOpen()) { closeSyncPanel(); return; }
-  closeCcPanel();                             // 字色面板先收掉
-  $('sync-panel').classList.remove('hidden');
-  $('sync-val').textContent = syncValText();
-  if (document.fullscreenElement) wakeBar();
-});
-document.addEventListener('click', (e) => {
-  if (!$('sync-wrap').contains(e.target)) closeSyncPanel();
-});
-$('sync-minus').addEventListener('click', () => setSubOffset(subOffset - 0.25));
-$('sync-plus').addEventListener('click', () => setSubOffset(subOffset + 0.25));
-$('sync-reset').addEventListener('click', () => setSubOffset(0));
-
-// 一条字幕轨的开关。中文轨默认开（要的就是画面内实时中文），
-// 原声英文轨默认关 —— 两条可以同时开，也可以各自关掉。
+// 一条字幕轨的开关。中文轨默认开（画面顶部实时中文）。
 function setupTrackToggle(trackEl, btnEl, defaultOn) {
   const ON = ['bg-indigo-600', 'text-white'];
   const OFF = ['bg-slate-800', 'text-slate-300'];
@@ -776,7 +699,7 @@ function togglePlay() {
 }
 
 // ---------------------------------------------------------------- 键盘
-const ccZh = { toggle: null }, ccEn = { toggle: null };
+const ccZh = { toggle: null };
 
 document.addEventListener('keydown', (e) => {
   const t = e.target;
@@ -796,12 +719,9 @@ document.addEventListener('keydown', (e) => {
     $('btn-fs').click();
   } else if (e.key === 'c' || e.key === 'C') {
     if (ccZh.toggle) ccZh.toggle();
-  } else if (e.key === 'v' || e.key === 'V') {
-    if (ccEn.toggle) ccEn.toggle();
-  } else if (e.key === 'Escape' && (ccPanelOpen() || syncPanelOpen())) {
+  } else if (e.key === 'Escape' && ccPanelOpen()) {
     // 全屏里 Escape 会先退出全屏，面板顺手也关掉；非全屏时它专门用来关面板
     closeCcPanel();
-    closeSyncPanel();
   }
 });
 
@@ -913,17 +833,12 @@ applyCueColor();
 
     renderSubs();
 
-    // 中文字幕轨（画面内实时对照）+ 原声英文字幕轨
+    // 只挂中文字幕轨（画面顶部）。英文字幕用 CBS 流内自带的官方轨（hls.js 自动加载，
+    // 画面底部），它和画面严格对齐，页面不再另挂 subs_en.vtt。
     const zhEl = addTrack(withRev(epBase + (VIDEO.local_subs_zh || 'subs_zh.vtt'), revs.subs_zh),
                           'zh', '中文');
-    const enEl = addTrack(withRev(epBase + (VIDEO.local_subs || 'subs_en.vtt'), revs.subs_en),
-                          'en', 'English');
     ccZh.toggle = setupTrackToggle(zhEl, $('btn-cc-zh'), true).toggle;
-    ccEn.toggle = setupTrackToggle(enEl, $('btn-cc-en'), false).toggle;
-    applyOffsetOnLoad(zhEl);
-    applyOffsetOnLoad(enEl);
-    // 视频元数据就绪后再补一次：某些浏览器 track 的 load 比 loadedmetadata 晚
-    $('video').addEventListener('loadedmetadata', () => applySubOffset());
+    positionZhOnTop(zhEl);
     setupFullscreen();
 
     await initPlayer(VIDEO);

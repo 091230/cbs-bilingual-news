@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CBS Evening News · 双语精听</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%236366f1'/><path d='M9 7l8 5-8 5z' fill='white'/></svg>">
+<!-- 本地预编译好的 Tailwind，不再是 cdn.tailwindcss.com（国内常打不开 + 运行时 JIT） -->
+<link rel="stylesheet" href="assets/tailwind.css">
+<!-- build_site.py 生成 dist/ 时把这一行整体换成 window.STATIC_SITE = true; -->
+<script>window.STATIC_SITE = true;</script>
+<style>
+  html, body { min-height: 100%; }
+  body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #475569; }
+  /* 卡片在手机上点下去要有反馈 —— hover 那套触屏看不见 */
+  .ep-card:active { transform: scale(.985); }
+</style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-full flex flex-col">
+
+<header class="border-b border-slate-800 px-4 sm:px-5 py-5 flex flex-wrap items-end gap-x-4 gap-y-2">
+  <div class="min-w-0">
+    <h1 class="text-xl font-semibold tracking-tight text-slate-100">CBS Evening News · 双语精听</h1>
+    <p class="text-xs text-slate-500 mt-1">每日英语新闻精听 · 中英对照字幕 · 在线高清流</p>
+  </div>
+  <div class="ml-auto flex items-center gap-3 text-xs text-slate-500">
+    <span id="stat-count" class="px-2 py-1 rounded bg-slate-800/70"></span>
+  </div>
+</header>
+
+<main class="flex-1 p-4 sm:p-5">
+  <div id="grid" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+  <div id="msg" class="hidden max-w-2xl mx-auto mt-16 text-center">
+    <div class="text-sm text-slate-300 leading-relaxed"></div>
+  </div>
+</main>
+
+<footer class="border-t border-slate-800 px-5 py-3 text-[11px] text-slate-600 flex flex-wrap items-center gap-x-3 gap-y-1">
+  <span>开源项目 · 数据来自 CBS News 公开节目</span>
+  <span class="hidden sm:inline">·</span>
+  <span>仅供英语学习，版权归原媒体所有</span>
+  <span class="ml-auto">字幕由 Claude 翻译 · 每日更新</span>
+</footer>
+
+<script>
+// STATIC_SITE 由 <head> 里那一行小脚本给定（dist/ 里是 true，本地 serve.py 是 false）
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+
+const fmtDur = (s) => {
+  if (!isFinite(s) || s <= 0) return '';
+  const m = Math.floor(s / 60), x = Math.floor(s % 60);
+  return `${m}:${String(x).padStart(2, '0')}`;
+};
+
+// upload_date 是 ISO（2026-09-23T18:30:00-0400）。库里的期次一般都有，
+// 没有就退回去拆期号：slug 形如 MMDDYY-cbs-evening-news。
+function showDate(ep) {
+  if (ep.upload_date) return ep.upload_date.slice(0, 10);
+  const m = /^(\d{2})(\d{2})(\d{2})-/.exec(ep.slug || '');
+  return m ? `20${m[3]}-${m[1]}-${m[2]}` : '';
+}
+
+function showMsg(html) {
+  $('msg').querySelector('div').innerHTML = html;
+  $('msg').classList.remove('hidden');
+}
+
+function card(ep) {
+  const date = showDate(ep);
+  const badge = date ? date.slice(5).replace('-', '/') : '—';
+  const bits = [
+    fmtDur(ep.duration),
+    ep.segment_count ? `${ep.segment_count} 句` : '',
+    '在线流',
+  ].filter(Boolean);
+
+  return `
+    <a href="player.html?slug=${encodeURIComponent(ep.slug)}"
+       class="ep-card group rounded-xl overflow-hidden bg-slate-900/50 ring-1 ring-slate-800 hover:ring-indigo-500/70 hover:bg-slate-900 transition flex flex-col">
+      <div class="relative aspect-video bg-gradient-to-br from-slate-800/80 to-slate-950 grid place-items-center border-b border-slate-800">
+        <span class="w-11 h-11 rounded-full bg-slate-950/60 ring-1 ring-slate-700 grid place-items-center group-hover:bg-indigo-600 group-hover:ring-indigo-500 transition">
+          <svg class="w-4 h-4 text-slate-300 group-hover:text-white translate-x-[1px]" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+        <span class="absolute top-2.5 left-2.5 text-[11px] font-semibold px-2 py-0.5 rounded bg-slate-950/80 text-slate-300 ring-1 ring-slate-700">${esc(badge)}</span>
+        ${ep.transcript_source === 'cbs-captions'
+          ? '<span class="absolute top-2.5 right-2.5 text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-300 ring-1 ring-emerald-500/30">官方字幕稿</span>'
+          : ''}
+        <span class="absolute bottom-2.5 left-2.5 text-[10px] px-1.5 py-0.5 rounded bg-slate-950/80 text-slate-400 ring-1 ring-slate-700">在线流</span>
+      </div>
+      <div class="p-4 flex-1 flex flex-col">
+        <h2 class="text-sm font-medium text-slate-100 leading-snug line-clamp-2">${esc(ep.title || ep.slug)}</h2>
+        <p class="mt-2 text-[11px] text-slate-500">${esc(bits.join(' · '))}</p>
+      </div>
+    </a>`;
+}
+
+(async () => {
+  try {
+    const url = window.STATIC_SITE ? 'index.json' : '/api/episodes';
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const eps = data.episodes || [];
+
+    $('stat-count').textContent = `${eps.length} 期`;
+
+    if (!eps.length) {
+      $('grid').innerHTML = '';
+      showMsg('还没有任何一期。<br><span class="text-slate-500 text-xs">' +
+        '项目开源，抓取与翻译流水线见 <code class="text-slate-400">README.md</code>。</span>');
+      return;
+    }
+    $('grid').innerHTML = eps.map(card).join('');
+  } catch (err) {
+    console.error(err);
+    showMsg('读取期次列表失败：' + esc(err.message) +
+      '<br><span class="text-slate-500 text-xs">请稍后刷新重试，或检查站点部署是否完整。</span>');
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<!-- viewport-fit=cover 是 env(safe-area-inset-*) 生效的前提，刘海屏横屏时需要 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CBS Evening News · 双语精听</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%236366f1'/><path d='M9 7l8 5-8 5z' fill='white'/></svg>">
+<!-- 本地预编译好的 Tailwind。原来是 cdn.tailwindcss.com —— 国内经常打不开，
+     而且它是运行时 JIT，不适合上线。改完 HTML 跑 python build_site.py 重新生成。 -->
+<link rel="stylesheet" href="assets/tailwind.css">
+<!-- build_site.py 生成 dist/ 时把这一行整体换成 window.STATIC_SITE = true; -->
+<script>window.STATIC_SITE = true;</script>
+<style>
+  html { height: 100%; }
+  /* 手机上要让页面能正常滚（原来是 overflow-hidden，小屏等于下半截摸不到），
+     所以这里只给 min-height，桌面的"刚好一屏不滚"交给 lg:h-full + lg:overflow-hidden */
+  body { min-height: 100%; font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #475569; }
+  .sub-row { transition: background-color .15s, border-color .15s; }
+  .sub-row.active { background: rgba(99, 102, 241, .16); border-left-color: #6366f1; }
+  .sub-row.active .sub-en { color: #fff; }
+  #subs { scroll-behavior: smooth; }
+
+  /* 进度条拖动：touch-action:none 必须给，否则手机上一按就开始滚页面，
+     根本收不到 pointermove。见 attachPlayerEvents 里的 pointer 那套。 */
+  #bar { touch-action: none; }
+
+  /* 画面内字幕。VTT 渲染在 shadow DOM 里，只能用 ::cue 命中。
+     ::cue 里不能按"这是第几条轨"选，所以中文轨每条 cue 都包了 <c.zh>
+     （见 process_transcript.py 的 write_zh_vtt），靠类名单独调它。
+     这里**不写 color**：颜色归下面那个 #cue-fg 管，见那里的说明。
+     字幕在画面里的位置也不在这里 —— 那是 VTT 时间行后面的 cue settings。
+     注意 iOS Safari 对 ::cue 的支持是残的（类和全屏字号经常不生效），所以手机上
+     真正靠得住的阅读面是右边/下面那个双语字幕列表，别把可读性押在这上面。 */
+  video::cue {
+    background: rgba(0, 0, 0, .72);
+    font-size: 1.15rem;
+    line-height: 1.4;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .9);
+  }
+  /* 中文比拉丁字母"矮"得多，同样字号看着小一圈，所以给大两档 */
+  video::cue(.zh) {
+    background: rgba(0, 0, 0, .78);
+    font-size: 1.5rem;
+    line-height: 1.45;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .95);
+  }
+  /* 全屏后画面大得多，字幕得跟着大，否则等于没放大 */
+  :fullscreen video::cue { font-size: 1.7rem; }
+  /* 再大就会把整句中文顶成两行，反而不好读 */
+  :fullscreen video::cue(.zh) { font-size: 2.2rem; }
+
+  /* 小屏的字号按**画面宽度**缩放（vw），不能写死 rem。
+     原因是 Chrome 一个很硬的性子：一条 cue 只要排不进画面框（还要留出它的边距），
+     它既不是截断、也不是自动缩小，而是**整条不画** —— 表现成"字幕开关点了画面
+     没反应"。而画面框的宽和高都是跟着视口走的：390px 宽时框只有 201px 高，
+     CBS 那种 100 多字的长句在 1.2rem 就整条消失（实测），1.1rem 才排得下；
+     同一句在 820px 的平板上 1.55rem 却好好的。写死 rem 必然在某段宽度上踩雷。
+     4.2vw 在 390px 上正好≈1.1rem（长句排得下），宽到 1023px 顶到 1.55rem
+     （和桌面那档接上），中间任何宽度都不越界。
+     英文轨单给 3.6vw（拉丁字母比汉字窄，同样字号看着大一圈，本就该更小）。
+     代价要讲清楚：390px 上英文轨约 190 字以上就排不下（实测 175 字 ✓、213 字
+     ✗），而这一期 207 句里 p90 正好 175、最长 472 —— 也就是**最长的约 1/10 句
+     在手机上看不到画面内英文**。压到能容下 p99 得降到 10.6px，那是拿所有句子
+     换极少数，不划算。中文轨则是**全量覆盖**（最长 128 字，70% 框高，排得下）。
+     真正的修法是把超长 cue 在生成 VTT 时按字数拆条，那是流水线的事，先记着。 */
+  @media (max-width: 1023px) {
+    video::cue { font-size: min(3.6vw, 1.25rem); }
+    video::cue(.zh) { font-size: min(4.2vw, 1.55rem); }
+  }
+
+  /* 手机端点击目标 ≥44px（Apple HIG 下限），字号 ≥12px。
+     放在媒体查询里而不是直接改类名：桌面上控制条要紧凑，44px 会把条撑成两行高。 */
+  @media (max-width: 1023px) {
+    #stage-bar button, #stage-bar select {
+      min-height: 44px; min-width: 44px; font-size: 12px;
+    }
+    #stage-bar #btn-cc-zh, #stage-bar #btn-cc-en, #stage-bar #btn-cc-color {
+      padding-left: .75rem; padding-right: .75rem;
+    }
+  }
+  /* 刘海 / 小黑条 */
+  #stage-bar { padding-bottom: max(.625rem, env(safe-area-inset-bottom)); }
+  @media (max-width: 1023px) {
+    main { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+  }
+
+  /* 全屏：整块舞台铺满，视频要占满**整个**屏幕。
+     控制条原来是 flex 里独立的一行，全屏后它吃掉约 55px，视频只好按高度缩、
+     左右留黑边 —— 那看着就是"假全屏"。改成压在画面下沿的半透明浮层（B站那样），
+     画面就能顶满上下，控制条浮在上面。
+     注意浮层用 opacity/transform 隐藏，**不能 display:none** —— 那样 offsetParent
+     变 null，全屏后控制条上的按钮会一起消失。 */
+  #stage:fullscreen { position: relative; gap: 0; }
+  #stage:fullscreen #stage-video { border-radius: 0; box-shadow: none; }
+  #stage:fullscreen #stage-bar {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 20;
+    border-radius: 0; padding: 26px 20px calc(14px + env(safe-area-inset-bottom));
+    background: linear-gradient(to top, rgba(0, 0, 0, .88), rgba(0, 0, 0, .5) 55%, transparent);
+    transition: opacity .25s, transform .25s;
+  }
+  /* 不动一会儿就把控制条淡掉，别一直挡着画面 */
+  #stage:fullscreen.fs-idle #stage-bar {
+    opacity: 0; transform: translateY(10px); pointer-events: none;
+  }
+  #stage:fullscreen.fs-idle { cursor: none; }
+</style>
+<!-- 字幕颜色的唯一来源，内容由 JS 填（颜色按钮 / localStorage）。
+     独立成一个 <style> 而不是写死在上面：改颜色时只重写这一条规则就行，
+     不用跟静态规则比优先级、也不用把字号背景那一堆重复一遍。 -->
+<style id="cue-fg"></style>
+</head>
+<body class="bg-slate-950 text-slate-200 flex flex-col lg:h-full lg:overflow-hidden">
+
+<!-- 手机上 flex-wrap：标题长的时候徽章整块折到第二行，不会把 header 撑出横向滚动 -->
+<header class="flex-none border-b border-slate-800 px-4 sm:px-5 py-2.5 sm:py-3 flex flex-wrap items-center gap-x-4 gap-y-1.5">
+  <a href="index.html" class="flex-none text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 ring-1 ring-slate-700 transition" title="回到期次列表">← 列表</a>
+  <div class="min-w-0 flex-1">
+    <h1 id="title" class="text-base font-semibold text-slate-100 truncate">加载中…</h1>
+    <p id="subtitle-line" class="text-xs text-slate-500 truncate"></p>
+  </div>
+  <!-- 来源徽章放这儿而不是控制条上：手机上控制条那一行已经很挤了，
+         而"本地 1080p / 在线 432p"是随时想瞄一眼的信息，放 header 一直看得见 -->
+  <div class="flex-none flex items-center gap-2 text-xs text-slate-500">
+    <span id="src-badge" class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 ring-1 ring-slate-700">加载中</span>
+    <span id="stat-subs" class="px-2 py-1 rounded bg-slate-800/70"></span>
+  </div>
+</header>
+
+<main class="flex flex-col lg:flex-row lg:flex-1 lg:min-h-0 gap-4 p-4">
+
+  <!-- 左：播放器。整块 #stage 是全屏的目标——控制条在它里面，全屏后按钮才还在 -->
+  <section class="lg:w-[72%] lg:flex-none flex flex-col min-h-0 gap-3">
+    <div id="stage" class="flex flex-col gap-3 lg:flex-1 lg:min-h-0">
+
+      <!-- 手机上必须给 aspect-video：这一层是 absolute inset-0 的 <video> 的容器，
+           之前靠 flex-1 撑高，但 <lg 时它的父级不分配高度 → 高度算成 0、视频整块消失。
+           桌面仍然是 flex-1 撑满。 -->
+      <div id="stage-video" class="relative aspect-video lg:aspect-auto lg:flex-1 min-h-0 bg-black rounded-xl overflow-hidden shadow-2xl ring-1 ring-slate-800">
+        <!-- 字幕轨由 JS 按 ?slug= 挂上来：路径是带期号的，
+             而且 <track src=""> 会让浏览器拿当前页面当字幕去解析 -->
+        <video id="video" class="absolute inset-0 w-full h-full object-contain bg-black" playsinline preload="metadata"></video>
+        <div id="player-msg" class="absolute inset-0 hidden items-center justify-center text-center px-6">
+          <div class="text-sm text-slate-300 leading-relaxed"></div>
+        </div>
+      </div>
+
+      <!-- 控制条。手机上 flex-wrap 会自动折成两行：第一行 播放/时间/进度，
+           第二行 字幕开关/字色/全屏/倍速（整组 ml-auto 右对齐）。
+           wrap 是"不横向溢出"的硬保证，比算像素可靠。 -->
+      <div id="stage-bar" class="flex-none rounded-xl bg-slate-900/70 ring-1 ring-slate-800 px-3 py-2 flex flex-wrap items-center gap-x-2.5 gap-y-2">
+        <button id="btn-play" class="flex-none w-9 h-9 rounded-lg bg-indigo-600 hover:bg-indigo-500 grid place-items-center transition" title="播放 / 暂停（空格）">
+          <svg id="ico-play" class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="ico-pause" class="w-4 h-4 text-white hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+        </button>
+        <span id="t-cur" class="flex-none text-xs tabular-nums text-slate-400 w-12 text-right">0:00</span>
+        <!-- 外层是拖动热区（手机上加竖向 padding 把可点范围撑大），
+             视觉上的轨道/缓冲/填充/滑块都在里面那层 -->
+        <div id="bar" class="flex-1 min-w-[80px] py-4 lg:py-0 cursor-pointer group relative">
+          <div id="bar-track" class="relative h-2 lg:h-1.5 rounded-full bg-slate-700">
+            <div id="bar-buf" class="absolute inset-y-0 left-0 bg-slate-600 rounded-full" style="width:0"></div>
+            <div id="bar-fill" class="absolute inset-y-0 left-0 bg-indigo-500 rounded-full" style="width:0"></div>
+            <!-- 手机上滑块常显 —— 原来只在 :hover 时出现，触屏永远 hover 不到，
+                 等于没有滑块，看着就不像能拖 -->
+            <div id="bar-knob" class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 lg:w-3 lg:h-3 rounded-full bg-white opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition" style="left:0"></div>
+          </div>
+        </div>
+        <span id="t-dur" class="flex-none text-xs tabular-nums text-slate-400 w-12">0:00</span>
+
+        <div class="flex items-center gap-2.5 ml-auto">
+          <button id="btn-cc-zh" class="flex-none text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="画面内中文字幕开关（C）">中</button>
+          <button id="btn-cc-en" class="flex-none text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="原声英文字幕开关（V）">CC</button>
+          <div id="cc-wrap" class="relative flex-none">
+            <button id="btn-cc-color" class="text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="画面内字幕颜色"><span id="cc-swatch">字色</span><span class="text-slate-500 ml-0.5">▾</span></button>
+            <div id="cc-panel" class="hidden absolute bottom-full right-0 mb-2 z-30 w-60 lg:w-52 rounded-xl bg-slate-900/95 ring-1 ring-slate-700 shadow-2xl p-3">
+              <div class="text-[11px] text-slate-400 mb-2">画面内字幕颜色</div>
+              <div id="cc-grid" class="grid grid-cols-6 gap-2 lg:gap-1.5"></div>
+            </div>
+          </div>
+          <div id="sync-wrap" class="relative flex-none">
+            <button id="btn-cc-sync" class="text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="字幕同步：微调画面字幕与视频的偏差">同步<span class="text-slate-500 ml-0.5">▾</span></button>
+            <div id="sync-panel" class="hidden absolute bottom-full right-0 mb-2 z-30 w-56 rounded-xl bg-slate-900/95 ring-1 ring-slate-700 shadow-2xl p-3">
+              <div class="text-[11px] text-slate-400 mb-2">字幕同步</div>
+              <div class="flex items-center gap-2">
+                <button id="sync-minus" class="flex-1 text-[11px] font-semibold px-2 py-1.5 rounded-md bg-slate-800 text-slate-200 ring-1 ring-slate-600 hover:bg-slate-700 transition" title="字幕提前 0.25 秒">−0.25s</button>
+                <span id="sync-val" class="flex-none w-12 text-center text-xs tabular-nums text-slate-300">+0.00s</span>
+                <button id="sync-plus" class="flex-1 text-[11px] font-semibold px-2 py-1.5 rounded-md bg-slate-800 text-slate-200 ring-1 ring-slate-600 hover:bg-slate-700 transition" title="字幕延后 0.25 秒">+0.25s</button>
+              </div>
+              <button id="sync-reset" class="mt-2 w-full text-[11px] font-semibold px-2 py-1.5 rounded-md bg-slate-800 text-slate-300 ring-1 ring-slate-600 hover:bg-slate-700 transition" title="清除偏移">重置</button>
+              <p class="text-[10px] text-slate-500 mt-1.5 leading-relaxed">字幕比画面慢 → 点 −（提前）<br>字幕比画面快 → 点 +（延后）</p>
+            </div>
+          </div>
+          <button id="btn-fs" class="flex-none w-7 h-7 rounded-md bg-slate-800 text-slate-300 ring-1 ring-slate-700 hover:bg-slate-700 grid place-items-center transition" title="全屏（F）">
+            <svg id="ico-fs-in" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+            <svg id="ico-fs-out" class="w-3.5 h-3.5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>
+          </button>
+          <select id="quality" class="hidden flex-none text-xs bg-slate-800 border border-slate-700 rounded-md px-1.5 py-1 text-slate-300 outline-none" title="画质"></select>
+          <select id="rate" class="flex-none text-xs bg-slate-800 border border-slate-700 rounded-md px-1.5 py-1 text-slate-300 outline-none" title="播放速度">
+            <option value="0.75">0.75x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- 键盘快捷键对触屏没意义，手机上别占地方 -->
+    <p class="hidden lg:block flex-none text-[11px] text-slate-600 px-1">
+      空格 播放/暂停 · ← → 快退/快进 5 秒 · C 中文字幕 · V 原声字幕 · F 全屏 · 同步 字幕微调 · 点字幕跳转
+    </p>
+  </section>
+
+  <!-- 右：双语字幕（桌面占满右栏；手机上在视频下面，固定高度自己滚） -->
+  <aside class="lg:flex-1 lg:min-h-0 flex flex-col gap-4">
+    <div class="h-[44vh] min-h-[220px] lg:h-auto lg:flex-1 lg:min-h-0 rounded-xl bg-slate-900/50 ring-1 ring-slate-800 flex flex-col">
+      <div class="flex-none px-4 py-2.5 border-b border-slate-800 flex items-center gap-2">
+        <h2 class="text-sm font-semibold text-slate-200">双语字幕</h2>
+        <button id="btn-follow" class="ml-auto text-[11px] px-2 py-1 rounded bg-indigo-600/90 hover:bg-indigo-500 text-white transition">跟随中</button>
+      </div>
+      <div id="subs" class="flex-1 min-h-0 overflow-y-auto"></div>
+    </div>
+  </aside>
+</main>
+
+<script>
+// ---------------------------------------------------------------- 工具
+const $ = (id) => document.getElementById(id);
+const fmt = (s) => {
+  if (!isFinite(s) || s < 0) s = 0;
+  const m = Math.floor(s / 60), x = Math.floor(s % 60);
+  return `${m}:${String(x).padStart(2, '0')}`;
+};
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+
+const CDN = {
+  // jsDelivr 主，cdnjs 备（两者都是官方镜像；bootcdn/staticfile 有供应链投毒历史，不用）
+  hls: [
+    'https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.17/hls.min.js',
+  ],
+};
+
+function loadScript(urls) {
+  return new Promise((resolve, reject) => {
+    const next = (i) => {
+      if (i >= urls.length) return reject(new Error('所有 CDN 都不可用'));
+      const s = document.createElement('script');
+      s.src = urls[i];
+      s.onload = resolve;
+      s.onerror = () => next(i + 1);
+      document.head.appendChild(s);
+    };
+    next(0);
+  });
+}
+
+// ---------------------------------------------------------------- 状态
+let SUBS = [], VIDEO = {}, SLUG = '';
+let activeIdx = -1, follow = true, hls = null;
+let epBase = '';
+
+// 两种部署形态，靠 build_site.py 注入的 window.STATIC_SITE 区分：
+//   本地 serve.py —— 数据从 /api 读（走 SQLite），视频/字幕在 data/episodes/<slug>/
+//   dist/ 和云端 —— 全静态，数据是构建时生成的 e/<slug>/latest_cbs.json
+// 两条路的 JSON 字段完全一样（见 build_site.py），所以下面解析代码一行不用改。
+const STATIC = !!window.STATIC_SITE;
+const DATA_BASE = STATIC ? 'e/' : 'data/episodes/';
+const metaUrl = (slug) => STATIC
+  ? `e/${encodeURIComponent(slug)}/latest_cbs.json`
+  : `/api/episodes/${encodeURIComponent(slug)}`;
+
+// 静态站的缓存失效**按文件走**：字幕改一次就整期换 URL 的话，440MB 的视频
+// 会跟着缓存失效重新下载一遍。指纹由 build_site.py 算（内容 sha256 前 10 位）。
+const withRev = (url, rev) => (STATIC && rev) ? `${url}?v=${rev}` : url;
+
+// ---------------------------------------------------------------- 渲染
+function renderSubs() {
+  $('subs').innerHTML = SUBS.map((s) => `
+    <div data-i="${s.index}" class="sub-row border-l-2 border-transparent px-4 py-2.5 cursor-pointer active:bg-slate-700/50 hover:bg-slate-800/40">
+      <div class="flex gap-3">
+        <span class="flex-none text-[11px] tabular-nums text-slate-600 pt-0.5 w-11">${fmt(s.start)}</span>
+        <div class="min-w-0">
+          <p class="sub-en text-sm text-slate-300 leading-snug">${esc(s.en)}</p>
+          <p class="sub-zh text-sm text-indigo-300/90 mt-1 leading-snug">${esc(s.zh)}</p>
+        </div>
+      </div>
+    </div>`).join('');
+
+  $('subs').querySelectorAll('.sub-row').forEach((el) => {
+    el.addEventListener('click', () => {
+      const s = SUBS[+el.dataset.i];
+      if (!s) return;
+      $('video').currentTime = s.start + 0.01;
+      $('video').play().catch(() => {});
+    });
+  });
+}
+
+// ---------------------------------------------------------------- 高亮联动
+function setActive(i) {
+  if (i === activeIdx) return;
+  const box = $('subs');
+  const prev = box.querySelector('.sub-row.active');
+  if (prev) prev.classList.remove('active');
+
+  activeIdx = i;
+  if (i < 0) return;
+  const el = box.querySelector(`.sub-row[data-i="${i}"]`);
+  if (!el) return;
+  el.classList.add('active');
+
+  // 只在当前行滚出可视区时才滚动，避免和用户手动滚动打架
+  if (follow) {
+    const er = el.getBoundingClientRect(), cr = box.getBoundingClientRect();
+    if (er.top < cr.top || er.bottom > cr.bottom) {
+      el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }
+  }
+}
+
+function currentIndex(t) {
+  let lo = 0, hi = SUBS.length - 1, ans = -1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (SUBS[mid].start <= t) { ans = mid; lo = mid + 1; } else hi = mid - 1;
+  }
+  if (ans < 0) return -1;
+  return t <= SUBS[ans].end + 0.35 ? ans : -1;
+}
+
+// ---------------------------------------------------------------- 播放器
+function playerMsg(html) {
+  const box = $('player-msg');
+  box.querySelector('div').innerHTML = html;
+  box.classList.remove('hidden');
+  box.classList.add('flex');
+}
+
+function hidePlayerMsg() {
+  const box = $('player-msg');
+  box.classList.add('hidden');
+  box.classList.remove('flex');
+}
+
+// 画质选择器：只有在线播放时才出现。本地文件本来就没有多档可选，
+// 而且 serve.py 带 Range 支持，本地播放拖到哪都是秒开，不存在糊的问题。
+function setupQuality(hls) {
+  const sel = $('quality');
+  sel.innerHTML = '';
+  sel.add(new Option('自动', '-1'));
+  hls.levels
+    .map((lv, i) => ({ i, lv }))
+    .sort((a, b) => (b.lv.height || 0) - (a.lv.height || 0))
+    .forEach(({ i, lv }) => sel.add(new Option(`${lv.height}p`, String(i))));
+  sel.value = String(hls.autoLevelEnabled ? -1 : hls.currentLevel);
+  sel.classList.remove('hidden');
+
+  sel.addEventListener('change', () => {
+    const i = +sel.value;
+    hls.currentLevel = i;              // -1 = 交回 ABR 自动
+  });
+
+  // 注意：自动模式下 hls.currentLevel 是 -1，不能直接拿它当索引（会 undefined），
+  // 要听 LEVEL_SWITCHED 给的实际档位；首次显示退回 loadLevel / 最高档。
+  const showNow = (idx) => {
+    const i = (typeof idx === 'number' && idx >= 0) ? idx
+      : (hls.loadLevel >= 0 ? hls.loadLevel : hls.levels.length - 1);
+    const lv = hls.levels[i];
+    if (lv) $('src-badge').textContent = '在线 ' + lv.height + 'p';
+  };
+  hls.on(Hls.Events.LEVEL_SWITCHED, (_, d) => {
+    showNow(d.level);
+    if (hls.autoLevelEnabled) sel.value = '-1';
+  });
+  showNow();
+}
+
+function initStreaming(src) {
+  const v = $('video');
+  hidePlayerMsg();                     // 可能是从本地回退过来的，把错误浮层收掉
+
+  if (window.Hls && Hls.isSupported()) {
+    hls = new Hls({
+      enableWorker: true,
+      lowLatencyMode: false,
+      backBufferLength: 90,
+      startLevel: -1,
+      // 到 CBS CDN 的单连接只有约 1.2 Mbps，而 1080p 要 3.19 Mbps，所以在线
+      // 播放实际只能稳在 432p 左右。这里把初始估计调高，让它先试高档、撑不住
+      // 再自动降；想固定某一档就用右边的选择器。
+      abrEwmaDefaultEstimate: 8e6,
+      // ⚠️ CBS 流自带字幕轨（WebVTT + CEA-608 隐藏字幕）。hls.js 默认会解析
+      // 并显示它们，渲染在画面底部，正好和页面挂的中文字幕叠在一起 —— 这就是
+      // "原视频字幕没消失、两层字幕重叠"的来源。两条全关，只用页面自己的轨。
+      enableWebVTT: false,
+      enableCEA608Captions: false,
+    });
+    hls.loadSource(src);
+    hls.attachMedia(v);
+    enableForeignTrackMute();
+    hls.on(Hls.Events.MANIFEST_PARSED, (_, d) => {
+      console.log('[hls] 已解析，' + d.levels.length + ' 档画质');
+      hls.nextLevel = d.levels.length - 1;   // 先按最高档起播，之后交给 ABR
+      setupQuality(hls);
+    });
+    hls.on(Hls.Events.ERROR, (_, data) => {
+      // 拖动进度条时 hls.js 会主动中断在途分片（aborted / bufferAppendNoProgress），
+      // 都是 fatal:false 的正常行为，别拿 error 级别刷屏。
+      if (!data.fatal) { console.debug('[hls] 非致命:', data.details); return; }
+      console.error('[hls] 致命错误:', data);
+      if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+        playerMsg('网络错误，正在重试…<br><span class="text-slate-500 text-xs">' + esc(data.details) + '</span>');
+        hls.startLoad();
+      } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+        playerMsg('解码错误，正在恢复…');
+        hls.recoverMediaError();
+      } else {
+        playerMsg('播放失败：' + esc(data.details) +
+          '<br><span class="text-slate-500 text-xs">视频流地址可能已失效，请稍后重试或换一期看看</span>');
+      }
+    });
+  } else if (v.canPlayType('application/vnd.apple.mpegurl')) {
+    v.src = src;                       // Safari 原生支持 HLS
+    enableForeignTrackMute();          // 原生播放也会把流内字幕带进来，一并按掉
+    $('src-badge').textContent = '在线';
+  } else {
+    playerMsg('这个浏览器不支持 HLS 播放，换 Chrome / Edge / Safari 试试');
+  }
+
+  attachPlayerEvents();
+}
+
+// 本地文件优先：整期 1080p 已经下到 data/episodes/<slug>/video.mp4，拖动是本地
+// Range 请求，秒开、可离线，也没有在线流那个 432p 的带宽天花板。
+function initLocal(src, fallback) {
+  const v = $('video');
+  let rescued = false;
+
+  // 文件没了/损坏就退回在线流，别留个黑屏。这个 handler 要拦在通用的
+  // "视频加载失败" 兜底之前，否则退回成功了错误浮层还盖在画面上。
+  const onError = () => {
+    if (rescued) return;
+    rescued = true;
+    if (!fallback) { playerMsg('视频加载失败，请稍后重试'); return; }
+    console.warn('[player] 本地视频打不开，退回在线流');
+    loadScript(CDN.hls)
+      .then(() => { v.removeAttribute('src'); v.load(); return initStreaming(fallback); })
+      .catch(() => playerMsg('本地视频打不开，在线流也没加载起来'));
+  };
+
+  // 先挂监听再设 src，否则加载失败的错误事件会赶在监听之前发生
+  attachPlayerEvents(onError);
+  hidePlayerMsg();
+  $('src-badge').textContent = '本地 1080p';
+  v.src = src;
+  v.load();
+}
+
+// 本地播放失败会退回在线流，那会再调一次 attachPlayerEvents（错误处理要换成新的，
+// 因为退回来的这次不能再退）。但别的监听和 rAF 循环**只能挂一次** ——
+// 挂两遍的话进度条上的 pointer 监听会重复触发，拖一次 seek 两次。
+let eventsBound = false;
+let currentOnError = null;
+
+function attachPlayerEvents(onError) {
+  const v = $('video');
+
+  v.removeEventListener('error', currentOnError);
+  currentOnError = onError || (() => playerMsg('视频加载失败'));
+  v.addEventListener('error', currentOnError);
+
+  if (eventsBound) return;
+  eventsBound = true;
+
+  v.addEventListener('progress', () => {
+    if (v.buffered.length && v.duration) {
+      const end = v.buffered.end(v.buffered.length - 1);
+      $('bar-buf').style.width = (end / v.duration * 100) + '%';
+    }
+  });
+  v.addEventListener('loadedmetadata', () => { $('t-dur').textContent = fmt(v.duration); });
+  v.addEventListener('play', () => { $('ico-play').classList.add('hidden'); $('ico-pause').classList.remove('hidden'); });
+  v.addEventListener('pause', () => { $('ico-pause').classList.add('hidden'); $('ico-play').classList.remove('hidden'); });
+  v.addEventListener('waiting', () => { $('bar').classList.add('animate-pulse'); });
+  v.addEventListener('playing', () => { $('bar').classList.remove('animate-pulse'); });
+
+  // ------------------------------------------------------------ 进度条拖动
+  // 原来是只监听 click —— 手机上那是"点一下跳一下"，手指按着左右滑根本不响应。
+  // 换成 pointer 事件：按下就跳、按住滑动持续跳、松手结束。
+  // setPointerCapture 保证手指滑出进度条（或者滑出屏幕边缘）之后
+  // 仍然收得到 move/up，不会卡在拖动状态里。
+  const bar = $('bar');
+  let dragging = false;
+
+  const timeAt = (clientX) => {
+    const r = bar.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, (clientX - r.left) / r.width));
+    return v.duration ? p * v.duration : 0;
+  };
+
+  bar.addEventListener('pointerdown', (e) => {
+    if (!v.duration) return;
+    dragging = true;
+    try { bar.setPointerCapture(e.pointerId); } catch (_) {}
+    v.currentTime = timeAt(e.clientX);
+    wakeBar();                       // 全屏里拖动时别把控制条淡掉
+  });
+  bar.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    v.currentTime = timeAt(e.clientX);
+    wakeBar();
+  });
+  const endDrag = (e) => {
+    if (!dragging) return;
+    dragging = false;
+    try { bar.releasePointerCapture(e.pointerId); } catch (_) {}
+  };
+  bar.addEventListener('pointerup', endDrag);
+  bar.addEventListener('pointercancel', endDrag);
+
+  // 时间标签/高亮都放在每帧里读 currentTime，不用 timeupdate：
+  // seek 到未缓冲区域后要重新拉分片，期间 timeupdate 不触发，标签会冻在旧值。
+  const tick = () => {
+    if (v.duration) {
+      const p = v.currentTime / v.duration * 100;
+      $('bar-fill').style.width = p + '%';
+      $('bar-knob').style.left = p + '%';
+      $('t-cur').textContent = fmt(v.currentTime);
+      setActive(currentIndex(v.currentTime));
+    }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+
+  $('btn-play').addEventListener('click', togglePlay);
+  $('rate').addEventListener('change', (e) => { v.playbackRate = +e.target.value; });
+}
+
+// ---------------------------------------------------------------- 字幕轨
+// 浏览器不认 mp4 里嵌的 mov_text，所以字幕得另挂 <track>。路径带期号，
+// 只能等拿到 ?slug= 之后再建，所以这里用 JS 创建而不是写在 HTML 里。
+// 所有页面自己挂的 <track> 都登记进 ourTrackEls，muteForeignTracks 只认它。
+// ⚠️ 不能靠 label 判断"是不是自己的"：CBS 流内嵌的官方字幕轨 label 也叫
+// "English"（master.m3u8 里 NAME="English"），label 会撞名，按 label 放过
+// 会把流内字幕也放出来 —— 重叠就是这么修不掉的。
+const ourTrackEls = new Set();
+function addTrack(src, lang, label) {
+  const t = document.createElement('track');
+  t.kind = 'subtitles';
+  t.srclang = lang;
+  t.label = label;
+  t.src = src;
+  $('video').appendChild(t);
+  ourTrackEls.add(t);
+  return t;
+}
+
+// 把流自带字幕轨（WebVTT / 608 隐藏字幕，hls.js 或 Safari 原生解析出来的）
+// 全部按掉，只留我们自己挂的中/英两条。CBS 流里嵌了官方英文字幕轨，
+// 不按掉的话会和页面字幕叠在一起：英文在上、中文在下就全乱了。
+// 字幕轨是流解析过程中**异步**加进 textTracks 的，所以这里用 addtrack 监听
+// 持续镇压，而不是只调一次；change 监听兜住浏览器把 mode 弹回 showing。
+let foreignTrackMuted = false;
+function muteForeignTracks() {
+  const v = $('video');
+  [...v.textTracks].forEach((t) => {
+    if (t.kind !== 'subtitles' && t.kind !== 'captions') return;
+    // 只有页面 addTrack 创建的 <track> 对应的 TextTrack 才算自己的
+    const isOurs = [...ourTrackEls].some((el) => el.track === t);
+    if (isOurs) return;
+    t.mode = 'disabled';
+    t.addEventListener('change', () => {
+      if (t.mode === 'showing' || t.mode === 'hidden') t.mode = 'disabled';
+    });
+  });
+}
+// 一次性挂上 addtrack 监听：任何新出现的非页面字幕轨立即按掉。
+function enableForeignTrackMute() {
+  if (foreignTrackMuted) return;
+  foreignTrackMuted = true;
+  const v = $('video');
+  v.textTracks.addEventListener('addtrack', muteForeignTracks);
+  v.addEventListener('loadedmetadata', muteForeignTracks);
+  muteForeignTracks();
+}
+
+// ------------------------------------------------------------ 字幕同步偏移
+// CBS 在线流与字幕轨的时间基准可能有固定偏差（实测约 0.2~0.8s 量级），
+// 页面挂的 <track> 渲染时逐条 cue 对齐，给每条 cue 的起止时间统一加偏移。
+// 偏移量持久化到 localStorage，下次打开还在。中英两条轨同移，保持互相对齐。
+let subOffset = +(localStorage.getItem('subOffset') || 0);
+let appliedOffset = 0;   // 已经施加到 cue 上的偏移，避免重复加
+
+function syncValText() {
+  return (subOffset >= 0 ? '+' : '') + subOffset.toFixed(2) + 's';
+}
+
+function applySubOffset() {
+  const delta = subOffset - appliedOffset;
+  if (!delta) return;
+  appliedOffset = subOffset;
+  [...ourTrackEls].forEach((el) => {
+    const tt = el.track;
+    if (!tt || !tt.cues || !tt.cues.length) return;
+    // cue 时间直接改 startTime 的话，个别浏览器不会自动重排 TextTrack 内部
+    // 的 cue 列表（active cue 匹配依赖按 startTime 排序）。先全部移除，
+    // 改完时间再按新 startTime 排序插回 —— 顺序永远正确。
+    const cues = [...tt.cues];
+    cues.forEach((cue) => tt.removeCue(cue));
+    cues.forEach((cue) => {
+      cue.startTime = Math.max(0, cue.startTime + delta);
+      cue.endTime = Math.max(0, cue.endTime + delta);
+    });
+    cues.sort((a, b) => a.startTime - b.startTime);
+    cues.forEach((cue) => tt.addCue(cue));
+  });
+  $('sync-val').textContent = syncValText();
+}
+
+function setSubOffset(v) {
+  subOffset = Math.max(-10, Math.min(10, v));     // 限制 ±10s，防手滑点过头
+  localStorage.setItem('subOffset', String(subOffset));
+  applySubOffset();
+}
+
+// 轨道是异步加载的，cue 可能还没解析完；加载完成后再施加偏移
+function applyOffsetOnLoad(el) {
+  const h = () => {
+    if (!el.track || !el.track.cues) return;
+    if (appliedOffset !== subOffset) applySubOffset();
+  };
+  el.addEventListener('load', h);
+}
+
+// 同步面板开关（与字色面板互斥）
+const syncPanelOpen = () => !$('sync-panel').classList.contains('hidden');
+function closeSyncPanel() { $('sync-panel').classList.add('hidden'); }
+
+$('btn-cc-sync').addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (syncPanelOpen()) { closeSyncPanel(); return; }
+  closeCcPanel();                             // 字色面板先收掉
+  $('sync-panel').classList.remove('hidden');
+  $('sync-val').textContent = syncValText();
+  if (document.fullscreenElement) wakeBar();
+});
+document.addEventListener('click', (e) => {
+  if (!$('sync-wrap').contains(e.target)) closeSyncPanel();
+});
+$('sync-minus').addEventListener('click', () => setSubOffset(subOffset - 0.25));
+$('sync-plus').addEventListener('click', () => setSubOffset(subOffset + 0.25));
+$('sync-reset').addEventListener('click', () => setSubOffset(0));
+
+// 一条字幕轨的开关。中文轨默认开（要的就是画面内实时中文），
+// 原声英文轨默认关 —— 两条可以同时开，也可以各自关掉。
+function setupTrackToggle(trackEl, btnEl, defaultOn) {
+  const ON = ['bg-indigo-600', 'text-white'];
+  const OFF = ['bg-slate-800', 'text-slate-300'];
+  const render = () => {
+    const on = !!(trackEl.track && trackEl.track.mode === 'showing');
+    ON.forEach((c) => btnEl.classList.toggle(c, on));
+    OFF.forEach((c) => btnEl.classList.toggle(c, !on));
+  };
+  const apply = () => {
+    if (!trackEl.track) return;
+    trackEl.track.mode = defaultOn ? 'showing' : 'hidden';
+    render();
+  };
+
+  btnEl.addEventListener('click', () => {
+    if (!trackEl.track) return;
+    trackEl.track.mode = trackEl.track.mode === 'showing' ? 'hidden' : 'showing';
+    render();
+  });
+  // 轨道是异步加载的，加载完可能被重置回 disabled，加载事件里再定一次
+  trackEl.addEventListener('load', apply);
+  apply();
+  return { toggle: () => btnEl.click(), apply };
+}
+
+// ---------------------------------------------------------------- 全屏
+// 全屏的是 #stage（视频 + 控制条），不是 <video>：用原生 video 全屏的话
+// 自制的控制条会被浏览器自带的替掉，字幕开关、倍速、进度条全没了。
+let wakeBar = () => {};             // setupFullscreen 里填上，进度条和颜色面板要用
+
+function setupFullscreen() {
+  const stage = $('stage');
+  const bar = $('stage-bar');
+  const vid = $('video');
+  let idle = null;
+
+  const setIcon = (on) => {
+    $('ico-fs-in').classList.toggle('hidden', on);
+    $('ico-fs-out').classList.toggle('hidden', !on);
+    $('btn-fs').classList.toggle('bg-indigo-600', on);
+    $('btn-fs').classList.toggle('text-white', on);
+    $('btn-fs').classList.toggle('bg-slate-800', !on);
+    $('btn-fs').classList.toggle('text-slate-300', !on);
+  };
+
+  // 全屏后控制条浮在画面上，不动就淡掉，动一下再出来（B站那套）。
+  // ⚠️ 判据不能用 bar.matches(':hover')：触屏上 :hover 点一次就**永久粘住**，
+  // 全屏后控制条就再也不淡出了。pointerenter/pointerleave 在触摸时是配对触发的
+  // （按下进、抬起出），语义正好，而且不粘。
+  let barHot = false;
+  wakeBar = () => {
+    stage.classList.remove('fs-idle');
+    clearTimeout(idle);
+    idle = setTimeout(() => {
+      // 暂停时留着 —— 那多半是在看某一句；手指还压在控制条上、或者颜色面板
+      // 正开着，也不隐（面板是控制条的子节点，跟着一起淡掉就没法点色块了）
+      if (document.fullscreenElement && !vid.paused && !barHot && !ccPanelOpen()) {
+        stage.classList.add('fs-idle');
+      }
+    }, 3000);
+  };
+
+  $('btn-fs').addEventListener('click', () => {
+    if (document.fullscreenElement) { document.exitFullscreen(); return; }
+    // ⚠️ iOS Safari 上元素全屏压根不存在，而且它是**同步抛 TypeError**、
+    // 不是返回一个 rejected promise —— 写 .catch() 是抓不住的，必须先判类型。
+    if (typeof stage.requestFullscreen === 'function') {
+      stage.requestFullscreen().catch((e) => playerMsg('进不了全屏：' + esc(e.message)));
+    } else if (typeof vid.webkitEnterFullscreen === 'function') {
+      // iPhone 只支持 <video> 原生全屏。那边是系统控件：自制控制条、CC 开关、
+      // 字幕颜色面板、#stage:fullscreen 那套 CSS 全部不生效 —— 平台限制，认了。
+      vid.webkitEnterFullscreen();
+    } else {
+      playerMsg('这个浏览器不支持全屏');
+    }
+  });
+
+  stage.addEventListener('pointermove', () => { if (document.fullscreenElement) wakeBar(); });
+  bar.addEventListener('pointerenter', () => { barHot = true; clearTimeout(idle); stage.classList.remove('fs-idle'); });
+  bar.addEventListener('pointerleave', () => { barHot = false; wakeBar(); });
+
+  // 点画面切控制条显隐。手机上它是唯一的"唤出/收起"手段（没有鼠标移动这件事）。
+  stage.addEventListener('pointerdown', (e) => {
+    if (!document.fullscreenElement) return;
+    if (bar.contains(e.target)) return;              // 点在控制条上不算
+    if (stage.classList.contains('fs-idle')) wakeBar();
+    else { clearTimeout(idle); stage.classList.add('fs-idle'); }
+  });
+
+  document.addEventListener('fullscreenchange', () => {
+    const on = !!document.fullscreenElement;
+    setIcon(on);
+    clearTimeout(idle);
+    stage.classList.remove('fs-idle');     // 刚进全屏先亮着
+    if (on) wakeBar();
+  });
+  // iPhone 的原生 <video> 全屏不触发 fullscreenchange，只有这两个 webkit 事件
+  vid.addEventListener('webkitbeginfullscreen', () => setIcon(true));
+  vid.addEventListener('webkitendfullscreen', () => setIcon(false));
+}
+
+function initPlayer(video) {
+  if (video.local_video) return initLocal(video.local_video, video.hls_master);
+  if (!video.hls_master) {
+    playerMsg('缺少视频源<br><span class="text-slate-500 text-xs">' +
+      '这一期暂时没有可播的视频流，请稍后重试</span>');
+    return;
+  }
+  return loadScript(CDN.hls).then(() => initStreaming(video.hls_master));
+}
+
+function togglePlay() {
+  const v = $('video');
+  if (!v.src && !hls) return;
+  v.paused ? v.play().catch(() => {}) : v.pause();
+}
+
+// ---------------------------------------------------------------- 键盘
+const ccZh = { toggle: null }, ccEn = { toggle: null };
+
+document.addEventListener('keydown', (e) => {
+  const t = e.target;
+  if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) return;
+  const v = $('video');
+
+  if (e.code === 'Space' || e.key === ' ') {
+    e.preventDefault();               // 否则会滚动页面
+    togglePlay();
+  } else if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    v.currentTime = Math.max(0, v.currentTime - 5);
+  } else if (e.key === 'ArrowRight') {
+    e.preventDefault();
+    v.currentTime = Math.min(v.duration || 1e9, v.currentTime + 5);
+  } else if (e.key === 'f' || e.key === 'F') {
+    $('btn-fs').click();
+  } else if (e.key === 'c' || e.key === 'C') {
+    if (ccZh.toggle) ccZh.toggle();
+  } else if (e.key === 'v' || e.key === 'V') {
+    if (ccEn.toggle) ccEn.toggle();
+  } else if (e.key === 'Escape' && (ccPanelOpen() || syncPanelOpen())) {
+    // 全屏里 Escape 会先退出全屏，面板顺手也关掉；非全屏时它专门用来关面板
+    closeCcPanel();
+    closeSyncPanel();
+  }
+});
+
+$('btn-follow').addEventListener('click', () => {
+  follow = !follow;
+  const b = $('btn-follow');
+  b.textContent = follow ? '跟随中' : '已暂停跟随';
+  b.className = follow
+    ? 'ml-auto text-[11px] px-2 py-1 rounded bg-indigo-600/90 hover:bg-indigo-500 text-white transition'
+    : 'ml-auto text-[11px] px-2 py-1 rounded bg-slate-700 hover:bg-slate-600 text-slate-300 transition';
+});
+
+// ------------------------------------------------------- 画面内字幕颜色
+// 只换颜色：位置在 VTT 的 cue settings 里（改不了），字号/背景归静态 ::cue 管。
+// 中英两条轨共用一套颜色 —— 按钮叫"字色"就是画面里那两行字幕的字色。右栏的
+// 双语对照不跟着变：那是拿来读的正文，染成黄绿反而不好看。
+// 全是浅色：cue 后面压着一层半透明黑，深色字糊上去等于看不见。
+const CUE_COLORS = [
+  ['纯白', '#ffffff'], ['米白', '#f2ead8'], ['浅灰', '#c9d1d9'], ['亮黄', '#ffe066'],
+  ['暖橙', '#ffb066'], ['珊瑚', '#ff8a75'], ['桃粉', '#ff9ec4'], ['淡紫', '#c9a7ff'],
+  ['天蓝', '#7fb8ff'], ['青色', '#7fe3ff'], ['薄荷', '#7fe6b0'], ['嫩绿', '#a6f07a'],
+];
+let cueFg = localStorage.getItem('cueFg') || CUE_COLORS[0][1];
+
+function applyCueColor() {
+  $('cue-fg').textContent =
+    `video::cue{color:${cueFg}}video::cue(.zh){color:${cueFg}}`;
+  $('cc-swatch').style.color = cueFg;          // 按钮上的字就是当前色的预览
+  const name = (CUE_COLORS.find((c) => c[1] === cueFg) || ['自定义'])[0];
+  $('btn-cc-color').title = `画面内字幕颜色：${name}`;
+  document.querySelectorAll('#cc-grid button').forEach((el) => {
+    const on = el.dataset.fg.toLowerCase() === cueFg.toLowerCase();
+    el.replaceChildren();
+    if (on) el.textContent = '✓';              // 打勾比描边在浅色块上看得清
+    el.classList.toggle('ring-2', on);
+    el.classList.toggle('ring-white', on);
+    el.classList.toggle('ring-1', !on);
+    el.classList.toggle('ring-slate-600', !on);
+  });
+}
+
+const ccPanelOpen = () => !$('cc-panel').classList.contains('hidden');
+function closeCcPanel() { $('cc-panel').classList.add('hidden'); }
+
+CUE_COLORS.forEach(([name, fg]) => {
+  const el = document.createElement('button');
+  el.dataset.fg = fg;
+  el.title = name;
+  // 色块都是浅色，对勾用深色，否则白块上打白勾看不见。
+  // 手机上要 h-8：24px 的色块手指点不准，但 6 列排下来也不会到 44px，
+  // 那是 12 个一起的取色网格，不是主控件，30px 上下够用（面板跟着加宽到 w-60）。
+  el.className = 'h-8 lg:h-6 rounded-md text-[13px] leading-none font-bold text-slate-900 ' +
+    'ring-1 ring-slate-600 hover:scale-110 transition';
+  el.style.background = fg;
+  el.addEventListener('click', () => {
+    cueFg = fg;
+    localStorage.setItem('cueFg', cueFg);
+    applyCueColor();
+    closeCcPanel();
+  });
+  $('cc-grid').appendChild(el);
+});
+
+$('btn-cc-color').addEventListener('click', (e) => {
+  e.stopPropagation();                         // 否则下面"点外面就关"会立刻把它又关掉
+  if (ccPanelOpen()) { closeCcPanel(); return; }
+  $('cc-panel').classList.remove('hidden');
+  if (document.fullscreenElement) wakeBar();   // 全屏里开着面板时别把控制条淡掉
+});
+document.addEventListener('click', (e) => {
+  if (!$('cc-wrap').contains(e.target)) closeCcPanel();
+});
+applyCueColor();
+
+// ---------------------------------------------------------------- 启动
+(async () => {
+  try {
+    SLUG = new URLSearchParams(location.search).get('slug') || '';
+    if (!SLUG) {
+      playerMsg('地址里没有期号<br><span class="text-slate-500 text-xs">' +
+        '应该从 <a class="text-indigo-400 underline" href="index.html">列表页</a> 点进来看某一期</span>');
+      return;
+    }
+    epBase = DATA_BASE + encodeURIComponent(SLUG) + '/';
+
+    const res = await fetch(metaUrl(SLUG), { cache: 'no-store' });
+    if (!res.ok) {
+      const detail = await res.json().catch(() => ({}));
+      throw new Error(detail.error || `HTTP ${res.status}`);
+    }
+    const data = await res.json();
+
+    VIDEO = data.video || {};
+    SUBS = data.subtitles || [];
+    const meta = data.meta || {};
+    const revs = data.revs || {};
+
+    // 库里存的是文件名，这里补上目录（不存完整相对路径就不会因为换目录结构而失效）
+    if (VIDEO.local_video) VIDEO.local_video = withRev(epBase + VIDEO.local_video, revs.video);
+
+    document.title = `${VIDEO.title || SLUG} · 双语精听`;
+    $('title').textContent = VIDEO.title || SLUG;
+    $('subtitle-line').textContent =
+      [VIDEO.channel, VIDEO.upload_date ? VIDEO.upload_date.slice(0, 10) : '',
+       VIDEO.duration ? fmt(VIDEO.duration) : '',
+       meta.transcript_source === 'cbs-captions' ? '官方字幕稿' : '语音识别'].filter(Boolean).join(' · ');
+    $('stat-subs').textContent = `${SUBS.length} 句`;
+    $('t-dur').textContent = fmt(VIDEO.duration || 0);
+
+    renderSubs();
+
+    // 中文字幕轨（画面内实时对照）+ 原声英文字幕轨
+    const zhEl = addTrack(withRev(epBase + (VIDEO.local_subs_zh || 'subs_zh.vtt'), revs.subs_zh),
+                          'zh', '中文');
+    const enEl = addTrack(withRev(epBase + (VIDEO.local_subs || 'subs_en.vtt'), revs.subs_en),
+                          'en', 'English');
+    ccZh.toggle = setupTrackToggle(zhEl, $('btn-cc-zh'), true).toggle;
+    ccEn.toggle = setupTrackToggle(enEl, $('btn-cc-en'), false).toggle;
+    applyOffsetOnLoad(zhEl);
+    applyOffsetOnLoad(enEl);
+    // 视频元数据就绪后再补一次：某些浏览器 track 的 load 比 loadedmetadata 晚
+    $('video').addEventListener('loadedmetadata', () => applySubOffset());
+    setupFullscreen();
+
+    await initPlayer(VIDEO);
+  } catch (err) {
+    console.error(err);
+    playerMsg('数据加载失败：' + esc(err.message) +
+      '<br><span class="text-slate-500 text-xs">这一期可能还没上线，请稍后重试或回列表选别的期</span>');
+  }
+})();
+</script>
+</body>
+</html>

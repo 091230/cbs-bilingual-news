@@ -1,0 +1,15 @@
+{
+  "slug": "100126-cbs-evening-news",
+  "video_id": "4abe5fb9-17b4-41fb-84f7-9f35416ae8f9",
+  "title": "10/1: CBS Evening News",
+  "duration": 1157,
+  "upload_date": "2026-10-01T18:30:00-0400",
+  "channel": "CBS Evening News",
+  "webpage_url": "https://www.cbsnews.com/video/100126-cbs-evening-news/",
+  "hls_master": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4863565_hls/master.m3u8",
+  "hls_subs": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4863565_hls/subs_en.m3u8",
+  "audio_file": "audio.mp3",
+  "audio_size_mb": 4.41,
+  "audio_format": "16000Hz 32k mono mp3",
+  "local_video": null
+}

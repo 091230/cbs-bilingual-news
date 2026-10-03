@@ -1,0 +1,15 @@
+{
+  "slug": "093026-cbs-evening-news",
+  "video_id": "37b559b6-b376-4c14-9cfd-4cdbaeee1d44",
+  "title": "9/30: CBS Evening News",
+  "duration": 1039,
+  "upload_date": "2026-09-30T18:30:00-0400",
+  "channel": "CBS Evening News",
+  "webpage_url": "https://www.cbsnews.com/video/093026-cbs-evening-news/",
+  "hls_master": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4860767_hls/master.m3u8",
+  "hls_subs": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4860767_hls/subs_en.m3u8",
+  "audio_file": "audio.mp3",
+  "audio_size_mb": 3.96,
+  "audio_format": "16000Hz 32k mono mp3",
+  "local_video": null
+}

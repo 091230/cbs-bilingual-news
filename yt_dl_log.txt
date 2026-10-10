@@ -1,0 +1,53 @@
+﻿python.exe : Deprecated Feature: Support for Python version 3.10 has been deprecated. Please update to Python 3.11 or 
+above
+所在位置 行:1 字符: 120
++ ... .0.1:7897'; & 'C:\Users\lenovo\AppData\Local\Programs\Python\Python31 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Deprecated Feat...n 3.11 or above:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[youtube] Extracting URL: https://www.youtube.com/watch?v=MxFPb5ByyzU
+[youtube] MxFPb5ByyzU: Downloading webpage
+WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another 
+runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been 
+deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing 
+one
+[youtube] MxFPb5ByyzU: Downloading visionos player API JSON
+[youtube] MxFPb5ByyzU: Downloading m3u8 information
+[info] MxFPb5ByyzU: Downloading subtitles: en-orig, en, zh-Hans, zh-Hant
+[info] MxFPb5ByyzU: Downloading 1 format(s): 399+140
+[info] Writing video subtitles to: data\episodes\100926-cbs-evening-news\youtube_raw.en-orig.vtt
+WARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If 
+you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the 
+required dependencies
+[download] Destination: data\episodes\100926-cbs-evening-news\youtube_raw.en-orig.vtt
+
+[download]    1.00KiB at  470.79KiB/s (00:00:00)
+[download]    3.00KiB at  796.79KiB/s (00:00:00)
+[download]    7.00KiB at    1.18MiB/s (00:00:00)
+[download]   15.00KiB at    2.14MiB/s (00:00:00)
+[download]   31.00KiB at    3.41MiB/s (00:00:00)
+[download]   63.00KiB at    2.35MiB/s (00:00:00)
+[download]  127.00KiB at    2.75MiB/s (00:00:00)
+[download]  171.18KiB at    2.79MiB/s (00:00:00)
+[download] 100% of  171.18KiB in 00:00:00 at 443.53KiB/s
+[info] Writing video subtitles to: data\episodes\100926-cbs-evening-news\youtube_raw.en.vtt
+WARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If 
+you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the 
+required dependencies
+[download] Destination: data\episodes\100926-cbs-evening-news\youtube_raw.en.vtt
+
+[download]    1.00KiB at  998.41KiB/s (00:00:00)
+[download]    3.00KiB at    2.93MiB/s (00:00:00)
+[download]    7.00KiB at    6.83MiB/s (00:00:00)
+[download]   15.00KiB at    1.23MiB/s (00:00:00)
+[download]   31.00KiB at    2.33MiB/s (00:00:00)
+[download]   63.00KiB at    2.36MiB/s (00:00:00)
+[download]  127.00KiB at    2.35MiB/s (00:00:00)
+[download]  171.18KiB at    2.42MiB/s (00:00:00)
+[download] 100% of  171.18KiB in 00:00:00 at 525.47KiB/s
+[info] Writing video subtitles to: data\episodes\100926-cbs-evening-news\youtube_raw.zh-Hans.vtt
+WARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If 
+you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the 
+required dependencies
+ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests

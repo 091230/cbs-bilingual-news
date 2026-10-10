@@ -1,0 +1,365 @@
+﻿python.exe : Deprecated Feature: Support for Python version 3.10 has been deprecated. Please update to Python 3.11 or 
+above
+所在位置 行:1 字符: 120
++ ... .0.1:7897'; & 'C:\Users\lenovo\AppData\Local\Programs\Python\Python31 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Deprecated Feat...n 3.11 or above:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[youtube] Extracting URL: https://www.youtube.com/watch?v=MxFPb5ByyzU
+[youtube] MxFPb5ByyzU: Downloading webpage
+WARNING: [youtube] unable to extract yt initial data; please report this issue on  
+https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest 
+version using  yt-dlp -U
+WARNING: [youtube] Incomplete data received in embedded initial data; re-fetching using API.
+[youtube] MxFPb5ByyzU: Downloading initial data API JSON
+WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another 
+runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been 
+deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing 
+one
+[youtube] MxFPb5ByyzU: Downloading visionos player API JSON
+[youtube] MxFPb5ByyzU: Downloading m3u8 information
+[info] MxFPb5ByyzU: Downloading 1 format(s): 399+140
+WARNING: You have requested merging of multiple formats but ffmpeg is not installed. The formats won't be merged
+[download] Destination: data\episodes\100926-cbs-evening-news\youtube_raw.f399.mp4
+
+[download]   0.0% of  296.25MiB at   61.11KiB/s ETA 01:22:44
+[download]   0.0% of  296.25MiB at  166.11KiB/s ETA 30:26   
+[download]   0.0% of  296.25MiB at  387.60KiB/s ETA 13:02
+[download]   0.0% of  296.25MiB at  786.81KiB/s ETA 06:25
+[download]   0.0% of  296.25MiB at    1.59MiB/s ETA 03:06
+[download]   0.0% of  296.25MiB at    3.07MiB/s ETA 01:36
+[download]   0.0% of  296.25MiB at    3.99MiB/s ETA 01:14
+[download]   0.1% of  296.25MiB at    2.16MiB/s ETA 02:16
+[download]   0.2% of  296.25MiB at    1.24MiB/s ETA 03:58
+[download]   0.3% of  296.25MiB at  895.35KiB/s ETA 05:37
+[download]   0.6% of  296.25MiB at  861.14KiB/s ETA 05:50
+[download]   0.8% of  296.25MiB at  890.96KiB/s ETA 05:37
+[download]   1.2% of  296.25MiB at  895.60KiB/s ETA 05:34
+[download]   1.4% of  296.25MiB at  881.10KiB/s ETA 05:39
+[download]   1.7% of  296.25MiB at  859.92KiB/s ETA 05:46
+[download]   2.0% of  296.25MiB at  967.43KiB/s ETA 05:07
+[download]   2.5% of  296.25MiB at  945.49KiB/s ETA 05:12
+[download]   2.8% of  296.25MiB at  837.07KiB/s ETA 05:52
+[download]   2.9% of  296.25MiB at  880.26KiB/s ETA 05:34
+[download]   3.2% of  296.25MiB at  957.86KiB/s ETA 05:06
+[download]   3.2% of  296.25MiB at  964.49KiB/s ETA 05:04
+[download]   3.2% of  296.25MiB at   91.80KiB/s ETA 53:18
+[download]   3.2% of  296.25MiB at  248.73KiB/s ETA 19:40
+[download]   3.2% of  296.25MiB at  556.95KiB/s ETA 08:47
+[download]   3.2% of  296.25MiB at    1.11MiB/s ETA 04:17
+[download]   3.2% of  296.25MiB at    2.21MiB/s ETA 02:09
+[download]   3.2% of  296.25MiB at    1.23MiB/s ETA 03:52
+[download]   3.3% of  296.25MiB at    1.89MiB/s ETA 02:31
+[download]   3.3% of  296.25MiB at  628.71KiB/s ETA 07:46
+[download]   3.4% of  296.25MiB at    1.05MiB/s ETA 04:33
+[download]   3.6% of  296.25MiB at  714.98KiB/s ETA 06:49
+[download]   3.7% of  296.25MiB at  869.23KiB/s ETA 05:35
+[download]   4.1% of  296.25MiB at  865.79KiB/s ETA 05:36
+[download]   4.4% of  296.25MiB at  805.26KiB/s ETA 06:00
+[download]   4.6% of  296.25MiB at  957.52KiB/s ETA 05:02
+[download]   5.0% of  296.25MiB at  876.88KiB/s ETA 05:28
+[download]   5.3% of  296.25MiB at  943.05KiB/s ETA 05:04
+[download]   5.7% of  296.25MiB at 1004.55KiB/s ETA 04:44
+[download]   6.2% of  296.25MiB at  891.42KiB/s ETA 05:19
+[download]   6.4% of  296.25MiB at  961.24KiB/s ETA 04:55
+[download]   6.5% of  296.25MiB at  981.41KiB/s ETA 04:49
+[download]   6.5% of  296.25MiB at  Unknown B/s ETA Unknown
+[download]   6.5% of  296.25MiB at    2.30MiB/s ETA 02:00  
+[download]   6.5% of  296.25MiB at    3.80MiB/s ETA 01:12
+[download]   6.5% of  296.25MiB at    8.15MiB/s ETA 00:34
+[download]   6.5% of  296.25MiB at    1.34MiB/s ETA 03:26
+[download]   6.5% of  296.25MiB at    1.83MiB/s ETA 02:31
+[download]   6.5% of  296.25MiB at    2.18MiB/s ETA 02:07
+[download]   6.6% of  296.25MiB at    1.93MiB/s ETA 02:23
+[download]   6.6% of  296.25MiB at  573.22KiB/s ETA 08:14
+[download]   6.8% of  296.25MiB at  787.67KiB/s ETA 05:59
+[download]   7.0% of  296.25MiB at  639.79KiB/s ETA 07:21
+[download]   7.1% of  296.25MiB at  828.17KiB/s ETA 05:40
+[download]   7.5% of  296.25MiB at  976.58KiB/s ETA 04:47
+[download]   8.0% of  296.25MiB at  735.02KiB/s ETA 06:19
+[download]   8.2% of  296.25MiB at  855.35KiB/s ETA 05:25
+[download]   8.7% of  296.25MiB at  936.56KiB/s ETA 04:55
+[download]   9.2% of  296.25MiB at  918.36KiB/s ETA 04:59
+[download]   9.5% of  296.25MiB at 1003.15KiB/s ETA 04:33
+[download]   9.8% of  296.25MiB at  991.26KiB/s ETA 04:35
+[download]   9.8% of  296.25MiB at   46.38KiB/s ETA 01:40:35
+[download]   9.8% of  296.25MiB at  126.83KiB/s ETA 35:56   
+[download]   9.8% of  296.25MiB at  289.44KiB/s ETA 15:44
+[download]   9.8% of  296.25MiB at  602.60KiB/s ETA 07:43
+[download]   9.9% of  296.25MiB at    1.14MiB/s ETA 03:53
+[download]   9.9% of  296.25MiB at    1.68MiB/s ETA 02:38
+[download]   9.9% of  296.25MiB at    2.06MiB/s ETA 02:09
+[download]   9.9% of  296.25MiB at    2.08MiB/s ETA 02:08
+[download]  10.0% of  296.25MiB at  556.07KiB/s ETA 08:10
+[download]  10.1% of  296.25MiB at  483.46KiB/s ETA 09:24
+[download]  10.2% of  296.25MiB at  715.44KiB/s ETA 06:20
+[download]  10.5% of  296.25MiB at  967.31KiB/s ETA 04:40
+[download]  11.0% of  296.25MiB at  931.66KiB/s ETA 04:49
+[download]  11.3% of  296.25MiB at  850.56KiB/s ETA 05:16
+[download]  11.5% of  296.25MiB at  912.95KiB/s ETA 04:53
+[download]  12.0% of  296.25MiB at  912.95KiB/s ETA 04:52
+[download]  12.3% of  296.25MiB at  925.50KiB/s ETA 04:47
+[download]  12.6% of  296.25MiB at  973.90KiB/s ETA 04:32
+[download]  13.1% of  296.25MiB at  962.02KiB/s ETA 04:34
+[download]  13.1% of  296.25MiB at  964.92KiB/s ETA 04:33
+[download]  13.1% of  296.25MiB at  100.70KiB/s ETA 43:37
+[download]  13.1% of  296.25MiB at  281.41KiB/s ETA 15:36
+[download]  13.1% of  296.25MiB at  656.62KiB/s ETA 06:41
+[download]  13.1% of  296.25MiB at    1.30MiB/s ETA 03:17
+[download]  13.1% of  296.25MiB at    2.46MiB/s ETA 01:44
+[download]  13.1% of  296.25MiB at    2.25MiB/s ETA 01:55
+[download]  13.2% of  296.25MiB at    1.95MiB/s ETA 02:11
+[download]  13.2% of  296.25MiB at    1.90MiB/s ETA 02:15
+[download]  13.3% of  296.25MiB at    1.68MiB/s ETA 02:33
+[download]  13.5% of  296.25MiB at  461.17KiB/s ETA 09:29
+[download]  13.5% of  296.25MiB at  581.07KiB/s ETA 07:31
+[download]  13.7% of  296.25MiB at  735.58KiB/s ETA 05:55
+[download]  14.1% of  296.25MiB at 1021.60KiB/s ETA 04:15
+[download]  14.8% of  296.25MiB at  948.79KiB/s ETA 04:32
+[download]  15.1% of  296.25MiB at  980.77KiB/s ETA 04:22
+[download]  15.5% of  296.25MiB at  960.85KiB/s ETA 04:26
+[download]  15.8% of  296.25MiB at 1011.20KiB/s ETA 04:12
+[download]  16.4% of  296.25MiB at  999.89KiB/s ETA 04:13
+[download]  16.4% of  296.25MiB at 1023.44KiB/s ETA 04:07
+[download]  16.4% of  296.25MiB at    9.38KiB/s ETA 07:30:33
+[download]  16.4% of  296.25MiB at   27.86KiB/s ETA 02:31:38
+[download]  16.4% of  296.25MiB at   65.00KiB/s ETA 01:04:59
+[download]  16.4% of  296.25MiB at  137.87KiB/s ETA 30:38   
+[download]  16.5% of  296.25MiB at  284.94KiB/s ETA 14:49
+[download]  16.5% of  296.25MiB at  381.40KiB/s ETA 11:04
+[download]  16.5% of  296.25MiB at  663.67KiB/s ETA 06:22
+[download]  16.5% of  296.25MiB at    1.03MiB/s ETA 03:59
+[download]  16.6% of  296.25MiB at  841.84KiB/s ETA 05:00
+[download]  16.8% of  296.25MiB at  840.81KiB/s ETA 05:00
+[download]  17.1% of  296.25MiB at  839.98KiB/s ETA 04:59
+[download]  17.3% of  296.25MiB at  926.11KiB/s ETA 04:30
+[download]  17.7% of  296.25MiB at  837.49KiB/s ETA 04:58
+[download]  18.0% of  296.25MiB at  839.83KiB/s ETA 04:56
+[download]  18.2% of  296.25MiB at  851.11KiB/s ETA 04:51
+[download]  18.5% of  296.25MiB at  986.50KiB/s ETA 04:10
+[download]  19.1% of  296.25MiB at  949.35KiB/s ETA 04:18
+[download]  19.4% of  296.25MiB at  970.38KiB/s ETA 04:11
+[download]  19.8% of  296.25MiB at  992.54KiB/s ETA 04:05
+[download]  19.8% of  296.25MiB at  Unknown B/s ETA Unknown
+[download]  19.8% of  296.25MiB at    2.68MiB/s ETA 01:28  
+[download]  19.8% of  296.25MiB at    6.25MiB/s ETA 00:38
+[download]  19.8% of  296.25MiB at    6.95MiB/s ETA 00:34
+[download]  19.8% of  296.25MiB at  130.57KiB/s ETA 31:03
+[download]  19.8% of  296.25MiB at  264.18KiB/s ETA 15:20
+[download]  19.8% of  296.25MiB at  504.49KiB/s ETA 08:01
+[download]  19.9% of  296.25MiB at  700.16KiB/s ETA 05:47
+[download]  20.0% of  296.25MiB at    1.04MiB/s ETA 03:47
+[download]  20.1% of  296.25MiB at  761.80KiB/s ETA 05:18
+[download]  20.3% of  296.25MiB at  570.82KiB/s ETA 07:03
+[download]  20.5% of  296.25MiB at  711.28KiB/s ETA 05:39
+[download]  20.7% of  296.25MiB at  727.50KiB/s ETA 05:30
+[download]  21.0% of  296.25MiB at  804.17KiB/s ETA 04:58
+[download]  21.4% of  296.25MiB at  832.71KiB/s ETA 04:46
+[download]  21.7% of  296.25MiB at  764.88KiB/s ETA 05:10
+[download]  21.9% of  296.25MiB at  818.36KiB/s ETA 04:49
+[download]  22.2% of  296.25MiB at  878.39KiB/s ETA 04:28[download] Got error: The read operation timed out. Retrying (1/10)...
+[download] Destination: data\episodes\100926-cbs-evening-news\youtube_raw.f399.mp4
+
+[download]  22.2% of  296.25MiB at   72.43KiB/s ETA 54:16
+[download]  22.2% of  296.25MiB at  202.68KiB/s ETA 19:23
+[download]  22.3% of  296.25MiB at  472.91KiB/s ETA 08:18
+[download]  22.3% of  296.25MiB at  906.68KiB/s ETA 04:20
+[download]  22.3% of  296.25MiB at    1.70MiB/s ETA 02:15
+[download]  22.3% of  296.25MiB at    1.68MiB/s ETA 02:17
+[download]  22.3% of  296.25MiB at  818.00KiB/s ETA 04:48
+[download]  22.3% of  296.25MiB at    1.15MiB/s ETA 03:19
+[download]  22.4% of  296.25MiB at    1.11MiB/s ETA 03:27
+[download]  22.6% of  296.25MiB at  997.71KiB/s ETA 03:55
+[download]  22.9% of  296.25MiB at  912.70KiB/s ETA 04:16
+[download]  23.2% of  296.25MiB at    1.06MiB/s ETA 03:35
+[download]  23.7% of  296.25MiB at  626.12KiB/s ETA 06:09
+[download]  24.0% of  296.25MiB at  687.63KiB/s ETA 05:35
+[download]  24.4% of  296.25MiB at  701.86KiB/s ETA 05:26
+[download]  24.7% of  296.25MiB at  699.01KiB/s ETA 05:26
+[download]  24.9% of  296.25MiB at  736.02KiB/s ETA 05:09
+[download]  25.4% of  296.25MiB at  769.15KiB/s ETA 04:54
+[download]  25.6% of  296.25MiB at  798.33KiB/s ETA 04:42
+[download]  25.6% of  296.25MiB at    1.80KiB/s ETA 34:46:43
+[download]  25.6% of  296.25MiB at    5.05KiB/s ETA 12:25:16
+[download]  25.6% of  296.25MiB at   11.54KiB/s ETA 05:25:57
+[download]  25.6% of  296.25MiB at   24.53KiB/s ETA 02:33:21
+[download]  25.6% of  296.25MiB at   50.42KiB/s ETA 01:14:37
+[download]  25.6% of  296.25MiB at  102.11KiB/s ETA 36:50   
+[download]  25.6% of  296.25MiB at  204.55KiB/s ETA 18:23
+[download]  25.6% of  296.25MiB at  409.39KiB/s ETA 09:10
+[download]  25.7% of  296.25MiB at  794.50KiB/s ETA 04:43
+[download]  25.9% of  296.25MiB at  816.24KiB/s ETA 04:35
+[download]  26.2% of  296.25MiB at  799.95KiB/s ETA 04:40
+[download]  26.4% of  296.25MiB at  781.64KiB/s ETA 04:45
+[download]  26.7% of  296.25MiB at  739.46KiB/s ETA 05:00
+[download]  26.9% of  296.25MiB at  735.29KiB/s ETA 05:01
+[download]  27.1% of  296.25MiB at  789.15KiB/s ETA 04:40
+[download]  27.5% of  296.25MiB at  701.93KiB/s ETA 05:13
+[download]  27.8% of  296.25MiB at  659.84KiB/s ETA 05:32
+[download]  27.9% of  296.25MiB at  669.79KiB/s ETA 05:26
+[download]  28.2% of  296.25MiB at  703.94KiB/s ETA 05:09
+[download]  28.6% of  296.25MiB at  718.48KiB/s ETA 05:01
+[download]  28.8% of  296.25MiB at  746.74KiB/s ETA 04:49
+[download]  28.9% of  296.25MiB at  760.54KiB/s ETA 04:43
+[download]  28.9% of  296.25MiB at    9.54KiB/s ETA 06:16:44
+[download]  28.9% of  296.25MiB at   28.48KiB/s ETA 02:06:11
+[download]  28.9% of  296.25MiB at   65.81KiB/s ETA 54:36   
+[download]  28.9% of  296.25MiB at  141.02KiB/s ETA 25:28
+[download]  28.9% of  296.25MiB at  288.68KiB/s ETA 12:26
+[download]  28.9% of  296.25MiB at  586.68KiB/s ETA 06:07
+[download]  29.0% of  296.25MiB at  478.03KiB/s ETA 07:30
+[download]  29.0% of  296.25MiB at  954.26KiB/s ETA 03:45
+[download]  29.1% of  296.25MiB at    1.13MiB/s ETA 03:05
+[download]  29.3% of  296.25MiB at  237.23KiB/s ETA 15:04
+[download]  29.3% of  296.25MiB at  226.77KiB/s ETA 15:45
+[download]  29.4% of  296.25MiB at  259.37KiB/s ETA 13:45
+[download]  29.5% of  296.25MiB at  215.15KiB/s ETA 16:33
+[download]  29.6% of  296.25MiB at  211.93KiB/s ETA 16:47
+[download]  29.7% of  296.25MiB at  209.07KiB/s ETA 17:00
+[download]  29.7% of  296.25MiB at  217.85KiB/s ETA 16:18
+[download]  29.8% of  296.25MiB at  221.90KiB/s ETA 15:59
+[download]  29.9% of  296.25MiB at  231.55KiB/s ETA 15:18
+[download]  30.1% of  296.25MiB at  247.17KiB/s ETA 14:18
+[download]  30.2% of  296.25MiB at  246.82KiB/s ETA 14:17
+[download]  30.3% of  296.25MiB at  191.14KiB/s ETA 18:26
+[download]  30.3% of  296.25MiB at  192.83KiB/s ETA 18:15
+[download]  30.4% of  296.25MiB at  187.88KiB/s ETA 18:43
+[download]  30.5% of  296.25MiB at  193.22KiB/s ETA 18:11
+[download]  30.6% of  296.25MiB at  203.90KiB/s ETA 17:13
+[download]  30.7% of  296.25MiB at  223.62KiB/s ETA 15:39
+[download]  31.1% of  296.25MiB at  257.65KiB/s ETA 13:31
+[download]  31.5% of  296.25MiB at  293.96KiB/s ETA 11:46
+[download]  31.8% of  296.25MiB at  310.78KiB/s ETA 11:05
+[download]  32.0% of  296.25MiB at  326.96KiB/s ETA 10:30
+[download]  32.3% of  296.25MiB at  347.03KiB/s ETA 09:52
+[download]  32.3% of  296.25MiB at    2.25KiB/s ETA 25:25:02
+[download]  32.3% of  296.25MiB at    6.73KiB/s ETA 08:28:55
+[download]  32.3% of  296.25MiB at   15.67KiB/s ETA 03:38:35
+[download]  32.3% of  296.25MiB at   33.57KiB/s ETA 01:42:00
+[download]  32.3% of  296.25MiB at   69.23KiB/s ETA 49:27   
+[download]  32.3% of  296.25MiB at  140.37KiB/s ETA 24:23
+[download]  32.3% of  296.25MiB at  178.89KiB/s ETA 19:07
+[download]  32.3% of  296.25MiB at  269.85KiB/s ETA 12:40
+[download]  32.4% of  296.25MiB at  475.24KiB/s ETA 07:11
+[download]  32.6% of  296.25MiB at  465.71KiB/s ETA 07:19
+[download]  32.8% of  296.25MiB at  543.32KiB/s ETA 06:15
+[download]  32.9% of  296.25MiB at  680.58KiB/s ETA 04:59
+[download]  32.9% of  296.25MiB at  Unknown B/s ETA Unknown
+[download]  32.9% of  296.25MiB at  Unknown B/s ETA Unknown
+[download]  32.9% of  296.25MiB at  Unknown B/s ETA Unknown
+[download]  32.9% of  296.25MiB at  Unknown B/s ETA Unknown
+[download]  32.9% of  296.25MiB at    1.95MiB/s ETA 01:42  
+[download]  32.9% of  296.25MiB at  138.41KiB/s ETA 24:30
+[download]  32.9% of  296.25MiB at  278.36KiB/s ETA 12:10
+[download]  33.0% of  296.25MiB at  557.69KiB/s ETA 06:04
+[download]  33.1% of  296.25MiB at  772.24KiB/s ETA 04:22
+[download]  33.2% of  296.25MiB at  724.25KiB/s ETA 04:39
+[download]  33.5% of  296.25MiB at  739.61KiB/s ETA 04:32
+[download]  33.7% of  296.25MiB at  997.51KiB/s ETA 03:21
+[download]  34.2% of  296.25MiB at  332.78KiB/s ETA 09:59
+[download]  34.5% of  296.25MiB at  345.00KiB/s ETA 09:36
+[download]  34.6% of  296.25MiB at  367.85KiB/s ETA 08:59
+[download]  34.9% of  296.25MiB at  339.78KiB/s ETA 09:41
+[download]  35.0% of  296.25MiB at  358.62KiB/s ETA 09:09
+[download]  35.3% of  296.25MiB at  378.54KiB/s ETA 08:38
+[download]  35.5% of  296.25MiB at  361.58KiB/s ETA 09:00
+[download]  35.6% of  296.25MiB at  376.32KiB/s ETA 08:38
+[download]  35.9% of  296.25MiB at  389.10KiB/s ETA 08:20
+[download]  36.1% of  296.25MiB at  368.88KiB/s ETA 08:45
+[download]  36.2% of  296.25MiB at  374.90KiB/s ETA 08:36
+[download]  36.2% of  296.25MiB at    8.68KiB/s ETA 06:12:04
+[download]  36.2% of  296.25MiB at   25.91KiB/s ETA 02:04:35
+[download]  36.2% of  296.25MiB at   59.92KiB/s ETA 53:51   
+[download]  36.2% of  296.25MiB at  128.41KiB/s ETA 25:08
+[download]  36.2% of  296.25MiB at   19.51KiB/s ETA 02:45:27
+[download]  36.2% of  296.25MiB at   26.32KiB/s ETA 02:02:35
+[download]  36.2% of  296.25MiB at   35.96KiB/s ETA 01:29:43
+[download]  36.2% of  296.25MiB at   51.87KiB/s ETA 01:02:11
+[download]  36.2% of  296.25MiB at   93.96KiB/s ETA 34:19   
+[download]  36.3% of  296.25MiB at  170.82KiB/s ETA 18:51
+[download]  36.4% of  296.25MiB at  282.00KiB/s ETA 11:24
+[download]  36.6% of  296.25MiB at  443.60KiB/s ETA 07:13
+[download]  37.0% of  296.25MiB at  582.30KiB/s ETA 05:28
+[download]  37.3% of  296.25MiB at  392.14KiB/s ETA 08:05
+[download]  37.5% of  296.25MiB at  443.72KiB/s ETA 07:07
+[download]  37.8% of  296.25MiB at  480.73KiB/s ETA 06:32
+[download]  38.0% of  296.25MiB at  508.60KiB/s ETA 06:09
+[download]  38.3% of  296.25MiB at  309.01KiB/s ETA 10:05
+[download]  38.4% of  296.25MiB at  307.26KiB/s ETA 10:07
+[download]  38.5% of  296.25MiB at  315.75KiB/s ETA 09:50
+[download]  38.7% of  296.25MiB at  339.21KiB/s ETA 09:07
+[download]  39.1% of  296.25MiB at  360.78KiB/s ETA 08:32
+[download]  39.3% of  296.25MiB at  379.93KiB/s ETA 08:04
+[download]  39.5% of  296.25MiB at  391.23KiB/s ETA 07:48
+[download]  39.5% of  296.25MiB at    1.20KiB/s ETA 42:35:17
+[download]  39.5% of  296.25MiB at    2.63KiB/s ETA 19:23:40
+[download]  39.5% of  296.25MiB at    5.49KiB/s ETA 09:17:15
+[download]  39.5% of  296.25MiB at   11.20KiB/s ETA 04:32:57
+[download]  39.5% of  296.25MiB at   22.63KiB/s ETA 02:15:07
+[download]  39.5% of  296.25MiB at   45.46KiB/s ETA 01:07:15
+[download]  39.5% of  296.25MiB at   91.06KiB/s ETA 33:33   
+[download]  39.6% of  296.25MiB at  182.36KiB/s ETA 16:45
+[download]  39.6% of  296.25MiB at  364.52KiB/s ETA 08:22
+[download]  39.7% of  296.25MiB at  728.39KiB/s ETA 04:11
+[download]  39.9% of  296.25MiB at  800.13KiB/s ETA 03:47
+[download]  40.2% of  296.25MiB at  920.10KiB/s ETA 03:17
+[download]  40.6% of  296.25MiB at    1.01MiB/s ETA 02:53
+[download]  41.0% of  296.25MiB at  765.95KiB/s ETA 03:53
+[download]  41.3% of  296.25MiB at  824.67KiB/s ETA 03:36
+[download]  41.7% of  296.25MiB at  818.89KiB/s ETA 03:35
+[download]  42.0% of  296.25MiB at  647.91KiB/s ETA 04:31
+[download]  42.1% of  296.25MiB at  588.38KiB/s ETA 04:58
+[download]  42.2% of  296.25MiB at  549.90KiB/s ETA 05:18
+[download]  42.2% of  296.25MiB at  512.11KiB/s ETA 05:42
+[download]  42.3% of  296.25MiB at  503.80KiB/s ETA 05:47
+[download]  42.4% of  296.25MiB at  493.78KiB/s ETA 05:54
+[download]  42.4% of  296.25MiB at  508.37KiB/s ETA 05:43
+[download]  42.6% of  296.25MiB at  535.74KiB/s ETA 05:24
+[download]  42.8% of  296.25MiB at  546.73KiB/s ETA 05:17
+[download]  42.8% of  296.25MiB at   56.86KiB/s ETA 50:53
+[download]  42.8% of  296.25MiB at  160.99KiB/s ETA 17:58
+[download]  42.8% of  296.25MiB at  365.30KiB/s ETA 07:55
+[download]  42.8% of  296.25MiB at  782.78KiB/s ETA 03:41
+[download]  42.8% of  296.25MiB at    1.58MiB/s ETA 01:47
+[download]  42.8% of  296.25MiB at    2.18MiB/s ETA 01:17
+[download]  42.8% of  296.25MiB at  317.33KiB/s ETA 09:06
+[download]  42.9% of  296.25MiB at  244.28KiB/s ETA 11:49
+[download]  42.9% of  296.25MiB at  149.50KiB/s ETA 19:18
+[download]  42.9% of  296.25MiB at  182.36KiB/s ETA 15:49
+[download]  43.0% of  296.25MiB at  248.03KiB/s ETA 11:36
+[download]  43.1% of  296.25MiB at  353.02KiB/s ETA 08:08
+[download]  43.4% of  296.25MiB at  486.65KiB/s ETA 05:52
+[download]  43.8% of  296.25MiB at  623.73KiB/s ETA 04:33
+[download]  44.2% of  296.25MiB at  602.73KiB/s ETA 04:40
+[download]  44.4% of  296.25MiB at  691.95KiB/s ETA 04:03
+[download]  44.8% of  296.25MiB at  724.02KiB/s ETA 03:51
+[download]  45.1% of  296.25MiB at  732.27KiB/s ETA 03:47
+[download]  45.4% of  296.25MiB at  733.43KiB/s ETA 03:45
+[download]  45.6% of  296.25MiB at  791.44KiB/s ETA 03:28
+[download]  46.1% of  296.25MiB at  662.88KiB/s ETA 04:06
+[download]  46.1% of  296.25MiB at  666.50KiB/s ETA 04:05
+[download]  46.1% of  296.25MiB at    3.41KiB/s ETA 13:19:39
+[download]  46.1% of  296.25MiB at   10.20KiB/s ETA 04:27:00
+[download]  46.1% of  296.25MiB at   23.75KiB/s ETA 01:54:40
+[download]  46.1% of  296.25MiB at   50.70KiB/s ETA 53:42   
+[download]  46.1% of  296.25MiB at  104.75KiB/s ETA 25:59
+[download]  46.2% of  296.25MiB at  210.65KiB/s ETA 12:56
+[download]  46.2% of  296.25MiB at  392.20KiB/s ETA 06:56
+[download]  46.2% of  296.25MiB at  642.94KiB/s ETA 04:13
+[download]  46.3% of  296.25MiB at  505.43KiB/s ETA 05:22
+[download]  46.4% of  296.25MiB at  566.83KiB/s ETA 04:46
+[download]  46.7% of  296.25MiB at  544.52KiB/s ETA 04:57
+[download]  46.8% of  296.25MiB at  601.68KiB/s ETA 04:28
+[download]  47.1% of  296.25MiB at  691.93KiB/s ETA 03:51
+[download]  47.5% of  296.25MiB at  605.25KiB/s ETA 04:23
+[download]  47.7% of  296.25MiB at  684.63KiB/s ETA 03:51
+[download]  48.0% of  296.25MiB at  768.78KiB/s ETA 03:25
+[download]  48.5% of  296.25MiB at  879.70KiB/s ETA 02:57
+[download]  49.1% of  296.25MiB at  672.71KiB/s ETA 03:49
+[download]  49.4% of  296.25MiB at  670.51KiB/s ETA 03:48
+[download]  49.5% of  296.25MiB at  670.46KiB/s ETA 03:48[download] Got error: _ssl.c:990: The handshake operation timed out. Retrying (2/10)...
+[download] Got error: The read operation timed out. Retrying (3/10)...
+[download] Got error: _ssl.c:990: The handshake operation timed out. Retrying (4/10)...
+[download] Got error: _ssl.c:990: The handshake operation timed out. Retrying (5/10)...
+ERROR: unable to download video data: HTTP Error 403: Forbidden

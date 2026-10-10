@@ -1,0 +1,83 @@
+﻿[18:03:01] JS 运行时: node
+[18:03:11] 准备跑 3 期: 100926-cbs-evening-news, 100826-cbs-evening-news, 100526-cbs-evening-news（纯在线流，不下本地视频）
+[18:03:11] ===== 100926-cbs-evening-news  10/9: CBS Evening News（19分43秒）=====
+[18:03:11]   素材已在本地，跳过抓取
+[18:03:11]   → 字幕 + Claude 翻译 + 入库
+[18:03:19] 期号: 100926-cbs-evening-news
+[18:03:19] 视频: 10/9: CBS Evening News（1183 秒）
+[18:03:19] 翻译: https://api.deepseek.com/anthropic  模型 claude-opus-5   key 来源: ~/.claude/settings.json
+[18:03:19] 取 CBS 源字幕: https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4884166_hls/subs_en.m3u8
+[18:07:19]   源字幕完成：487 条 cue -> 269 句，到 19.5 分钟，用时 240.1 秒
+[18:07:19]   缓存到 D:\investment\douyin_download\data\episodes\100926-cbs-evening-news\captions_raw.json
+[18:07:19] 切 5 块（每块 60 句），逐块送 Claude …
+[18:08:54]   第 1/5 块完成：60/60 句译文、6 个词  (in 1415 / out 8111 tokens)
+[18:11:00]   第 2/5 块完成：60/60 句译文、6 个词  (in 1636 / out 11826 tokens)
+[18:12:38]   第 3/5 块完成：60/60 句译文、6 个词  (in 1503 / out 8888 tokens)
+[18:15:04]   第 4/5 块完成：60/60 句译文、6 个词  (in 1500 / out 12686 tokens)
+[18:16:37]   第 5/5 块完成：29/29 句译文、6 个词  (in 853 / out 7263 tokens)
+[18:16:37] 候选词汇 30 个 -> 去重 28 个
+[18:17:16]   词汇精选完成：28 个候选 -> 20 个最终词条  (out 3252 tokens)
+[18:17:16] 这一期翻译共 6 次调用、in 7953 / out 52026 tokens
+[18:17:16]   缓存到 D:\investment\douyin_download\data\episodes\100926-cbs-evening-news\claude_raw.json
+[18:17:16]   已入库 D:\investment\douyin_download\data\cbs.db（字幕 269 句、词汇 20 个）
+[18:17:16] 完成
+  英文来源: cbs-captions
+  字幕    : 269 句（中英对照）
+  词汇    : 20 个
+  中文字幕轨: D:\investment\douyin_download\data\episodes\100926-cbs-evening-news\subs_zh.vtt
+  输出    : D:\investment\douyin_download\data\episodes\100926-cbs-evening-news\latest_cbs.json  (69 KB)
+[18:17:17]   ✓ 100926-cbs-evening-news 完成，用时 846 秒
+[18:17:17] ===== 100826-cbs-evening-news  10/8: CBS Evening News（19分25秒）=====
+[18:17:17]   素材已在本地，跳过抓取
+[18:17:17]   → 字幕 + Claude 翻译 + 入库
+[18:17:24] 期号: 100826-cbs-evening-news
+[18:17:24] 视频: 10/8: CBS Evening News（1165 秒）
+[18:17:24] 翻译: https://api.deepseek.com/anthropic  模型 claude-opus-5   key 来源: ~/.claude/settings.json
+[18:17:24] 取 CBS 源字幕: https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4881085_hls/subs_en.m3u8
+[18:17:53]   源字幕完成：452 条 cue -> 230 句，到 19.4 分钟，用时 28.7 秒
+[18:17:53]   缓存到 D:\investment\douyin_download\data\episodes\100826-cbs-evening-news\captions_raw.json
+[18:17:54] 切 4 块（每块 60 句），逐块送 Claude …
+[18:20:16]   第 1/4 块完成：60/60 句译文、6 个词  (in 1442 / out 12811 tokens)
+[18:21:53]   第 2/4 块完成：60/60 句译文、6 个词  (in 1526 / out 9077 tokens)
+[18:24:12]   第 3/4 块完成：60/60 句译文、6 个词  (in 1762 / out 11955 tokens)
+[18:25:52]   第 4/4 块完成：50/50 句译文、6 个词  (in 1433 / out 8336 tokens)
+[18:25:52] 候选词汇 24 个 -> 去重 23 个
+[18:27:10]   词汇精选完成：23 个候选 -> 20 个最终词条  (out 5802 tokens)
+[18:27:10] 这一期翻译共 5 次调用、in 7117 / out 47981 tokens
+[18:27:10]   缓存到 D:\investment\douyin_download\data\episodes\100826-cbs-evening-news\claude_raw.json
+[18:27:10]   已入库 D:\investment\douyin_download\data\cbs.db（字幕 230 句、词汇 20 个）
+[18:27:10] 完成
+  英文来源: cbs-captions
+  字幕    : 230 句（中英对照）
+  词汇    : 20 个
+  中文字幕轨: D:\investment\douyin_download\data\episodes\100826-cbs-evening-news\subs_zh.vtt
+  输出    : D:\investment\douyin_download\data\episodes\100826-cbs-evening-news\latest_cbs.json  (64 KB)
+[18:27:10]   ✓ 100826-cbs-evening-news 完成，用时 594 秒
+[18:27:10] ===== 100526-cbs-evening-news  10/5: CBS Evening News（19分34秒）=====
+[18:27:10]   素材已在本地，跳过抓取
+[18:27:10]   → 字幕 + Claude 翻译 + 入库
+[18:27:18] 期号: 100526-cbs-evening-news
+[18:27:18] 视频: 10/5: CBS Evening News（1174 秒）
+[18:27:18] 翻译: https://api.deepseek.com/anthropic  模型 claude-opus-5   key 来源: ~/.claude/settings.json
+[18:27:18] 取 CBS 源字幕: https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4872048_hls/subs_en.m3u8
+[18:27:49]   源字幕完成：475 条 cue -> 244 句，到 19.4 分钟，用时 31.3 秒
+[18:27:49]   缓存到 D:\investment\douyin_download\data\episodes\100526-cbs-evening-news\captions_raw.json
+[18:27:50] 切 5 块（每块 60 句），逐块送 Claude …
+[18:30:06]   第 1/5 块完成：60/60 句译文、6 个词  (in 1513 / out 12728 tokens)
+[18:31:48]   第 2/5 块完成：60/60 句译文、6 个词  (in 1359 / out 8966 tokens)
+[18:33:53]   第 3/5 块完成：60/60 句译文、6 个词  (in 1616 / out 10483 tokens)
+[18:36:23]   第 4/5 块完成：60/60 句译文、6 个词  (in 1721 / out 13916 tokens)
+[18:36:49]   第 5/5 块完成：4/4 句译文、3 个词  (in 413 / out 1811 tokens)
+[18:36:49] 候选词汇 27 个 -> 去重 27 个
+[18:37:30]   词汇精选完成：27 个候选 -> 20 个最终词条  (out 3593 tokens)
+[18:37:30] 这一期翻译共 6 次调用、in 7686 / out 51497 tokens
+[18:37:30]   缓存到 D:\investment\douyin_download\data\episodes\100526-cbs-evening-news\claude_raw.json
+[18:37:30]   已入库 D:\investment\douyin_download\data\cbs.db（字幕 244 句、词汇 20 个）
+[18:37:30] 完成
+  英文来源: cbs-captions
+  字幕    : 244 句（中英对照）
+  词汇    : 20 个
+  中文字幕轨: D:\investment\douyin_download\data\episodes\100526-cbs-evening-news\subs_zh.vtt
+  输出    : D:\investment\douyin_download\data\episodes\100526-cbs-evening-news\latest_cbs.json  (67 KB)
+[18:37:30]   ✓ 100526-cbs-evening-news 完成，用时 620 秒
+[18:37:30] 全部结束：成功 3/3 期

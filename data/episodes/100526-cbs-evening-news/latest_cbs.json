@@ -1,0 +1,1839 @@
+{
+  "slug": "100526-cbs-evening-news",
+  "video": {
+    "slug": "100526-cbs-evening-news",
+    "video_id": "47ddae85-a3f4-4b7f-987a-748a6b077f40",
+    "title": "10/5: CBS Evening News",
+    "duration": 1174,
+    "upload_date": "2026-10-05T18:30:00-0400",
+    "channel": "CBS Evening News",
+    "webpage_url": "https://www.cbsnews.com/video/100526-cbs-evening-news/",
+    "hls_master": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4872048_hls/master.m3u8",
+    "hls_subs": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4872048_hls/subs_en.m3u8",
+    "audio_file": "audio.mp3",
+    "audio_size_mb": 4.48,
+    "audio_format": "16000Hz 32k mono mp3",
+    "local_video": null
+  },
+  "vocabulary": [
+    {
+      "word": "veer",
+      "level": "C1",
+      "meaning": "突然转向；偏离方向"
+    },
+    {
+      "word": "oncoming",
+      "level": "C1",
+      "meaning": "迎面而来的"
+    },
+    {
+      "word": "silver lining",
+      "level": "C1",
+      "meaning": "不幸中的一点慰藉；一线希望"
+    },
+    {
+      "word": "quarantine",
+      "level": "C1",
+      "meaning": "隔离；检疫"
+    },
+    {
+      "word": "sneak up on",
+      "level": "C1",
+      "meaning": "悄悄靠近；出其不意地接近"
+    },
+    {
+      "word": "brew",
+      "level": "C1",
+      "meaning": "（风暴、麻烦等）酝酿，形成"
+    },
+    {
+      "word": "infamous",
+      "level": "C1",
+      "meaning": "声名狼藉的，臭名昭著的"
+    },
+    {
+      "word": "slam into",
+      "level": "C1",
+      "meaning": "猛撞上，猛烈撞向"
+    },
+    {
+      "word": "backlash",
+      "level": "C1",
+      "meaning": "强烈反对，反弹"
+    },
+    {
+      "word": "tamper with",
+      "level": "C1",
+      "meaning": "篡改，擅自改动（证据等）"
+    },
+    {
+      "word": "parole",
+      "level": "C1",
+      "meaning": "假释"
+    },
+    {
+      "word": "appeal",
+      "level": "C1",
+      "meaning": "上诉"
+    },
+    {
+      "word": "out of an abundance of caution",
+      "level": "C1",
+      "meaning": "出于高度谨慎"
+    },
+    {
+      "word": "en route",
+      "level": "B2",
+      "meaning": "在途中；去…的路上"
+    },
+    {
+      "word": "shoot down",
+      "level": "B2",
+      "meaning": "击落（飞机等）"
+    },
+    {
+      "word": "record-breaking",
+      "level": "B2",
+      "meaning": "破纪录的，创纪录的"
+    },
+    {
+      "word": "broil",
+      "level": "C2",
+      "meaning": "炙烤；（使人）感到酷热难耐"
+    },
+    {
+      "word": "lone-wolf attack",
+      "level": "C2",
+      "meaning": "独狼式袭击；单人实施的恐怖袭击"
+    },
+    {
+      "word": "recuse",
+      "level": "C2",
+      "meaning": "回避（案件或调查）"
+    },
+    {
+      "word": "caucus",
+      "level": "C2",
+      "meaning": "加入（某党）党团；参加党团会议"
+    }
+  ],
+  "subtitles": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.5,
+      "en": "Good to be with you.",
+      "zh": "很高兴您能收看我们的节目。"
+    },
+    {
+      "index": 1,
+      "start": 1.5,
+      "end": 2.34,
+      "en": "I'm Tony Dokoupil.",
+      "zh": "我是托尼·多库皮尔。"
+    },
+    {
+      "index": 2,
+      "start": 2.34,
+      "end": 4.76,
+      "en": "The breaking news right now.",
+      "zh": "现在来看突发新闻。"
+    },
+    {
+      "index": 3,
+      "start": 4.76,
+      "end": 9.18,
+      "en": "A school bus filled with children mangled in a multivehicle crash.",
+      "zh": "一辆载满儿童的校车在多车相撞事故中被撞得严重变形。"
+    },
+    {
+      "index": 4,
+      "start": 9.18,
+      "end": 11.64,
+      "en": "At least two dead, including a tenth grader.",
+      "zh": "至少两人死亡，其中包括一名十年级学生。"
+    },
+    {
+      "index": 5,
+      "start": 11.64,
+      "end": 13.2,
+      "en": "More than 20 injured.",
+      "zh": "超过20人受伤。"
+    },
+    {
+      "index": 6,
+      "start": 13.2,
+      "end": 14.37,
+      "en": "What went wrong?",
+      "zh": "究竟哪里出了问题？"
+    },
+    {
+      "index": 7,
+      "start": 15.19,
+      "end": 17.08,
+      "en": "and the heroes who raced in to help.",
+      "zh": "还有冲上前去施救的英雄们。"
+    },
+    {
+      "index": 8,
+      "start": 17.08,
+      "end": 20.58,
+      "en": "Pneumonic plague fears after a Russian lab worker dies.",
+      "zh": "一名俄罗斯实验室工作人员死亡，引发肺鼠疫担忧。"
+    },
+    {
+      "index": 9,
+      "start": 20.58,
+      "end": 26.6,
+      "en": "Dozens quarantined after a test tube containing the deadly pathogen allegedly broke.",
+      "zh": "据称装有致命病原体的试管破裂后，数十人被隔离。"
+    },
+    {
+      "index": 10,
+      "start": 26.6,
+      "end": 29.64,
+      "en": "What US officials are saying tonight.",
+      "zh": "美国官员今晚有何表态。"
+    },
+    {
+      "index": 11,
+      "start": 29.64,
+      "end": 37.52,
+      "en": "What could be the first hurricane of the Atlantic storm season takes aim at the Gulf Coast, as dangerous heat broils the west.",
+      "zh": "可能成为本季大西洋首个飓风的风暴正瞄准墨西哥湾沿岸，与此同时危险高温炙烤着美国西部。"
+    },
+    {
+      "index": 12,
+      "start": 37.52,
+      "end": 40.32,
+      "en": "Rob Marciano tracking it all.",
+      "zh": "罗布·马尔恰诺将追踪报道相关情况。"
+    },
+    {
+      "index": 13,
+      "start": 40.32,
+      "end": 47.72,
+      "en": "A top chef killed in Los Angeles when a Range Rover, allegedly driven by a 16-year-old, plows into his car.",
+      "zh": "洛杉矶一名顶级厨师遇难，据称一辆由16岁少年驾驶的路虎撞上了他的车。"
+    },
+    {
+      "index": 14,
+      "start": 47.72,
+      "end": 49.54,
+      "en": "And turmoil at Cornell.",
+      "zh": "康奈尔大学陷入混乱。"
+    },
+    {
+      "index": 15,
+      "start": 49.54,
+      "end": 56.08,
+      "en": "The campus vandalized as new details emerge in that frat-house gang-rape investigation.",
+      "zh": "校园遭人破坏，兄弟会轮奸案调查也出现新细节。"
+    },
+    {
+      "index": 16,
+      "start": 56.08,
+      "end": 57.28,
+      "en": "And The Good Stuff.",
+      "zh": "接下来是暖心栏目《好东西》。"
+    },
+    {
+      "index": 17,
+      "start": 57.28,
+      "end": 62.23,
+      "en": "One of college football's greatest traditions has its biggest moment.",
+      "zh": "大学橄榄球最伟大的传统之一迎来最盛大的时刻。"
+    },
+    {
+      "index": 18,
+      "start": 62.23,
+      "end": 70.7,
+      "en": "NARRATOR: From CBS News headquarters in New York, this is the CBS Evening News with Tony Dokoupil.",
+      "zh": "这里是纽约 CBS 新闻总部。您正在收看的是由托尼·多库皮尔主持的《CBS晚间新闻》。"
+    },
+    {
+      "index": 19,
+      "start": 70.7,
+      "end": 72.03,
+      "en": "TONY DOKOUPIL: And good evening.",
+      "zh": "大家晚上好。"
+    },
+    {
+      "index": 20,
+      "start": 72.03,
+      "end": 73.75,
+      "en": "It's great to have you with us on a Monday night.",
+      "zh": "很高兴在这个周一晚上与您相伴。"
+    },
+    {
+      "index": 21,
+      "start": 73.75,
+      "end": 79.11,
+      "en": "We begin with what one Florida sheriff calls the most horrific bus tragedy we've had in decades.",
+      "zh": "我们首先关注一起被佛罗里达州一名警长称为数十年来最惨烈的校车事故。"
+    },
+    {
+      "index": 22,
+      "start": 79.11,
+      "end": 80.95,
+      "en": "It happened just before dawn this morning.",
+      "zh": "事故发生在今天清晨天亮之前。"
+    },
+    {
+      "index": 23,
+      "start": 80.95,
+      "end": 89.19,
+      "en": "A school bus with 37 students on board en route to Winter Haven High School flipped over onto its roof in a multivehicle accident.",
+      "zh": "一辆载有37名学生的校车在前往温特黑文高中的途中发生多车事故，翻了个底朝天。"
+    },
+    {
+      "index": 24,
+      "start": 89.19,
+      "end": 93.27,
+      "en": "One student is dead tonight, and everyone else on board rushed to a local hospital.",
+      "zh": "今晚已有一名学生死亡，车上其他人均被紧急送往当地医院。"
+    },
+    {
+      "index": 25,
+      "start": 93.27,
+      "end": 103.31,
+      "en": "According to investigators, a driver crossed the center line and crashed into the side of the bus, sending it into oncoming traffic and killing at least one other driver.",
+      "zh": "调查人员称，一名司机越过中心线撞上校车侧面，导致校车冲入对向车流，并造成至少另一名司机死亡。"
+    },
+    {
+      "index": 26,
+      "start": 103.31,
+      "end": 106.53,
+      "en": "Cristian Benavides leads us off with the latest.",
+      "zh": "克里斯蒂安·贝纳维德斯首先带来最新情况。"
+    },
+    {
+      "index": 27,
+      "start": 106.53,
+      "end": 109.67,
+      "en": "DISPATCH: A school bus has flipped over at this time, 6:15.",
+      "zh": "一辆校车此时已经翻车，时间是6点15分。"
+    },
+    {
+      "index": 28,
+      "start": 109.67,
+      "end": 113.53,
+      "en": "CRISTIAN BENAVIDES: A tragic start to the school week in Winter Haven, Florida.",
+      "zh": "对佛罗里达州温特黑文来说，这是学校这一周悲惨的开端。"
+    },
+    {
+      "index": 29,
+      "start": 113.53,
+      "end": 121.93,
+      "en": "This school bus, loaded with high-school students, became a twisted heap of metal in a grassy ditch following a deadly multivehicle car accident.",
+      "zh": "在发生致命的多车相撞事故后，这辆满载高中生的校车在长满草的沟渠里变成了一堆扭曲的金属。"
+    },
+    {
+      "index": 30,
+      "start": 121.93,
+      "end": 124.17,
+      "en": "DISPATCH: There are injuries to children on the bus.",
+      "zh": "校车上有儿童受伤。"
+    },
+    {
+      "index": 31,
+      "start": 124.17,
+      "end": 128.25,
+      "en": "CRISTIAN BENAVIDES: The bus ended up lying upside down, its front end ripped off.",
+      "zh": "校车最终底朝天翻倒在地，车头被撞掉。"
+    },
+    {
+      "index": 32,
+      "start": 128.25,
+      "end": 136.31,
+      "en": "We have two fatalities, and we had a total of about five to seven trauma alerts.",
+      "zh": "目前已有两人死亡，另有约五到七人需要创伤急救。"
+    },
+    {
+      "index": 33,
+      "start": 136.31,
+      "end": 142.11,
+      "en": "They left here in helicopters, ambulances, and private vehicles.",
+      "zh": "伤者由直升机、救护车和私家车送离现场。"
+    },
+    {
+      "index": 34,
+      "start": 142.11,
+      "end": 153.85,
+      "en": "CRISTIAN BENAVIDES: The school bus, carrying 39 people, was heading eastbound when a white car driving in the opposite direction suddenly veered over the line and hit the bus, forcing it head on into a Jeep, which caught fire.",
+      "zh": "当时这辆载有39人的校车正朝东行驶，一辆反方向行驶的白色汽车突然越过中线撞上校车，导致校车迎面撞上一辆吉普车，吉普车随后起火。"
+    },
+    {
+      "index": 35,
+      "start": 153.85,
+      "end": 157.11,
+      "en": "The driver of the Jeep and a tenth grader on the bus were killed.",
+      "zh": "吉普车司机和校车上的一名十年级学生死亡。"
+    },
+    {
+      "index": 36,
+      "start": 157.11,
+      "end": 159.81,
+      "en": "Aniyah Urbaez was driving to work.",
+      "zh": "阿尼娅·乌尔巴埃兹当时正开车去上班。"
+    },
+    {
+      "index": 37,
+      "start": 159.81,
+      "end": 162.25,
+      "en": "She jumped out of her vehicle and rushed to help.",
+      "zh": "她跳下车，冲过去帮忙。"
+    },
+    {
+      "index": 38,
+      "start": 162.25,
+      "end": 167.67,
+      "en": "I tried to ask them if they were OK, what hurts, where they were bleeding from.",
+      "zh": "我试着问他们还好吗，哪里疼，血是从哪里流出来的。"
+    },
+    {
+      "index": 39,
+      "start": 167.67,
+      "end": 169.73,
+      "en": "And, luckily, I had a first aid kit in my car.",
+      "zh": "幸运的是，我车里有急救包。"
+    },
+    {
+      "index": 40,
+      "start": 169.73,
+      "end": 174.45,
+      "en": "CRISTIAN BENAVIDES: The bus driver and his nine-year-old daughter, who was also on the bus, survived.",
+      "zh": "校车司机和他同在车上的9岁女儿幸免于难。"
+    },
+    {
+      "index": 41,
+      "start": 174.45,
+      "end": 179.26,
+      "en": "Police helped other parents who responded to the scene reunite with their children.",
+      "zh": "警方帮助赶到现场的其他家长与孩子们团聚。"
+    },
+    {
+      "index": 42,
+      "start": 179.26,
+      "end": 184.13,
+      "en": "GRADY JUDD: The silver lining is there wasn't more fatalities than there were.",
+      "zh": "不幸中的万幸是死亡人数没有更多。"
+    },
+    {
+      "index": 43,
+      "start": 184.13,
+      "end": 187.84,
+      "en": "The National Transportation Safety Board is investigating the crash.",
+      "zh": "美国国家运输安全委员会正在调查这起事故。"
+    },
+    {
+      "index": 44,
+      "start": 187.84,
+      "end": 197.04,
+      "en": "Meantime, school officials say that students have practiced drills on what to do in the event of a bus crash and that that likely saved many lives.",
+      "zh": "与此同时，校方表示学生们此前演练过校车事故应对方法，这可能挽救了许多人的生命。"
+    },
+    {
+      "index": 45,
+      "start": 197.04,
+      "end": 197.64,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 46,
+      "start": 197.64,
+      "end": 199.48,
+      "en": "Cristian, thank you very much.",
+      "zh": "克里斯蒂安，非常感谢。"
+    },
+    {
+      "index": 47,
+      "start": 199.48,
+      "end": 210.92,
+      "en": "We turn now to that troubling news out of Siberia today, the death of a Russian lab worker at an institute focused on the plague, that notorious bacterial infection tied to medieval pandemics like the Black Death.",
+      "zh": "现在我们来关注今天从西伯利亚传来的令人不安的消息：一名在鼠疫研究机构工作的俄罗斯实验室工作人员去世。鼠疫就是那种与黑死病等中世纪大流行病有关的臭名昭著的细菌感染。"
+    },
+    {
+      "index": 48,
+      "start": 210.92,
+      "end": 214.04,
+      "en": "President Trump today called it a big problem for Russia.",
+      "zh": "特朗普总统今天称，这对俄罗斯来说是个大问题。"
+    },
+    {
+      "index": 49,
+      "start": 214.04,
+      "end": 218.9,
+      "en": "Here's Senior Foreign Correspondent Ramy Inocencio with what we know.",
+      "zh": "下面由资深驻外记者拉米·伊诺森西奥带来我们目前了解的情况。"
+    },
+    {
+      "index": 50,
+      "start": 218.9,
+      "end": 220.22,
+      "en": "Tony, yes, good evening.",
+      "zh": "托尼，你好，晚上好。"
+    },
+    {
+      "index": 51,
+      "start": 220.22,
+      "end": 226.78,
+      "en": "The Kremlin today pushed back against those reports that a plague researcher died after a test tube she was handling broke.",
+      "zh": "克里姆林宫今天驳斥了有关一名鼠疫研究人员因操作的试管破裂而死亡的报道。"
+    },
+    {
+      "index": 52,
+      "start": 226.78,
+      "end": 231.46,
+      "en": "This happened in late September at the Irkutsk Anti-Plague Institute in Siberia.",
+      "zh": "这起事件发生在九月底，地点是西伯利亚的伊尔库茨克抗鼠疫研究所。"
+    },
+    {
+      "index": 53,
+      "start": 231.46,
+      "end": 234.0,
+      "en": "That's about 2,600 miles east of Moscow.",
+      "zh": "那里位于莫斯科以东约2600英里处。"
+    },
+    {
+      "index": 54,
+      "start": 234.0,
+      "end": 248.76,
+      "en": "Russian media said that the researcher died from pneumonic plague, which attacks the lungs and can be transmitted from person to person, but Russia's health watchdog denied those reports, instead saying that she died from pneumonia of unknown origin.",
+      "zh": "俄罗斯媒体称，这名研究人员死于肺鼠疫。肺鼠疫会侵袭肺部，并可在人与人之间传播。但俄罗斯卫生监督机构否认了这些报道，称她死于原因不明的肺炎。"
+    },
+    {
+      "index": 55,
+      "start": 248.76,
+      "end": 258.46,
+      "en": "Russian media also reported about 200 people were placed under observation and that five hospitals were quarantined for a period, but all tests have since come back negative.",
+      "zh": "俄罗斯媒体还报道称，约200人被置于医学观察之下，5家医院一度被隔离，但此后所有检测结果均为阴性。"
+    },
+    {
+      "index": 56,
+      "start": 258.46,
+      "end": 262.6,
+      "en": "This is the same bacteria that caused the Black Death in the Middle Ages.",
+      "zh": "这就是在中世纪引发黑死病的同一种细菌。"
+    },
+    {
+      "index": 57,
+      "start": 262.6,
+      "end": 271.2,
+      "en": "Symptoms of pneumonic plague include fever, shortness of breath, and bloody mucus, but it is treatable with antibiotics, if caught early.",
+      "zh": "肺鼠疫的症状包括发烧、呼吸急促和咳血性痰，但如果及早发现，可以用抗生素治疗。"
+    },
+    {
+      "index": 58,
+      "start": 271.2,
+      "end": 279.86,
+      "en": "President Trump said today the US will help Russia if needed, and the World Health Organization told CBS News that the risk to the general public is very low.",
+      "zh": "特朗普总统今天表示，如果需要，美国将帮助俄罗斯。世界卫生组织告诉 CBS 新闻，公众面临的风险非常低。"
+    },
+    {
+      "index": 59,
+      "start": 279.86,
+      "end": 280.44,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 60,
+      "start": 280.44,
+      "end": 281.72,
+      "en": "All right, Ramy, thank you.",
+      "zh": "好的，拉米，谢谢你。"
+    },
+    {
+      "index": 61,
+      "start": 281.72,
+      "end": 290.18,
+      "en": "And we have new reporting tonight on that flydubai copilot who attacked the captain and tried to crash the jet en route to Tel Aviv and the heroes who fought back.",
+      "zh": "今晚我们还有一则最新报道，讲的是那名袭击机长、试图在飞往特拉维夫途中让飞机坠毁的迪拜航空副驾驶，以及奋起反击的英雄们。"
+    },
+    {
+      "index": 62,
+      "start": 290.18,
+      "end": 294.21,
+      "en": "Chief Correspondent Matt Gutman reports tonight from the United Arab Emirates.",
+      "zh": "首席记者马特·古特曼今晚从阿拉伯联合酋长国发回报道。"
+    },
+    {
+      "index": 63,
+      "start": 296.37,
+      "end": 307.81,
+      "en": "MATT GUTMAN: In the minutes after chaos took over Flight 1073, Israel was prepared, if the flight continued into Israeli territory, for fighter jets to shoot it down, according to Israeli sources.",
+      "zh": "据以色列消息人士称，在1073航班陷入混乱后的几分钟内，以色列已做好准备：如果该航班继续进入以色列领空，就会派战斗机将其击落。"
+    },
+    {
+      "index": 64,
+      "start": 307.81,
+      "end": 316.23,
+      "en": "CBS News has also learned that copilot Hamam al-Hammami, a citizen of Oman, had planned to crash the plane into Israel's main airport.",
+      "zh": "CBS新闻还了解到，副驾驶哈马姆·阿尔-哈马米是阿曼公民，他原本计划让飞机撞向以色列的主要机场。"
+    },
+    {
+      "index": 65,
+      "start": 316.23,
+      "end": 324.35,
+      "en": "An Israeli officials said he had planned the attack before being hired by flydubai earlier this year and had flown to Israel several times before.",
+      "zh": "一名以色列官员表示，他在今年早些时候被迪拜航空聘用之前就已经策划了这次袭击，而且此前曾多次飞往以色列。"
+    },
+    {
+      "index": 66,
+      "start": 324.35,
+      "end": 325.63,
+      "en": "PASSENGER: Go in for you.",
+      "zh": "我进去帮你。"
+    },
+    {
+      "index": 67,
+      "start": 325.63,
+      "end": 332.46,
+      "en": "MATT GUTMAN: The UAE says Hamam attacked Captain Smit Machchhar with a cockpit crash ax, allegedly sneaking up behind him.",
+      "zh": "阿联酋方面称，哈马姆用驾驶舱里的应急斧袭击了机长斯米特·马奇哈尔，据称是悄悄从背后靠近下手的。"
+    },
+    {
+      "index": 68,
+      "start": 332.46,
+      "end": 336.69,
+      "en": "The captain spoke to Israel's prime minister, Benjamin Netanyahu, this past weekend.",
+      "zh": "机长上周末与以色列总理本雅明·内塔尼亚胡通了话。"
+    },
+    {
+      "index": 69,
+      "start": 336.69,
+      "end": 340.67,
+      "en": "SMIT MACHCHHAR: Suddenly, there was a big blow to the back of my head.",
+      "zh": "突然，我的后脑勺遭到一记重击。"
+    },
+    {
+      "index": 70,
+      "start": 340.67,
+      "end": 342.22,
+      "en": "PASSENGERS: No!",
+      "zh": "不要！"
+    },
+    {
+      "index": 71,
+      "start": 342.22,
+      "end": 349.39,
+      "en": "MATT GUTMAN: With his last bit of strength, the captain managed to open the cockpit door, and a group of Israeli passengers rushed in.",
+      "zh": "机长用尽最后一点力气打开驾驶舱门，一群以色列乘客冲了进去。"
+    },
+    {
+      "index": 72,
+      "start": 349.39,
+      "end": 351.21,
+      "en": "This is a kill or be killed moment.",
+      "zh": "这是一个不是你死就是我亡的时刻。"
+    },
+    {
+      "index": 73,
+      "start": 351.21,
+      "end": 352.01,
+      "en": "Is that correct?",
+      "zh": "对吗？"
+    },
+    {
+      "index": 74,
+      "start": 352.01,
+      "end": 352.77,
+      "en": "Yeah.",
+      "zh": "是的。"
+    },
+    {
+      "index": 75,
+      "start": 352.77,
+      "end": 354.15,
+      "en": "And what did you decide?",
+      "zh": "那你当时做了什么决定？"
+    },
+    {
+      "index": 76,
+      "start": 354.15,
+      "end": 359.79,
+      "en": "I decided that we are going to survive, try to survive, try to save my family, my daughters.",
+      "zh": "我决定我们要活下去，努力活下去，努力救我的家人和女儿们。"
+    },
+    {
+      "index": 77,
+      "start": 359.79,
+      "end": 367.77,
+      "en": "PASSENGER: I tell you-- MATT GUTMAN: Israeli dentist Dr. Shota Musaev treated Captain Machchhar's wounds but also spoke to the copilot.",
+      "zh": "我跟你说——以色列牙医肖塔·穆萨耶夫医生处理了马奇哈尔机长的伤口，还与副驾驶交谈过。"
+    },
+    {
+      "index": 78,
+      "start": 367.77,
+      "end": 370.29,
+      "en": "I ask from where he.",
+      "zh": "我问他来自哪里。"
+    },
+    {
+      "index": 79,
+      "start": 370.29,
+      "end": 372.33,
+      "en": "He said to me, from Oman.",
+      "zh": "他对我说，来自阿曼。"
+    },
+    {
+      "index": 80,
+      "start": 372.33,
+      "end": 376.69,
+      "en": "And after two minutes, he said to me, \"Kill me.",
+      "zh": "过了两分钟，他对我说：“杀了我。"
+    },
+    {
+      "index": 81,
+      "start": 376.69,
+      "end": 377.32,
+      "en": "Kill me.\"",
+      "zh": "杀了我。”"
+    },
+    {
+      "index": 82,
+      "start": 377.32,
+      "end": 378.15,
+      "en": "He said, \"Kill me.",
+      "zh": "他说：“杀了我。"
+    },
+    {
+      "index": 83,
+      "start": 378.15,
+      "end": 378.55,
+      "en": "Kill me.\"",
+      "zh": "杀了我。”"
+    },
+    {
+      "index": 84,
+      "start": 378.55,
+      "end": 378.73,
+      "en": "Yes.",
+      "zh": "是的。"
+    },
+    {
+      "index": 85,
+      "start": 378.73,
+      "end": 379.71,
+      "en": "TONY DOKOUPIL: Multiple times?",
+      "zh": "说了好几次吗？"
+    },
+    {
+      "index": 86,
+      "start": 379.71,
+      "end": 380.65,
+      "en": "Yes.",
+      "zh": "是的。"
+    },
+    {
+      "index": 87,
+      "start": 380.65,
+      "end": 387.27,
+      "en": "Israel is working under the assumption that this was a lone-wolf attack, but there are two separate investigations going on here.",
+      "zh": "以色列目前是按“独狼式袭击”的假设来处理的，但这里有两项独立调查正在进行。"
+    },
+    {
+      "index": 88,
+      "start": 387.27,
+      "end": 390.71,
+      "en": "The first is into what exactly al-Hammami was planning.",
+      "zh": "第一项调查聚焦于阿尔-哈马米究竟在策划什么。"
+    },
+    {
+      "index": 89,
+      "start": 390.71,
+      "end": 401.53,
+      "en": "The other, which is playing out here in the UAE and in Israel, focuses on how a pilot with known extremist views was allowed to fly a plane into Israel, Tony.",
+      "zh": "另一项正在阿联酋和以色列展开，重点是为什么一个已知有极端主义观点的飞行员会被允许驾驶飞机进入以色列，托尼。"
+    },
+    {
+      "index": 90,
+      "start": 401.53,
+      "end": 402.55,
+      "en": "Matt, thank you.",
+      "zh": "马特，谢谢你。"
+    },
+    {
+      "index": 91,
+      "start": 402.55,
+      "end": 407.07,
+      "en": "We turn now to the weather system brewing in the Gulf that could develop into a tropical storm.",
+      "zh": "我们现在转向墨西哥湾正在酝酿的一个天气系统，它可能发展成热带风暴。"
+    },
+    {
+      "index": 92,
+      "start": 407.07,
+      "end": 412.22,
+      "en": "Meteorologist Rob Marciano is tracking that, as well as the dangerous heat in the West.",
+      "zh": "气象学家罗布·马尔恰诺正在追踪这一系统，以及美国西部危险的高温天气。"
+    },
+    {
+      "index": 93,
+      "start": 412.22,
+      "end": 414.58,
+      "en": "Good evening, Rob.",
+      "zh": "晚上好，罗布。"
+    },
+    {
+      "index": 94,
+      "start": 414.58,
+      "end": 415.16,
+      "en": "Hey, Tony.",
+      "zh": "嗨，托尼。"
+    },
+    {
+      "index": 95,
+      "start": 415.16,
+      "end": 417.29,
+      "en": "We've had eight tropical storms, no hurricanes yet.",
+      "zh": "目前已经出现了八场热带风暴，但还没有飓风。"
+    },
+    {
+      "index": 96,
+      "start": 417.29,
+      "end": 420.01,
+      "en": "This is the deepest we've gone without a hurricane.",
+      "zh": "这是今年飓风季持续至今还没有出现飓风的最晚纪录。"
+    },
+    {
+      "index": 97,
+      "start": 420.01,
+      "end": 424.46,
+      "en": "Unsure whether this one will become one, but it's in an area that's favorable for it this time of year.",
+      "zh": "目前还不确定它会不会成为飓风，但它所在的海域在每年这个时候正适合飓风发展。"
+    },
+    {
+      "index": 98,
+      "start": 424.46,
+      "end": 432.26,
+      "en": "In the Gulf, the Bay of Campeche, the southwest corner there, 80% chance of developing into a tropical cyclone and then potentially developing a name.",
+      "zh": "在墨西哥湾的坎佩切湾，也就是西南角一带，有80%的可能性发展成热带气旋，之后可能获得命名。"
+    },
+    {
+      "index": 99,
+      "start": 432.26,
+      "end": 435.9,
+      "en": "Most of the models bring, in some case, somewhere between New Orleans and Tampa.",
+      "zh": "大多数模型显示，它可能会在某个时候抵达新奥尔良和坦帕之间的某个地方。"
+    },
+    {
+      "index": 100,
+      "start": 435.9,
+      "end": 437.28,
+      "en": "At what strength, we're not sure.",
+      "zh": "具体会是什么强度，我们还不确定。"
+    },
+    {
+      "index": 101,
+      "start": 437.28,
+      "end": 443.2,
+      "en": "But getting closer to the weekend, anywhere from 4 to 8 or 10 inches or more of rainfall in these areas.",
+      "zh": "但临近周末时，这些地区的降雨量可能在4到8英寸或10英寸以上不等。"
+    },
+    {
+      "index": 102,
+      "start": 443.2,
+      "end": 445.2,
+      "en": "That much is likely going to happen.",
+      "zh": "这一点很可能会发生。"
+    },
+    {
+      "index": 103,
+      "start": 445.2,
+      "end": 447.68,
+      "en": "Meanwhile, in the West, 100 degrees again today.",
+      "zh": "与此同时，西部今天又是华氏100度。"
+    },
+    {
+      "index": 104,
+      "start": 447.68,
+      "end": 449.7,
+      "en": "This is four days in a row for LA.",
+      "zh": "洛杉矶已经连续四天如此。"
+    },
+    {
+      "index": 105,
+      "start": 449.7,
+      "end": 451.28,
+      "en": "That is an all-time record.",
+      "zh": "这是历史最高纪录。"
+    },
+    {
+      "index": 106,
+      "start": 451.28,
+      "end": 453.56,
+      "en": "Tomorrow's highs may very well break records again.",
+      "zh": "明天的最高气温很可能再次打破纪录。"
+    },
+    {
+      "index": 107,
+      "start": 453.56,
+      "end": 457.14,
+      "en": "Extreme heat warnings remain there, in Santa Barbara as well.",
+      "zh": "极端高温警报仍在当地以及圣巴巴拉生效。"
+    },
+    {
+      "index": 108,
+      "start": 457.14,
+      "end": 459.14,
+      "en": "Burbank, you're up and over a hundred degrees.",
+      "zh": "伯班克，你那里的气温也超过了一百度。"
+    },
+    {
+      "index": 109,
+      "start": 459.14,
+      "end": 462.08,
+      "en": "There will be some cooling on Friday, but look at the next three days.",
+      "zh": "周五会有所降温，但看看接下来三天。"
+    },
+    {
+      "index": 110,
+      "start": 462.08,
+      "end": 465.46,
+      "en": "Sacramento, probably three days in a row of record-breaking heat.",
+      "zh": "萨克拉门托可能连续三天出现破纪录的高温。"
+    },
+    {
+      "index": 111,
+      "start": 465.46,
+      "end": 468.08,
+      "en": "LA again tomorrow and into Vegas as well.",
+      "zh": "洛杉矶明天再次如此，拉斯维加斯也一样。"
+    },
+    {
+      "index": 112,
+      "start": 468.08,
+      "end": 471.24,
+      "en": "So looks to be a warm week ahead for our friends in the West.",
+      "zh": "所以对西部的朋友们来说，接下来一周看起来会很热。"
+    },
+    {
+      "index": 113,
+      "start": 471.24,
+      "end": 471.78,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 114,
+      "start": 471.78,
+      "end": 472.66,
+      "en": "Rob, thank you.",
+      "zh": "罗布，谢谢你。"
+    },
+    {
+      "index": 115,
+      "start": 472.66,
+      "end": 481.68,
+      "en": "We turn now to another deadly crash, allegedly involving a 16-year-old in a Range Rover that killed a chef at one of America's top sushi restaurants.",
+      "zh": "我们现在转向另一起致命车祸，据称涉及一名16岁少年驾驶的路虎，事故导致美国顶级寿司店之一的一名厨师身亡。"
+    },
+    {
+      "index": 116,
+      "start": 481.68,
+      "end": 485.36,
+      "en": "CBS's Carter Evans is in Los Angeles with what happened.",
+      "zh": "CBS记者卡特·埃文斯在洛杉矶报道事件经过。"
+    },
+    {
+      "index": 117,
+      "start": 485.36,
+      "end": 486.6,
+      "en": "Carter.",
+      "zh": "卡特。"
+    },
+    {
+      "index": 118,
+      "start": 486.6,
+      "end": 487.22,
+      "en": "That's right.",
+      "zh": "没错。"
+    },
+    {
+      "index": 119,
+      "start": 487.22,
+      "end": 488.01,
+      "en": "Good evening, Tony.",
+      "zh": "晚上好，托尼。"
+    },
+    {
+      "index": 120,
+      "start": 488.01,
+      "end": 494.62,
+      "en": "We're learning new details tonight about yet another death on this infamous stretch of Pacific Coast Highway in Malibu.",
+      "zh": "今晚我们了解到又一起死亡事件的新细节，事发地是马里布太平洋海岸公路上那段臭名昭著的路段。"
+    },
+    {
+      "index": 121,
+      "start": 494.62,
+      "end": 499.42,
+      "en": "The crash, caught on security cameras, happened just before 7:00 AM on Saturday morning.",
+      "zh": "这起被监控摄像头拍下的撞车事故发生在周六早上快到7点的时候。"
+    },
+    {
+      "index": 122,
+      "start": 502.8,
+      "end": 505.42,
+      "en": "A Range Rover slammed into a parked car.",
+      "zh": "一辆路虎揽胜狠狠撞上了一辆停着的车。"
+    },
+    {
+      "index": 123,
+      "start": 505.42,
+      "end": 509.32,
+      "en": "The force of the impact crushing the rear of that car.",
+      "zh": "撞击力把被撞车的尾部都撞瘪了。"
+    },
+    {
+      "index": 124,
+      "start": 509.32,
+      "end": 519.22,
+      "en": "Now, this happened right near the well-known Nobu restaurant, and it turns out one of the sushi chefs was apparently sleeping before his shift in the back seat of the car that was hit.",
+      "zh": "事情发生在知名餐厅Nobu附近，结果发现，被撞车辆后座上的一名寿司厨师显然正在轮班前补觉。"
+    },
+    {
+      "index": 125,
+      "start": 519.22,
+      "end": 524.06,
+      "en": "Investigators say 51-year-old Ryo Uchimiya was pronounced dead at the scene.",
+      "zh": "调查人员表示，51岁的Ryo Uchimiya被宣布当场死亡。"
+    },
+    {
+      "index": 126,
+      "start": 524.06,
+      "end": 528.9,
+      "en": "The LA County Sheriff's Department says a 16-year-old boy was driving the Range Rover.",
+      "zh": "洛杉矶县警长办公室表示，驾驶路虎的是个16岁的男孩。"
+    },
+    {
+      "index": 127,
+      "start": 528.9,
+      "end": 537.19,
+      "en": "And the cause of the crash is still under investigation, but right now, it does not appear that the driver was under the influence, and so far, no charges.",
+      "zh": "事故原因仍在调查中，但目前看起来司机没有酒驾或毒驾，而且至今尚未提出指控。"
+    },
+    {
+      "index": 128,
+      "start": 537.19,
+      "end": 542.01,
+      "en": "Now, more than 60 people have been killed on this stretch of the highway since 2010.",
+      "zh": "自2010年以来，已有超过60人在这段高速公路上丧生。"
+    },
+    {
+      "index": 129,
+      "start": 542.01,
+      "end": 546.13,
+      "en": "Several speed cameras are being tested right now, and get this.",
+      "zh": "几个测速摄像头目前正在测试，你听好了。"
+    },
+    {
+      "index": 130,
+      "start": 546.13,
+      "end": 551.75,
+      "en": "The cameras recently logged more than 100,000 speeding violations over a nine-day period.",
+      "zh": "这些摄像头最近在9天里记录到超过10万起超速违法。"
+    },
+    {
+      "index": 131,
+      "start": 551.75,
+      "end": 556.81,
+      "en": "Tony, that is roughly 11,000 speeders per day.",
+      "zh": "托尼，这大约是每天1.1万名超速司机。"
+    },
+    {
+      "index": 132,
+      "start": 556.81,
+      "end": 557.71,
+      "en": "Carter, thank you.",
+      "zh": "卡特，谢谢。"
+    },
+    {
+      "index": 133,
+      "start": 557.71,
+      "end": 568.53,
+      "en": "We turn now to the growing backlash against Cornell University as more information comes out about the Ivy League school's original response to an alleged gang rape two years ago inside a frat house on campus.",
+      "zh": "我们接下来关注康奈尔大学日益增长的强烈反对。随着更多信息曝光，这所常春藤盟校两年前对校园兄弟会会所内一起涉嫌轮奸案最初的处理方式遭到质疑。"
+    },
+    {
+      "index": 134,
+      "start": 568.53,
+      "end": 573.05,
+      "en": "CBS's Lilia Luciano is at the school tonight with new developments.",
+      "zh": "CBS的Lilia Luciano今晚在学校带来最新进展。"
+    },
+    {
+      "index": 135,
+      "start": 573.05,
+      "end": 573.99,
+      "en": "One struggle.",
+      "zh": "一场斗争。"
+    },
+    {
+      "index": 136,
+      "start": 573.99,
+      "end": 575.27,
+      "en": "WOMAN: One fight.",
+      "zh": "女声：一场战斗。"
+    },
+    {
+      "index": 137,
+      "start": 575.27,
+      "end": 576.17,
+      "en": "CROWD: One fight.",
+      "zh": "人群：一场战斗。"
+    },
+    {
+      "index": 138,
+      "start": 576.17,
+      "end": 581.29,
+      "en": "LILIA LUCIANO: A turbulent start to the week, with growing frustration and anger.",
+      "zh": "LILIA LUCIANO：本周开局动荡，不满和愤怒情绪不断升温。"
+    },
+    {
+      "index": 139,
+      "start": 581.29,
+      "end": 591.82,
+      "en": "Overnight, students vandalized a Cornell administration office over the university's handling of the alleged sexual assault of a former student at the Chi Phi fraternity in October 2024.",
+      "zh": "夜里，学生们破坏了康奈尔大学的一间行政办公室，以表达对校方处理2024年10月Chi Phi兄弟会前学生疑似遭性侵事件的不满。"
+    },
+    {
+      "index": 140,
+      "start": 591.82,
+      "end": 598.46,
+      "en": "This after the university president promised to do better, pledging more transparency and accountability.",
+      "zh": "而在此之前，校长还承诺会改进，保证提高透明度和问责力度。"
+    },
+    {
+      "index": 141,
+      "start": 598.46,
+      "end": 600.4,
+      "en": "No one was criminally charged.",
+      "zh": "没有人受到刑事起诉。"
+    },
+    {
+      "index": 142,
+      "start": 600.4,
+      "end": 601.04,
+      "en": "Cornell says.",
+      "zh": "康奈尔大学表示。"
+    },
+    {
+      "index": 143,
+      "start": 601.04,
+      "end": 608.34,
+      "en": "It conducted a Title IX investigation and, according to the New York Times, found at least one of the frat members responsible for sexual assault.",
+      "zh": "校方进行了Title IX调查，据《纽约时报》报道，发现至少一名兄弟会成员对性侵负有责任。"
+    },
+    {
+      "index": 144,
+      "start": 608.34,
+      "end": 621.11,
+      "en": "Being held accountable for a sexual assault or sexual misconduct in the Title IX context does not necessarily lend itself over to a criminal charge.",
+      "zh": "在Title IX框架下因性侵或性不当行为被追责，并不一定会转化为刑事指控。"
+    },
+    {
+      "index": 145,
+      "start": 621.11,
+      "end": 628.18,
+      "en": "LILIA LUCIANO: The woman, now identified as Jane Doe, filed a civil lawsuit last month against Cornell and seven members of the fraternity.",
+      "zh": "LILIA LUCIANO：这名女子现以Jane Doe的化名，上个月对康奈尔大学和7名兄弟会成员提起民事诉讼。"
+    },
+    {
+      "index": 146,
+      "start": 628.18,
+      "end": 636.42,
+      "en": "The lawsuit included Snapchat messages where frat brothers invited others to join in, with one man advertising free sex.",
+      "zh": "诉讼中包含Snapchat消息，兄弟会成员在群里拉人加入，其中一名男子还打出“免费性行为”的广告。"
+    },
+    {
+      "index": 147,
+      "start": 636.42,
+      "end": 639.68,
+      "en": "A student on campus confronted one of the accused.",
+      "zh": "校园里一名学生与其中一名被指控者对峙。"
+    },
+    {
+      "index": 148,
+      "start": 639.68,
+      "end": 642.55,
+      "en": "STUDENT: Were you in the group chat, Chi Phi actors?",
+      "zh": "学生：你在那个群聊里吗，Chi Phi的人？"
+    },
+    {
+      "index": 149,
+      "start": 642.55,
+      "end": 644.26,
+      "en": "GILLIO LOPES: There were 60 people in it.",
+      "zh": "GILLIO LOPES：里面有60个人。"
+    },
+    {
+      "index": 150,
+      "start": 644.26,
+      "end": 646.84,
+      "en": "STUDENT: Yeah, and none of you did [BLEEP].",
+      "zh": "学生：是啊，你们没一个人（哔——）。"
+    },
+    {
+      "index": 151,
+      "start": 646.84,
+      "end": 650.48,
+      "en": "GILLIO LOPES: I had nothing to do with it.",
+      "zh": "GILLIO LOPES：我跟这件事毫无关系。"
+    },
+    {
+      "index": 152,
+      "start": 650.48,
+      "end": 657.3,
+      "en": "The attorney for the man seen on that video said no one should be harassed, confronted, or effectively be put on trial on the street.",
+      "zh": "视频中那名男子的律师表示，任何人不该被骚扰、当面对质，或者在大街上被变相审判。"
+    },
+    {
+      "index": 153,
+      "start": 657.3,
+      "end": 667.6,
+      "en": "He's now calling for Attorney General Letitia James to recuse herself from the investigation because of comments she made about the case before being appointed as special prosecutor.",
+      "zh": "他现在呼吁总检察长Letitia James回避此调查，因为她在被任命为特别检察官之前曾就此案发表过评论。"
+    },
+    {
+      "index": 154,
+      "start": 667.6,
+      "end": 668.32,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 155,
+      "start": 668.32,
+      "end": 669.72,
+      "en": "Lilia, thank you.",
+      "zh": "莉莉亚，谢谢。"
+    },
+    {
+      "index": 156,
+      "start": 669.72,
+      "end": 677.3,
+      "en": "The US military removed all its B-1 bombers from a British air base over the weekend out of concern for potential attacks linked to Iran.",
+      "zh": "出于对与伊朗有关的潜在袭击的担忧，美军周末将所有B-1轰炸机从一处英国空军基地撤走。"
+    },
+    {
+      "index": 157,
+      "start": 677.3,
+      "end": 678.1,
+      "en": "What were they?",
+      "zh": "它们是什么？"
+    },
+    {
+      "index": 158,
+      "start": 678.1,
+      "end": 682.06,
+      "en": "Senior National Security Correspondent Charlie D'Agata is looking into this.",
+      "zh": "高级国家安全记者Charlie D'Agata正在调查此事。"
+    },
+    {
+      "index": 159,
+      "start": 682.06,
+      "end": 690.86,
+      "en": "CHARLIE D'AGATA: The urgent departure of around a dozen B-1 bombers from the UK base at the center of a potential terror plot is raising new questions tonight.",
+      "zh": "CHARLIE D'AGATA：约12架B-1轰炸机从一个处于潜在恐怖阴谋中心的英国基地紧急撤离，今晚引发新的疑问。"
+    },
+    {
+      "index": 160,
+      "start": 690.86,
+      "end": 699.12,
+      "en": "The New York Times reporting some of the jets left so fast, refueling aircraft had to scramble to support their flights back to the US.",
+      "zh": "《纽约时报》报道，一些战机离开得太快，加油机不得不紧急起飞为它们返回美国提供支援。"
+    },
+    {
+      "index": 161,
+      "start": 699.12,
+      "end": 703.78,
+      "en": "Vice President JD Vance said today it was done out of an abundance of caution.",
+      "zh": "副总统JD万斯今天表示，这样做是出于高度谨慎。"
+    },
+    {
+      "index": 162,
+      "start": 703.78,
+      "end": 712.75,
+      "en": "We do feel, with some confidence, that the Iranians, they're trying to do what the Iranian state has done for 49 years, which is engage in acts of terrorism against the United States.",
+      "zh": "我们确实比较有信心地认为，伊朗人正试图做伊朗国家49年来一直在做的事情，那就是对美国实施恐怖主义活动。"
+    },
+    {
+      "index": 163,
+      "start": 712.75,
+      "end": 717.19,
+      "en": "CHARLIE D'AGATA: The base RAF Fairford has served as a launch pad for US attacks in Iran.",
+      "zh": "CHARLIE D'AGATA：RAF Fairford基地一直是美国对伊朗实施打击的出发地。"
+    },
+    {
+      "index": 164,
+      "start": 717.19,
+      "end": 721.93,
+      "en": "With bombers parked on the tarmac, it's vulnerable to potential drone attacks.",
+      "zh": "轰炸机停在停机坪上，很容易成为无人机潜在袭击的目标。"
+    },
+    {
+      "index": 165,
+      "start": 721.93,
+      "end": 732.49,
+      "en": "This comes days after a British-Iranian suspect was arrested on suspicion of planning an attack at the base, adding to the five British nationals arrested in late September.",
+      "zh": "而就在几天前，一名英籍伊朗裔嫌疑人因涉嫌策划对该基地发动袭击被捕，此前9月底已有5名英国公民被捕。"
+    },
+    {
+      "index": 166,
+      "start": 732.49,
+      "end": 737.19,
+      "en": "The suspects were released on bail, much to the frustration of President Trump.",
+      "zh": "这些嫌疑人已获保释，这让特朗普总统非常不满。"
+    },
+    {
+      "index": 167,
+      "start": 737.19,
+      "end": 739.83,
+      "en": "Tehran denies any involvement.",
+      "zh": "德黑兰否认有任何参与。"
+    },
+    {
+      "index": 168,
+      "start": 739.83,
+      "end": 740.33,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 169,
+      "start": 740.33,
+      "end": 741.51,
+      "en": "Charlie, thank you.",
+      "zh": "查理，谢谢。"
+    },
+    {
+      "index": 170,
+      "start": 741.51,
+      "end": 752.53,
+      "en": "Election Day is four weeks from tomorrow, and President Trump is back on the campaign trail, not in an effort to gain ground on Democrats but to protect what has historically been Republican-friendly territory.",
+      "zh": "选举日距明天还有四周，特朗普总统重返竞选活动，不是要在民主党身上扩大优势，而是要保住历史上对共和党友好的地盘。"
+    },
+    {
+      "index": 171,
+      "start": 752.53,
+      "end": 756.27,
+      "en": "Senior White House Correspondent Ed O'Keefe is with the president in Nebraska.",
+      "zh": "白宫高级记者Ed O'Keefe正在内布拉斯加州与总统在一起。"
+    },
+    {
+      "index": 172,
+      "start": 756.27,
+      "end": 758.73,
+      "en": "Ed, good evening.",
+      "zh": "艾德，晚上好。"
+    },
+    {
+      "index": 173,
+      "start": 758.73,
+      "end": 765.45,
+      "en": "Tony, what's notable about being in Nebraska tonight, this is the fifth Republican-controlled state the president has been in since last Thursday.",
+      "zh": "托尼，今晚在内布拉斯加州值得注意的一点是，这已是总统自上周四以来到访的第五个共和党控制的州。"
+    },
+    {
+      "index": 174,
+      "start": 765.45,
+      "end": 767.13,
+      "en": "Why all the focus on red states?",
+      "zh": "为什么把精力都放在红州？"
+    },
+    {
+      "index": 175,
+      "start": 767.13,
+      "end": 769.41,
+      "en": "Well, it's designed to turn out the president's base.",
+      "zh": "这是为了动员总统的基本盘。"
+    },
+    {
+      "index": 176,
+      "start": 769.41,
+      "end": 773.71,
+      "en": "He understands the GOP candidates are struggling because of the state of the economy.",
+      "zh": "他知道共和党候选人因为经济状况而处境艰难。"
+    },
+    {
+      "index": 177,
+      "start": 773.71,
+      "end": 778.74,
+      "en": "New CBS News polling shows 70% of voters say Trump's policies are making prices go up.",
+      "zh": "CBS新闻最新民调显示，70%的选民表示特朗普的政策让物价上涨。"
+    },
+    {
+      "index": 178,
+      "start": 778.74,
+      "end": 790.43,
+      "en": "So the president is here to help Republican Senator Pete Ricketts, who is locked in a tighter-than-anticipated contest with independent Dan Osborn, who is taking monetary and political support from Democrats but say he would caucus with neither party.",
+      "zh": "因此，总统来到这里是为了帮助共和党参议员Pete Ricketts，他正与独立候选人Dan Osborn陷入一场比预期更激烈的竞争，后者从民主党那里获得资金和政治支持，但表示他不会加入任何一方的党团。"
+    },
+    {
+      "index": 179,
+      "start": 790.43,
+      "end": 793.85,
+      "en": "Looking for an edge, the president is now offering incentives.",
+      "zh": "为获得优势，总统现在开始提供激励措施。"
+    },
+    {
+      "index": 180,
+      "start": 793.85,
+      "end": 803.33,
+      "en": "He's saying he would give about 20 million seniors on Medicare Part B a $90 check on top of the $5,000 he's promising American adults if Republicans hold on to Congress.",
+      "zh": "他说，如果共和党人保住国会，他会在承诺给美国成年人每人5000美元的基础上，再给约2000万联邦医疗保险B部分的老年人发一张90美元的支票。"
+    },
+    {
+      "index": 181,
+      "start": 803.33,
+      "end": 805.79,
+      "en": "Democrats say he's trying to buy votes.",
+      "zh": "民主党人说他是在试图买选票。"
+    },
+    {
+      "index": 182,
+      "start": 805.79,
+      "end": 806.45,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 183,
+      "start": 806.45,
+      "end": 807.17,
+      "en": "Ed, thank you.",
+      "zh": "埃德，谢谢。"
+    },
+    {
+      "index": 184,
+      "start": 807.17,
+      "end": 814.93,
+      "en": "We turn now to more of our rare interview with Supreme Court Justice Samuel Alito, one of six conservative justices on the nine-member bench.",
+      "zh": "我们现在继续播出对最高法院大法官塞缪尔·阿利托的罕见采访，他是九人法官席中六位保守派大法官之一。"
+    },
+    {
+      "index": 185,
+      "start": 814.93,
+      "end": 823.36,
+      "en": "He tells our chief legal correspondent, Jan Crawford, that it is wrong for leaders of both parties to portray the justices as political players.",
+      "zh": "他告诉我们的首席法律记者简·克劳福德，两党领导人把大法官描绘成政治参与者是错误的。"
+    },
+    {
+      "index": 186,
+      "start": 823.36,
+      "end": 833.4,
+      "en": "We are not part of any political movement, and we are not attempting to further any political agenda.",
+      "zh": "我们不属于任何政治运动，也没有试图推进任何政治议程。"
+    },
+    {
+      "index": 187,
+      "start": 833.4,
+      "end": 841.24,
+      "en": "We are trying to interpret the Constitution as best we can and apply it in the cases that come before us.",
+      "zh": "我们只是在尽力解释宪法，并把它应用到我面前的案件中。"
+    },
+    {
+      "index": 188,
+      "start": 841.24,
+      "end": 853.64,
+      "en": "When you have political leaders on both sides talking about the Supreme Court as though justices are just nothing more than political actors trying to deliver victory to their team, how damaging is that to the Court?",
+      "zh": "当两党政治领导人都把最高法院说成只是试图为各自阵营争取胜利的政治演员时，这对最高法院有多大伤害？"
+    },
+    {
+      "index": 189,
+      "start": 853.64,
+      "end": 855.08,
+      "en": "I think it's damaging.",
+      "zh": "我认为这有伤害。"
+    },
+    {
+      "index": 190,
+      "start": 855.08,
+      "end": 857.02,
+      "en": "I think it can be quite damaging.",
+      "zh": "我认为可能伤害相当大。"
+    },
+    {
+      "index": 191,
+      "start": 857.02,
+      "end": 865.08,
+      "en": "There's been a great change in what presidents have said about the Court when they are unhappy about our decisions.",
+      "zh": "总统们在对我们的裁决不满时，他们对法院的言论已经发生了巨大变化。"
+    },
+    {
+      "index": 192,
+      "start": 865.08,
+      "end": 872.56,
+      "en": "The Supreme Court's new term began today with arguments in 2 of the 50 to 60 cases it will decide in the year ahead.",
+      "zh": "最高法院的新庭期今天开始，先就未来一年将裁决的50到60起案件中的2起进行了辩论。"
+    },
+    {
+      "index": 193,
+      "start": 872.56,
+      "end": 879.94,
+      "en": "Still ahead on the broadcast tonight, crying in court as a former American Idol contestant learned his fate for the murder of his wife.",
+      "zh": "今晚节目稍后：一名前《美国偶像》参赛者得知自己因谋杀妻子被判刑时在法庭上哭泣。"
+    },
+    {
+      "index": 194,
+      "start": 879.94,
+      "end": 881.36,
+      "en": "What he told the judge.",
+      "zh": "他对法官说了什么。"
+    },
+    {
+      "index": 195,
+      "start": 887.25,
+      "end": 894.28,
+      "en": "Today, a former music pastor and American Idol contestant got a life sentence for the execution-style murder of his wife.",
+      "zh": "今天，一名前音乐牧师兼《美国偶像》参赛者因以处决方式谋杀妻子被判处终身监禁。"
+    },
+    {
+      "index": 196,
+      "start": 894.28,
+      "end": 900.0,
+      "en": "But as CBS's Jericka Duncan reports, he was still claiming his innocence, even as he was sentenced.",
+      "zh": "但据CBS记者杰里卡·邓肯报道，即使在宣判时，他仍坚称自己无罪。"
+    },
+    {
+      "index": 197,
+      "start": 902.58,
+      "end": 905.24,
+      "en": "I will continue to fight for my innocence.",
+      "zh": "我会继续为证明自己的清白而抗争。"
+    },
+    {
+      "index": 198,
+      "start": 905.24,
+      "end": 913.94,
+      "en": "JERICKA DUNCAN: A tearful Caleb Flynn proclaimed his innocence today before a judge sentenced him to life in prison without the possibility of parole.",
+      "zh": "杰里卡·邓肯：泪流满面的凯莱布·弗林今天在法官判处他终身监禁且不得假释前，仍坚称自己无罪。"
+    },
+    {
+      "index": 199,
+      "start": 913.94,
+      "end": 919.3,
+      "en": "The former pastor and American Idol contestant had a message for his two young daughters.",
+      "zh": "这名前牧师兼《美国偶像》参赛者给自己两个年幼的女儿留了话。"
+    },
+    {
+      "index": 200,
+      "start": 919.3,
+      "end": 927.06,
+      "en": "I had so many thoughts and dreams of raising you and see you grow up to be mighty women of God.",
+      "zh": "我曾有那么多关于抚养你们、看着你们成长为上帝刚强女子的想法和梦想。"
+    },
+    {
+      "index": 201,
+      "start": 927.06,
+      "end": 928.8,
+      "en": "And this is straight from their heart.",
+      "zh": "而这是孩子们发自内心的话。"
+    },
+    {
+      "index": 202,
+      "start": 928.8,
+      "end": 931.3,
+      "en": "JERICKA DUNCAN: They had a message for him.",
+      "zh": "杰里卡·邓肯：她们也有话要对他说。"
+    },
+    {
+      "index": 203,
+      "start": 931.3,
+      "end": 936.04,
+      "en": "SPEAKER: Mommy was the perfect person, the absolute perfect person.",
+      "zh": "发言者：妈妈是个完美的人，绝对完美的人。"
+    },
+    {
+      "index": 204,
+      "start": 936.04,
+      "end": 939.75,
+      "en": "What did she ever do to make you hate her so much?",
+      "zh": "她到底做了什么，让你这么恨她？"
+    },
+    {
+      "index": 205,
+      "start": 939.75,
+      "end": 945.27,
+      "en": "She was my best friend, and then you chose to kill the only mother I ever had.",
+      "zh": "她是我最好的朋友，而你却选择杀死我唯一的母亲。"
+    },
+    {
+      "index": 206,
+      "start": 945.27,
+      "end": 946.73,
+      "en": "WOMAN: Guilty of aggravated murder.",
+      "zh": "女子：加重谋杀罪名成立。"
+    },
+    {
+      "index": 207,
+      "start": 946.73,
+      "end": 954.77,
+      "en": "JERICKA DUNCAN: Last week, Flynn was found guilty of shooting and killing his wife and staging the crime as a break-in at their Tipp City, Ohio, home in February.",
+      "zh": "杰里卡·邓肯：上周，弗林被判有罪，罪名是枪杀妻子，并把现场伪造成今年2月有人闯入他们位于俄亥俄州蒂普城的家。"
+    },
+    {
+      "index": 208,
+      "start": 954.77,
+      "end": 959.71,
+      "en": "He was convicted on all nine charges, including murder and tampering with evidence.",
+      "zh": "他被判全部九项罪名成立，包括谋杀和篡改证据。"
+    },
+    {
+      "index": 209,
+      "start": 959.71,
+      "end": 969.67,
+      "en": "During the eight-day trial, the prosecution called 40 witnesses, including Flynn's one-time lover, 24-year-old Alleigha Botner, a fellow church member.",
+      "zh": "在为期八天的庭审中，控方传唤了40名证人，包括弗林曾经的情人、24岁的同教会成员阿莉娅·博特纳。"
+    },
+    {
+      "index": 210,
+      "start": 969.67,
+      "end": 975.57,
+      "en": "Ashley's sister, Kayla Keyt, who is now raising her two nieces, said she forgave Flynn.",
+      "zh": "阿什莉的妹妹凯拉·凯特现在抚养着两个外甥女，她说她原谅了弗林。"
+    },
+    {
+      "index": 211,
+      "start": 975.57,
+      "end": 983.47,
+      "en": "We, as a family, know, without a doubt, Ashley is experiencing the very heaven she spent her life telling everyone else about.",
+      "zh": "作为家人，我们毫不怀疑，阿什莉正在经历她一生都在向别人讲述的那个天堂。"
+    },
+    {
+      "index": 212,
+      "start": 983.47,
+      "end": 986.21,
+      "en": "The defense plans to appeal the verdict.",
+      "zh": "辩方计划对判决提出上诉。"
+    },
+    {
+      "index": 213,
+      "start": 986.21,
+      "end": 998.71,
+      "en": "During the trial, evidence was presented, Tony, in which Flynn sent a text message to his lover about his wife, saying that if he could literally kill her and not go to hell, he would do it in a heartbeat.",
+      "zh": "托尼，庭审中出示的证据显示，弗林曾给情人发短信谈论妻子，说如果他能真的杀了她且不用下地狱，他会毫不犹豫地去做。"
+    },
+    {
+      "index": 214,
+      "start": 998.71,
+      "end": 999.73,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 215,
+      "start": 999.73,
+      "end": 1001.17,
+      "en": "Jericka, thank you very much.",
+      "zh": "杰里卡，非常感谢。"
+    },
+    {
+      "index": 216,
+      "start": 1001.17,
+      "end": 1005.43,
+      "en": "Still ahead, the brakes go out on a church-youth-group hayride.",
+      "zh": "稍后：教会青年团乘坐的干草车刹车失灵。"
+    },
+    {
+      "index": 217,
+      "start": 1005.43,
+      "end": 1006.55,
+      "en": "What happened next?",
+      "zh": "接下来发生了什么？"
+    },
+    {
+      "index": 218,
+      "start": 1013.09,
+      "end": 1023.31,
+      "en": "21 people from a church youth group were on a hayride Sunday in upstate New York when passengers say the brakes on the tractor began to smoke, and the 16-year-old driver lost control.",
+      "zh": "周日，纽约州北部一个教会青年团的21人在乘坐干草车时，乘客们说拖拉机的刹车开始冒烟，16岁的司机失去了控制。"
+    },
+    {
+      "index": 219,
+      "start": 1023.31,
+      "end": 1026.25,
+      "en": "The tractor and the wagon then careened down a hill.",
+      "zh": "随后拖拉机和挂车猛冲下山坡。"
+    },
+    {
+      "index": 220,
+      "start": 1026.25,
+      "end": 1032.81,
+      "en": "Some riders jumping off in fear before everything flipped, injuring the driver and everyone still on board.",
+      "zh": "一些乘客在车子翻覆前吓得跳下车，司机和当时仍在车上的所有人都因此受伤。"
+    },
+    {
+      "index": 221,
+      "start": 1032.81,
+      "end": 1040.65,
+      "en": "There is no bigger award than the Nobel Prize in Medicine and maybe no greater pleasure than sharing it with the people who watched you work for it.",
+      "zh": "没有比诺贝尔医学奖更大的奖项了，可能也没有比和那些看着你为它努力的人分享这一消息更让人高兴的事了。"
+    },
+    {
+      "index": 222,
+      "start": 1040.65,
+      "end": 1044.35,
+      "en": "This is Stanford Professor Karl Deisseroth telling his kids.",
+      "zh": "这是斯坦福大学教授卡尔·戴瑟罗特在告诉孩子们时的画面。"
+    },
+    {
+      "index": 223,
+      "start": 1044.35,
+      "end": 1049.21,
+      "en": "Screams and hugs from his daughters, and from his son, well, almost no words.",
+      "zh": "女儿们尖叫着拥抱他，而他的儿子，几乎说不出话。"
+    },
+    {
+      "index": 224,
+      "start": 1049.21,
+      "end": 1053.75,
+      "en": "SON: What?",
+      "zh": "儿子：什么？"
+    },
+    {
+      "index": 225,
+      "start": 1053.75,
+      "end": 1057.2,
+      "en": "TONY DOKOUPIL: But moments later, he joked it was back to dad duty.",
+      "zh": "托尼·多库皮尔：但过了一会儿，他开玩笑说，该回去尽爸爸的责任了。"
+    },
+    {
+      "index": 226,
+      "start": 1057.2,
+      "end": 1060.7,
+      "en": "Those school lunches, they do not make themselves.",
+      "zh": "学校的午餐可不会自己做好。"
+    },
+    {
+      "index": 227,
+      "start": 1060.7,
+      "end": 1061.9,
+      "en": "Up next, The Good Stuff.",
+      "zh": "接下来是《美好时光》。"
+    },
+    {
+      "index": 228,
+      "start": 1061.9,
+      "end": 1067.12,
+      "en": "A college football tradition that has little to do with the game and everything to do with kindness.",
+      "zh": "一项大学橄榄球传统，和比赛本身关系不大，却与善意息息相关。"
+    },
+    {
+      "index": 229,
+      "start": 1073.65,
+      "end": 1081.36,
+      "en": "We're back with The Good Stuff tonight, one of the newest and most beautiful traditions in college sports, and it may have reached a new emotional high over the weekend.",
+      "zh": "今晚我们继续带来《美好时光》，这是大学体育界最新也最美好的传统之一，而且上周末它可能达到了一个新的情感高潮。"
+    },
+    {
+      "index": 230,
+      "start": 1081.36,
+      "end": 1093.98,
+      "en": "The Hawkeye wave happens at every Iowa Hawkeyes home football game, when the entire stadium turns away from the field and waves at the kids in the windows of the neighboring Stead Family Children's Hospital.",
+      "zh": "在爱荷华鹰眼队每场主场橄榄球赛中，都会有“鹰眼挥手”环节，整个体育场的人会转过身，向邻近的斯特德家庭儿童医院窗户里的孩子们挥手。"
+    },
+    {
+      "index": 231,
+      "start": 1093.98,
+      "end": 1103.34,
+      "en": "It's a tradition that began less than a decade ago with a simple Facebook post suggesting a wave to the kids minute as a little extra inspiration for them.",
+      "zh": "这项传统始于不到十年前，当时一条简单的脸书帖文建议设置“向孩子们挥手一分钟”，作为给孩子们的一点额外鼓励。"
+    },
+    {
+      "index": 232,
+      "start": 1103.34,
+      "end": 1109.46,
+      "en": "Now it's covered live and broadcast nationally by CBS Sports and others and ends up all over social media.",
+      "zh": "现在CBS体育等媒体会进行全国直播报道，相关内容也会传遍社交媒体。"
+    },
+    {
+      "index": 233,
+      "start": 1109.46,
+      "end": 1121.2,
+      "en": "But this Saturday's wave reached a new pitch because the coach of the Ohio State Buckeyes, a.k.a. the team that was trying to break Iowa hearts in the game itself, did something a little extra.",
+      "zh": "但本周六的挥手活动达到了新的热度，因为俄亥俄州立大学七叶树队——也就是那支在比赛中试图让爱荷华人伤心的球队——的教练做了一点额外的事。"
+    },
+    {
+      "index": 234,
+      "start": 1121.2,
+      "end": 1129.94,
+      "en": "In addition to the wave, he sent a letter to the kids the day before, offering the support of his team and of all Buckeye Nation, too.",
+      "zh": "除了挥手，他在前一天给孩子们写了一封信，表示他的球队以及整个七叶树球迷群体也支持他们。"
+    },
+    {
+      "index": 235,
+      "start": 1129.94,
+      "end": 1134.69,
+      "en": "That's important to us, and that's part of the experience that you just recognize it's bigger than just football.",
+      "zh": "这对我们很重要，这也是这段经历的一部分，你会意识到它比橄榄球本身更重要。"
+    },
+    {
+      "index": 236,
+      "start": 1134.69,
+      "end": 1140.6,
+      "en": "TONY DOKOUPIL: Eight-year-old Everett is just one of the kids who felt that extra dose of love.",
+      "zh": "托尼·多库皮尔：八岁的埃弗里特只是感受到这份额外爱意的孩子之一。"
+    },
+    {
+      "index": 237,
+      "start": 1140.6,
+      "end": 1144.74,
+      "en": "I had a big smile on my face because I was really excited to do the wave.",
+      "zh": "当时我脸上露出大大的笑容，因为能参加挥手活动我真的很兴奋。"
+    },
+    {
+      "index": 238,
+      "start": 1144.74,
+      "end": 1150.52,
+      "en": "It means that everybody is supporting us.",
+      "zh": "这意味着每个人都在支持我们。"
+    },
+    {
+      "index": 239,
+      "start": 1150.52,
+      "end": 1158.48,
+      "en": "One of the most important things about sports is their ability to remind us that sports are not always the most important thing.",
+      "zh": "体育最重要的一点之一，就是它能提醒我们：体育并不总是最重要的事。"
+    },
+    {
+      "index": 240,
+      "start": 1158.48,
+      "end": 1159.86,
+      "en": "That's another day in America.",
+      "zh": "美国又一天过去了。"
+    },
+    {
+      "index": 241,
+      "start": 1159.86,
+      "end": 1160.98,
+      "en": "I'm Tony Dokoupil.",
+      "zh": "我是托尼·多库皮尔。"
+    },
+    {
+      "index": 242,
+      "start": 1160.98,
+      "end": 1163.4,
+      "en": "We'll see you right back here tomorrow night.",
+      "zh": "我们明晚准时在这里再见。"
+    },
+    {
+      "index": 243,
+      "start": 1163.4,
+      "end": 1164.16,
+      "en": "Good night.",
+      "zh": "晚安。"
+    }
+  ],
+  "meta": {
+    "slug": "100526-cbs-evening-news",
+    "generated_at": "2026-10-10T18:37:30",
+    "claude_model": "claude-opus-5",
+    "transcript_source": "cbs-captions",
+    "transcript_detail": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4872048_hls/subs_en.m3u8",
+    "segment_count": 244,
+    "audio_duration": 1164.16
+  }
+}

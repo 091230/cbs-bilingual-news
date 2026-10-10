@@ -28,3 +28,13 @@ __pycache__/
 
 # 无关的临时输出文件
 mandelbrot_ascii.txt
+
+data/episodes/**/youtube_raw.*
+data/episodes/**/f*.mp4
+data/episodes/**/f*.m4a
+douyin_*.mp4
+pipeline_log*.txt
+yt_dl_log*.txt
+_one.txt
+cbs_page.html
+_shots/

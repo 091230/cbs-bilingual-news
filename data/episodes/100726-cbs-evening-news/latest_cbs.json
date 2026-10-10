@@ -1,0 +1,1806 @@
+{
+  "slug": "100726-cbs-evening-news",
+  "video": {
+    "slug": "100726-cbs-evening-news",
+    "video_id": "518103b3-30f6-46e9-ac20-0e8714f33c33",
+    "title": "10/7: CBS Evening News",
+    "duration": 1197,
+    "upload_date": "2026-10-07T18:30:00-0400",
+    "channel": "CBS Evening News",
+    "webpage_url": "https://www.cbsnews.com/video/100726-cbs-evening-news/",
+    "hls_master": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4877968_hls/master.m3u8",
+    "hls_subs": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4877968_hls/subs_en.m3u8",
+    "audio_file": "audio.mp3",
+    "audio_size_mb": 4.57,
+    "audio_format": "16000Hz 32k mono mp3",
+    "local_video": null
+  },
+  "vocabulary": [
+    {
+      "word": "intensify",
+      "level": "C1",
+      "meaning": "动词，增强，加剧"
+    },
+    {
+      "word": "landfall",
+      "level": "C1",
+      "meaning": "名词，登陆"
+    },
+    {
+      "word": "storm surge",
+      "level": "C1",
+      "meaning": "名词，风暴潮"
+    },
+    {
+      "word": "brunt",
+      "level": "C1",
+      "meaning": "名词，主要冲击，首当其冲"
+    },
+    {
+      "word": "allege",
+      "level": "C1",
+      "meaning": "动词，指称，涉嫌（未经证实）"
+    },
+    {
+      "word": "mass casualty",
+      "level": "C1",
+      "meaning": "名词/形容词，大规模伤亡"
+    },
+    {
+      "word": "thwart",
+      "level": "C1",
+      "meaning": "动词，阻止，挫败"
+    },
+    {
+      "word": "chilling",
+      "level": "C1",
+      "meaning": "形容词，令人不寒而栗的"
+    },
+    {
+      "word": "consensual",
+      "level": "C2",
+      "meaning": "形容词，双方自愿的"
+    },
+    {
+      "word": "incapacitate",
+      "level": "C2",
+      "meaning": "动词，使无能力，使失去意识"
+    },
+    {
+      "word": "bioweapon",
+      "level": "C1",
+      "meaning": "名词，生物武器"
+    },
+    {
+      "word": "lethal injection",
+      "level": "C1",
+      "meaning": "名词短语，注射死刑"
+    },
+    {
+      "word": "botched",
+      "level": "C2",
+      "meaning": "形容词，搞砸的，拙劣的"
+    },
+    {
+      "word": "to the letter",
+      "level": "C1",
+      "meaning": "短语，不折不扣地，严格地"
+    },
+    {
+      "word": "billow",
+      "level": "C2",
+      "meaning": "动词，（烟、云等）滚滚升起，翻腾"
+    },
+    {
+      "word": "amass",
+      "level": "C2",
+      "meaning": "动词，积聚，大量积累"
+    },
+    {
+      "word": "shed light on",
+      "level": "C1",
+      "meaning": "短语，揭示，阐明"
+    },
+    {
+      "word": "exhaustive",
+      "level": "B2",
+      "meaning": "形容词，详尽的，地毯式的"
+    },
+    {
+      "word": "comb",
+      "level": "C1",
+      "meaning": "动词，仔细搜索，梳理"
+    }
+  ],
+  "subtitles": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 1.22,
+      "en": "Good to be with you.",
+      "zh": "很高兴和大家见面。"
+    },
+    {
+      "index": 1,
+      "start": 1.22,
+      "end": 2.02,
+      "en": "I'm Tony Dokoupil.",
+      "zh": "我是托尼·多库皮尔。"
+    },
+    {
+      "index": 2,
+      "start": 2.02,
+      "end": 4.88,
+      "en": "The breaking news right now.",
+      "zh": "现在来看突发新闻。"
+    },
+    {
+      "index": 3,
+      "start": 4.88,
+      "end": 5.98,
+      "en": "Hurricane threat.",
+      "zh": "飓风威胁。"
+    },
+    {
+      "index": 4,
+      "start": 5.98,
+      "end": 11.18,
+      "en": "What's expected to be the first hurricane in the Atlantic this season quickly strengthening tonight.",
+      "zh": "预计将成为本季大西洋首个飓风的系统今晚正在迅速增强。"
+    },
+    {
+      "index": 5,
+      "start": 11.18,
+      "end": 15.36,
+      "en": "A state of emergency already issued for parts of Florida and Alabama.",
+      "zh": "佛罗里达州和阿拉巴马州部分地区已经宣布进入紧急状态。"
+    },
+    {
+      "index": 6,
+      "start": 15.36,
+      "end": 19.08,
+      "en": "Rob Marciano with the latest timing and track.",
+      "zh": "罗布·马尔恰诺带来最新的时间和路径。"
+    },
+    {
+      "index": 7,
+      "start": 19.08,
+      "end": 27.0,
+      "en": "Also breaking tonight, an 18-year-old from Minnesota arrested for allegedly planning an ISIS-inspired terror attack on the Mall of America.",
+      "zh": "今晚还有突发消息：明尼苏达州一名18岁青年因涉嫌策划受ISIS启发的美国商城恐怖袭击被捕。"
+    },
+    {
+      "index": 8,
+      "start": 27.0,
+      "end": 29.76,
+      "en": "The warning for parents tonight.",
+      "zh": "今晚给家长的提醒。"
+    },
+    {
+      "index": 9,
+      "start": 29.76,
+      "end": 36.98,
+      "en": "The family home of the woman at the center of that Cornell University gang rape investigation was swatted, according to her lawyer.",
+      "zh": "据她的律师称，康奈尔大学轮奸案调查中那名女子的家人住所遭人报假警骚扰，引来了特警上门。"
+    },
+    {
+      "index": 10,
+      "start": 36.98,
+      "end": 40.68,
+      "en": "Exclusive new details tonight on the threats.",
+      "zh": "今晚关于这些威胁的独家新细节。"
+    },
+    {
+      "index": 11,
+      "start": 40.68,
+      "end": 44.3,
+      "en": "Reports of a possible second case of the plague in Russia.",
+      "zh": "有报道称俄罗斯可能出现第二例鼠疫病例。"
+    },
+    {
+      "index": 12,
+      "start": 44.3,
+      "end": 46.76,
+      "en": "What the Us is now doing.",
+      "zh": "美国现在正在采取什么行动。"
+    },
+    {
+      "index": 13,
+      "start": 46.76,
+      "end": 52.52,
+      "en": "And Christa Pike's first words after waking up nearly a week after her failed execution.",
+      "zh": "克里斯塔·派克在死刑执行失败近一周后醒来，首次开口说话。"
+    },
+    {
+      "index": 14,
+      "start": 52.52,
+      "end": 54.36,
+      "en": "What she said.",
+      "zh": "她说了什么。"
+    },
+    {
+      "index": 15,
+      "start": 54.36,
+      "end": 60.36,
+      "en": "A CBS News exclusive video of Iranian drone attacks on US bases in the Middle East.",
+      "zh": "CBS新闻独家视频：伊朗无人机袭击美国在中东的基地。"
+    },
+    {
+      "index": 16,
+      "start": 60.36,
+      "end": 63.51,
+      "en": "The images you won't see anywhere else.",
+      "zh": "这些画面你在其他地方看不到。"
+    },
+    {
+      "index": 17,
+      "start": 63.51,
+      "end": 69.57,
+      "en": "And a dog swept away by a rushing river, carried by the current on a two-hour misadventure.",
+      "zh": "还有一只狗被湍急的河水冲走，顺着水流漂了两个小时，经历了一场意外历险。"
+    },
+    {
+      "index": 18,
+      "start": 69.57,
+      "end": 70.95,
+      "en": "How it ended.",
+      "zh": "结局如何。"
+    },
+    {
+      "index": 19,
+      "start": 70.95,
+      "end": 76.43,
+      "en": "And The Good Stuff tonight, the story behind this great pumpkin.",
+      "zh": "今晚的“暖心时刻”，来说说这个大南瓜背后的故事。"
+    },
+    {
+      "index": 20,
+      "start": 76.43,
+      "end": 84.46,
+      "en": "announcer: From CBS News headquarters in New York, this is the CBS Evening News with Tony Dokoupil.",
+      "zh": "播音员：这里是位于纽约的CBS新闻总部，您正在收看托尼·多库皮尔主持的CBS晚间新闻。"
+    },
+    {
+      "index": 21,
+      "start": 84.46,
+      "end": 85.25,
+      "en": "And good evening.",
+      "zh": "晚上好。"
+    },
+    {
+      "index": 22,
+      "start": 85.25,
+      "end": 88.09,
+      "en": "We begin with that hurricane threat along the Gulf Coast.",
+      "zh": "我们首先关注墨西哥湾沿岸的飓风威胁。"
+    },
+    {
+      "index": 23,
+      "start": 88.09,
+      "end": 92.01,
+      "en": "Warnings now posted from roughly New Orleans to the Florida panhandle.",
+      "zh": "目前从新奥尔良附近到佛罗里达狭长地带都已发布警报。"
+    },
+    {
+      "index": 24,
+      "start": 92.01,
+      "end": 105.03,
+      "en": "And although the system is a tropical storm for the moment, it's expected to strengthen into a Category 2 hurricane, borderline Cat 3 storm by Friday, unleashing winds topping 100 miles an hour and up to a foot of rain.",
+      "zh": "尽管这个系统目前还是热带风暴，但预计到周五将增强为二级飓风，接近三级，带来超过每小时100英里的大风和最多一英尺的降雨。"
+    },
+    {
+      "index": 25,
+      "start": 105.03,
+      "end": 109.01,
+      "en": "It would be the first hurricane of the year, and the latest on record.",
+      "zh": "这将是今年首个飓风，也是有记录以来最晚形成的首场飓风。"
+    },
+    {
+      "index": 26,
+      "start": 109.01,
+      "end": 113.29,
+      "en": "Meteorologist Rob Marciano leads us off tonight in Fort Walton Beach, Florida.",
+      "zh": "气象学家罗布·马尔恰诺在佛罗里达州沃尔顿堡海滩率先带来报道。"
+    },
+    {
+      "index": 27,
+      "start": 113.29,
+      "end": 115.85,
+      "en": "Rob, good evening to you.",
+      "zh": "罗布，晚上好。"
+    },
+    {
+      "index": 28,
+      "start": 115.85,
+      "end": 116.93,
+      "en": "Hey, good evening, Tony.",
+      "zh": "嘿，晚上好，托尼。"
+    },
+    {
+      "index": 29,
+      "start": 116.93,
+      "end": 121.44,
+      "en": "The winds have been kicking up here along the Gulf Coast as this storm continues to intensify.",
+      "zh": "随着风暴持续增强，墨西哥湾沿岸这里的风越刮越大。"
+    },
+    {
+      "index": 30,
+      "start": 121.44,
+      "end": 129.14,
+      "en": "Down to our south and west, what has started as a very, very slow hurricane season is beginning to pick up.",
+      "zh": "在我们的西南方向，原本非常非常缓慢的飓风季开始活跃起来。"
+    },
+    {
+      "index": 31,
+      "start": 129.14,
+      "end": 135.84,
+      "en": "As tropical Storm Isaias intensifies in the Gulf, grocery shelves in Pensacola, Florida, are running empty.",
+      "zh": "随着热带风暴伊萨亚斯在墨西哥湾增强，佛罗里达州彭萨科拉的杂货店货架已经被抢购一空。"
+    },
+    {
+      "index": 32,
+      "start": 135.84,
+      "end": 140.28,
+      "en": "Shoppers are stocking up on water, food, and other essential supplies.",
+      "zh": "购物者正在囤积水、食物和其他必需物资。"
+    },
+    {
+      "index": 33,
+      "start": 140.28,
+      "end": 151.6,
+      "en": "The storm forecast to landfall as a Category 2 hurricane, packing winds of more than 100 miles per hour, targeting the US Gulf Coast, from the Florida panhandle to southeastern Louisiana.",
+      "zh": "预计这场风暴将以二级飓风强度登陆，带来超过每小时100英里的强风，目标区域从佛罗里达狭长地带到路易斯安那州东南部的美国墨西哥湾沿岸。"
+    },
+    {
+      "index": 34,
+      "start": 151.6,
+      "end": 157.14,
+      "en": "Patience is in high demand as motorists sit in long lines at gas stations, hoping to fill up in.",
+      "zh": "司机们在加油站排起长队，想加满油，这十分考验耐心。"
+    },
+    {
+      "index": 35,
+      "start": 157.14,
+      "end": 163.46,
+      "en": "Dauphin Island, Alabama, which could get the brunt of the storm, strong wind is already causing some tidal flooding.",
+      "zh": "阿拉巴马州的多芬岛可能首当其冲，强风已经引发一些潮汐洪水。"
+    },
+    {
+      "index": 36,
+      "start": 163.46,
+      "end": 168.06,
+      "en": "And red flags are flying on beaches with increasingly dangerous rip currents.",
+      "zh": "海滩上升起红旗，离岸流越来越危险。"
+    },
+    {
+      "index": 37,
+      "start": 168.06,
+      "end": 173.06,
+      "en": "In Slidell, Louisiana, the incoming rain has Bob Bradley filling sandbags.",
+      "zh": "在路易斯安那州斯莱德尔，即将到来的降雨让鲍勃·布拉德利赶紧装沙袋。"
+    },
+    {
+      "index": 38,
+      "start": 173.06,
+      "end": 179.74,
+      "en": "I always put a layer of bag right in front of the garage door, in case it gets that deep.",
+      "zh": "我总是在车库门前放一层沙袋，以防积水那么深。"
+    },
+    {
+      "index": 39,
+      "start": 179.74,
+      "end": 185.59,
+      "en": "And rainfall, inland flooding is going to be a huge issue for a lot more people, but here on the coast, it will be the storm surge.",
+      "zh": "降雨和内陆洪水会给更多人带来巨大影响，但在海岸这边，主要问题是风暴潮。"
+    },
+    {
+      "index": 40,
+      "start": 185.59,
+      "end": 190.19,
+      "en": "It will be the wind, which right now is intensifying and doing so in a rapid form.",
+      "zh": "此外还有风，目前风力正在迅速增强。"
+    },
+    {
+      "index": 41,
+      "start": 190.19,
+      "end": 191.15,
+      "en": "So let's go through it.",
+      "zh": "我们具体来看一下。"
+    },
+    {
+      "index": 42,
+      "start": 191.15,
+      "end": 194.09,
+      "en": "This thing looks a lot more organized than it did this time yesterday.",
+      "zh": "它看起来比昨天这个时候结构要完整得多。"
+    },
+    {
+      "index": 43,
+      "start": 194.09,
+      "end": 196.69,
+      "en": "With 65-mile-per-hour winds now.",
+      "zh": "目前风速为每小时65英里。"
+    },
+    {
+      "index": 44,
+      "start": 196.69,
+      "end": 203.27,
+      "en": "It is 500 miles to our south, and it's expected to become, yes, a hurricane overnight tonight, and by Friday a Category 2 storm.",
+      "zh": "它在我们以南500英里处，预计今晚就会增强为飓风，到周五成为二级风暴。"
+    },
+    {
+      "index": 45,
+      "start": 203.27,
+      "end": 206.67,
+      "en": "It will encounter some wind shield at landfall, hopefully knocking it down some.",
+      "zh": "登陆时它会遇到一些风切变，有望削弱一些强度。"
+    },
+    {
+      "index": 46,
+      "start": 206.67,
+      "end": 209.51,
+      "en": "But regardless, it will be a very strong storm because of that.",
+      "zh": "但不管怎样，它仍会是一场非常强的风暴。"
+    },
+    {
+      "index": 47,
+      "start": 209.51,
+      "end": 215.59,
+      "en": "We have hurricane watches that are posted from Bay St. Louis to Biloxi to Mobile, all the way to Apalachicola.",
+      "zh": "从圣路易斯湾、比洛克西到莫比尔，一直到阿巴拉契科拉，都已发布飓风观察预警。"
+    },
+    {
+      "index": 48,
+      "start": 215.59,
+      "end": 218.91,
+      "en": "Winds gusting to 74-plus miles per hour across a wide area.",
+      "zh": "大范围地区阵风可达每小时74英里以上。"
+    },
+    {
+      "index": 49,
+      "start": 218.91,
+      "end": 220.91,
+      "en": "We're going to see some power outages, for sure.",
+      "zh": "肯定会出现一些停电。"
+    },
+    {
+      "index": 50,
+      "start": 220.91,
+      "end": 227.83,
+      "en": "We're going to see storm surges in areas susceptible to it, and on the backside areas, even if you're to the left of the storm, you're going to see storm surge.",
+      "zh": "易受影响地区会出现风暴潮，而在风暴后侧区域，即使你处在风暴左侧，也会出现风暴潮。"
+    },
+    {
+      "index": 51,
+      "start": 227.83,
+      "end": 234.27,
+      "en": "And then, yeah, the rainfall is going to be an issue here, with it stretching all well inland for a bit of a washout as we head through the weekend.",
+      "zh": "然后，是的，降雨也会是个问题，随着进入周末，降雨一路深入内陆，一些地方可能会被冲毁或泡汤。"
+    },
+    {
+      "index": 52,
+      "start": 234.27,
+      "end": 239.35,
+      "en": "But here on the Gulf Coast, all eyes, Tony, tonight are to our south on Isaias.",
+      "zh": "不过在墨西哥湾沿岸这里，托尼，今晚大家的目光都集中在我们南边的伊萨亚斯身上。"
+    },
+    {
+      "index": 53,
+      "start": 239.35,
+      "end": 240.26,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 54,
+      "start": 240.26,
+      "end": 241.54,
+      "en": "Rob, thank you very much.",
+      "zh": "罗布，非常感谢。"
+    },
+    {
+      "index": 55,
+      "start": 241.54,
+      "end": 250.32,
+      "en": "We turn now to what the FBI says was yet another ISIS-inspired terror plot, this one to murder non-Muslims inside Minnesota's Mall of America.",
+      "zh": "我们现在来看FBI所说的又一起受ISIS启发的恐怖阴谋，这次是要在明尼苏达州的美国商城杀害非穆斯林。"
+    },
+    {
+      "index": 56,
+      "start": 250.32,
+      "end": 256.52,
+      "en": "The alleged would-be shooter, an 18-year-old, and the FBI says it tried to warn the young man's parents.",
+      "zh": "据称的潜在枪手是一名18岁青年，FBI表示曾试图提醒这名年轻人的父母。"
+    },
+    {
+      "index": 57,
+      "start": 256.52,
+      "end": 261.24,
+      "en": "Here's CBS's homeland security and justice correspondent Nicole Sganga.",
+      "zh": "下面是CBS国土安全与司法记者妮可·斯甘加。"
+    },
+    {
+      "index": 58,
+      "start": 261.24,
+      "end": 269.4,
+      "en": "NICOLE SGANGA: In less than two years, this 18-year-old allegedly went from praising terrorists online to planning a mass casualty attack.",
+      "zh": "妮可·斯甘加：不到两年时间，这名18岁青年据称从在网上赞美恐怖分子发展到了策划大规模伤亡袭击。"
+    },
+    {
+      "index": 59,
+      "start": 269.4,
+      "end": 277.52,
+      "en": "Authorities say Sheikhdoon Abdullahi Mohamud planned to carry out an ISIS-inspired shooting at the Mall of America in Minnesota.",
+      "zh": "当局称，谢赫杜恩·阿卜杜拉希·穆罕默德计划在明尼苏达州的美国商城实施受ISIS启发的枪击。"
+    },
+    {
+      "index": 60,
+      "start": 277.52,
+      "end": 288.06,
+      "en": "He was arrested at gunpoint Tuesday during an arranged meeting to buy an AK-47-style rifle, four magazines, and roughly 200 rounds of ammunition.",
+      "zh": "周二，他在一场安排好的交易中被持枪逮捕，当时他正准备购买一支 AK-47 式步枪、四个弹匣和大约 200 发子弹。"
+    },
+    {
+      "index": 61,
+      "start": 288.06,
+      "end": 298.06,
+      "en": "They were able to detect a threat and disrupt it before the defendant carried out his intention to kill, in his words, maybe 30 to 60 people.",
+      "zh": "他们成功发现并挫败了这一威胁，赶在被告实施杀人计划之前；用他自己的话说，他可能想杀 30 到 60 人。"
+    },
+    {
+      "index": 62,
+      "start": 298.06,
+      "end": 302.21,
+      "en": "NICOLE SGANGA: Investigators say Mohamud idolized previous terrorist attacks.",
+      "zh": "调查人员称，穆罕默德崇拜以往的恐怖袭击。"
+    },
+    {
+      "index": 63,
+      "start": 302.21,
+      "end": 309.01,
+      "en": "In one message after watching video of the pulse massacre, prosecutors say he wrote, \"I think I can do the same thing.",
+      "zh": "检方称，他在看完 Pulse 夜店枪击案视频后发了一条消息：“我觉得我也能做同样的事。"
+    },
+    {
+      "index": 64,
+      "start": 309.01,
+      "end": 310.97,
+      "en": "I just walk in and shoot.\"",
+      "zh": "我只要走进去开枪就行。”"
+    },
+    {
+      "index": 65,
+      "start": 310.97,
+      "end": 314.55,
+      "en": "The messages this defendant allegedly sent to others were chilling.",
+      "zh": "这名被告据称发给其他人的信息令人不寒而栗。"
+    },
+    {
+      "index": 66,
+      "start": 314.55,
+      "end": 323.78,
+      "en": "They document the idolization of ideologically motivated violence and a cold commitment to carrying out his vision of violence in our community.",
+      "zh": "这些信息记录了其对意识形态驱动的暴力的崇拜，以及在我们社区实施其暴力构想的冷酷决心。"
+    },
+    {
+      "index": 67,
+      "start": 323.78,
+      "end": 328.43,
+      "en": "NICOLE SGANGA: President Trump praised federal agents for thwarting the suspected attack.",
+      "zh": "特朗普总统赞扬了联邦特工挫败这起疑似袭击。"
+    },
+    {
+      "index": 68,
+      "start": 328.43,
+      "end": 331.21,
+      "en": "I did hear about it, and they did a great job.",
+      "zh": "我听说了这件事，他们干得很出色。"
+    },
+    {
+      "index": 69,
+      "start": 331.21,
+      "end": 333.55,
+      "en": "The FBI did a great job.",
+      "zh": "联邦调查局干得很出色。"
+    },
+    {
+      "index": 70,
+      "start": 333.55,
+      "end": 337.89,
+      "en": "CBS News has reached out to Mohamud's attorney but has yet to hear back.",
+      "zh": "CBS 新闻已联系穆罕默德的律师，但尚未收到回复。"
+    },
+    {
+      "index": 71,
+      "start": 337.89,
+      "end": 346.09,
+      "en": "Now, he faces one federal charge for obtaining a gun and ammunition allegedly intended for a terrorism act.",
+      "zh": "目前，他面临一项联邦指控，罪名是获取据称用于恐怖主义行为的枪支和弹药。"
+    },
+    {
+      "index": 72,
+      "start": 346.09,
+      "end": 351.25,
+      "en": "But prosecutors could bring even more charges as this investigation continues.",
+      "zh": "但随着调查继续，检方可能会提出更多指控。"
+    },
+    {
+      "index": 73,
+      "start": 351.25,
+      "end": 351.91,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 74,
+      "start": 351.91,
+      "end": 353.31,
+      "en": "Nicole, thank you.",
+      "zh": "妮可，谢谢。"
+    },
+    {
+      "index": 75,
+      "start": 353.31,
+      "end": 360.4,
+      "en": "The woman at the center of that alleged gang rape at Cornell University has been facing threats to her family home, according to her attorney.",
+      "zh": "据其律师称，康奈尔大学那起据称的轮奸案核心女子一直面临针对其家人住宅的威胁。"
+    },
+    {
+      "index": 76,
+      "start": 360.4,
+      "end": 366.26,
+      "en": "CBS's Lilia Luciano has new details tonight, reporting once again from Ithaca, New York.",
+      "zh": "CBS 的莉莉亚·卢西亚诺今晚带来最新详情，她再次从纽约州伊萨卡发回报道。"
+    },
+    {
+      "index": 77,
+      "start": 366.26,
+      "end": 367.4,
+      "en": "STUDENT: One struggle!",
+      "zh": "团结斗争！"
+    },
+    {
+      "index": 78,
+      "start": 367.4,
+      "end": 368.46,
+      "en": "ALL: One struggle!",
+      "zh": "团结斗争！"
+    },
+    {
+      "index": 79,
+      "start": 368.46,
+      "end": 379.32,
+      "en": "LILIA LUCIANO: As students at Cornell keep rallying in support of Jane Doe, she is now the target of threats, multiple death threats, according to her attorney, including this call she recorded and sent him last night.",
+      "zh": "康奈尔大学的学生们继续集会声援简·多伊，而她据律师称现在成了威胁目标，收到多个死亡威胁，包括她昨晚录下并发给律师的这通电话。"
+    },
+    {
+      "index": 80,
+      "start": 379.32,
+      "end": 384.16,
+      "en": "MAN: you want to keep ignoring me, bro, I can't guarantee you'll be safe.",
+      "zh": "你想继续无视我，兄弟，我可不能保证你的安全。"
+    },
+    {
+      "index": 81,
+      "start": 384.16,
+      "end": 390.92,
+      "en": "LILIA LUCIANO: And Jane Doe's attorney says police swarmed her family's home with guns drawn, an apparent swatting call.",
+      "zh": "简·多伊的律师还表示，警察曾持枪包围她家人的住所，这显然是一起报假警招来特警的事件。"
+    },
+    {
+      "index": 82,
+      "start": 390.92,
+      "end": 400.16,
+      "en": "There's also backlash against at least one of the seven men accused of participating in the alleged gang rape and sexual assault at this Cornell fraternity house in 2024.",
+      "zh": "此外，被控在2024年参与康奈尔大学兄弟会会所那起据称的轮奸和性侵案的七名男子中，至少有一人遭到强烈反对。"
+    },
+    {
+      "index": 83,
+      "start": 400.16,
+      "end": 401.66,
+      "en": "STUDENT: Were you in the group chat?",
+      "zh": "你在那个群聊里吗？"
+    },
+    {
+      "index": 84,
+      "start": 401.66,
+      "end": 404.4,
+      "en": "LILIA LUCIANO: Last week, a student confronted Gillio Lopes.",
+      "zh": "上周，一名学生当面质问吉利奥·洛佩斯。"
+    },
+    {
+      "index": 85,
+      "start": 404.4,
+      "end": 412.56,
+      "en": "He had completed a three-semester suspension after a Title IX hearing found him responsible for sexual assault and is back on campus.",
+      "zh": "在 Title IX 听证会认定他对性侵负有责任后，他完成了三个学期的停学处分，如今已回到校园。"
+    },
+    {
+      "index": 86,
+      "start": 412.56,
+      "end": 414.06,
+      "en": "STUDENT: You're in the lawsuit, man.",
+      "zh": "你被起诉了，哥们。"
+    },
+    {
+      "index": 87,
+      "start": 414.06,
+      "end": 415.72,
+      "en": "We've admitted they had sex.",
+      "zh": "我们已经承认他们发生过性关系。"
+    },
+    {
+      "index": 88,
+      "start": 415.72,
+      "end": 420.59,
+      "en": "LILIA LUCIANO: His attorney claims Lopes had no way of knowing that Jane Doe was incapacitated.",
+      "zh": "他的律师声称，洛佩斯当时不可能知道简·多伊已失去自主意识。"
+    },
+    {
+      "index": 89,
+      "start": 420.59,
+      "end": 424.31,
+      "en": "As for the suspension-- We object to those results.",
+      "zh": "至于停学处分——我们对这些结果提出异议。"
+    },
+    {
+      "index": 90,
+      "start": 424.31,
+      "end": 436.83,
+      "en": "We feel, and Gillio feels, that there is significant evidence that his interaction with Jane Doe was consensual.",
+      "zh": "我们以及吉利奥本人都认为，有重要证据表明他与简·多伊的接触是双方自愿的。"
+    },
+    {
+      "index": 91,
+      "start": 436.83,
+      "end": 440.39,
+      "en": "He says she did not seem like she was impaired.",
+      "zh": "他说她当时看起来并没有意识不清。"
+    },
+    {
+      "index": 92,
+      "start": 440.39,
+      "end": 442.29,
+      "en": "Did he see her taking drugs?",
+      "zh": "他有没有看到她吸毒？"
+    },
+    {
+      "index": 93,
+      "start": 442.29,
+      "end": 444.03,
+      "en": "He did not see her take drugs.",
+      "zh": "他没有看到她吸毒。"
+    },
+    {
+      "index": 94,
+      "start": 444.03,
+      "end": 446.03,
+      "en": "LILIA LUCIANO: Meanwhile, the protests continue.",
+      "zh": "与此同时，抗议仍在继续。"
+    },
+    {
+      "index": 95,
+      "start": 446.03,
+      "end": 448.51,
+      "en": "There's a sit-in on the Cornell campus today.",
+      "zh": "今天康奈尔校园内有一场静坐抗议。"
+    },
+    {
+      "index": 96,
+      "start": 448.51,
+      "end": 458.93,
+      "en": "Organizers say it will last seven hours, symbolizing the time that Jane Doe says she was inside the Chi Phi fraternity house.",
+      "zh": "组织者称静坐将持续七小时，象征简·多伊所说的她待在 Chi Phi 兄弟会会所里的时间。"
+    },
+    {
+      "index": 97,
+      "start": 458.93,
+      "end": 471.79,
+      "en": "And a lawyer for a group of former Chi Phi fraternity members who graduated Cornell University in 2022 and 2023 told CBS News exclusively that his clients are being wrongly targeted online.",
+      "zh": "一群于2022年和2023年从康奈尔大学毕业的前 Chi Phi 兄弟会成员的律师独家告诉 CBS 新闻，他的当事人正在网上遭到错误攻击。"
+    },
+    {
+      "index": 98,
+      "start": 471.79,
+      "end": 481.06,
+      "en": "He's asking that the university issue a public confirmation, stating that they were neither involved in the alleged assaults nor on the Snapchat group chat that was shared.",
+      "zh": "他要求校方发布公开确认，声明这些当事人既未参与那些据称的性侵事件，也不在曾被公开的那个 Snapchat 群聊里。"
+    },
+    {
+      "index": 99,
+      "start": 481.06,
+      "end": 484.68,
+      "en": "They had graduated by 2024 when the allegations emerged.",
+      "zh": "到2024年指控出现时，他们已经毕业了。"
+    },
+    {
+      "index": 100,
+      "start": 484.68,
+      "end": 485.24,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 101,
+      "start": 485.24,
+      "end": 486.42,
+      "en": "Lilia, thank you.",
+      "zh": "莉莉亚，谢谢。"
+    },
+    {
+      "index": 102,
+      "start": 486.42,
+      "end": 493.22,
+      "en": "Now to the global fears triggered by that suspected case of pneumonic plague in Russia and reports of a second case, too.",
+      "zh": "接下来关注俄罗斯那起疑似肺鼠疫病例以及据报还出现第二例病例所引发的全球担忧。"
+    },
+    {
+      "index": 103,
+      "start": 493.22,
+      "end": 497.96,
+      "en": "Now the World Health Organization is demanding to know more about what happened.",
+      "zh": "现在世界卫生组织要求进一步了解事件经过。"
+    },
+    {
+      "index": 104,
+      "start": 497.96,
+      "end": 500.62,
+      "en": "Our Imtiaz Tyab has the latest.",
+      "zh": "我们的伊姆蒂亚兹·提亚布带来最新报道。"
+    },
+    {
+      "index": 105,
+      "start": 500.62,
+      "end": 510.94,
+      "en": "IMTIAZ TYAB: Tonight, global health officials are pressing Russia for answers after the mysterious death of a 28-year-old researcher at the anti-plague institute in Siberia last week.",
+      "zh": "今晚，在西伯利亚抗鼠疫研究所一名28岁研究员离奇死亡后，全球卫生官员正在敦促俄罗斯给出答案。"
+    },
+    {
+      "index": 106,
+      "start": 510.94,
+      "end": 515.1,
+      "en": "President Trump saying it doesn't appear to be linked to a bioweapon.",
+      "zh": "特朗普总统表示，这似乎与生物武器无关。"
+    },
+    {
+      "index": 107,
+      "start": 515.1,
+      "end": 517.48,
+      "en": "They are sharing it a little bit with our people.",
+      "zh": "他们向我们的人透露了一点信息。"
+    },
+    {
+      "index": 108,
+      "start": 517.48,
+      "end": 519.52,
+      "en": "We expect them to share it a lot with our people.",
+      "zh": "我们希望他们能向我们的人分享更多信息。"
+    },
+    {
+      "index": 109,
+      "start": 519.52,
+      "end": 527.28,
+      "en": "IMTIAZ TYAB: According to Russia, the laboratory worker had been vaccinated for the diseases she was working with and still died of severe pneumonia.",
+      "zh": "据俄罗斯称，这名实验室工作人员曾接种过她所研究疾病的疫苗，但仍死于严重肺炎。"
+    },
+    {
+      "index": 110,
+      "start": 527.28,
+      "end": 532.9,
+      "en": "What caused it remains unknown, with Moscow rejecting reports of a laboratory accident.",
+      "zh": "致死原因仍不清楚，莫斯科则否认发生实验室事故的报道。"
+    },
+    {
+      "index": 111,
+      "start": 534.25,
+      "end": 540.63,
+      "en": "IMTIAZ TYAB: \"The vast majority of what is being reported about this situation is false information,\" he said.",
+      "zh": "“关于此事的大多数报道都是虚假信息，”他说。"
+    },
+    {
+      "index": 112,
+      "start": 540.63,
+      "end": 544.19,
+      "en": "But the World Health Organization is still asking questions.",
+      "zh": "但世界卫生组织仍在追问。"
+    },
+    {
+      "index": 113,
+      "start": 544.19,
+      "end": 549.15,
+      "en": "So there's more to come as it relates to what actually happened there.",
+      "zh": "所以，关于那里究竟发生了什么，后续还会有更多消息。"
+    },
+    {
+      "index": 114,
+      "start": 549.15,
+      "end": 552.75,
+      "en": "If anything-- For IMTIAZ TYAB: Americans, some reassurance.",
+      "zh": "如果非要说有什么——对美国民众来说，算是一点安慰。"
+    },
+    {
+      "index": 115,
+      "start": 552.75,
+      "end": 554.81,
+      "en": "Americans don't need to be concerned.",
+      "zh": "美国人不必担心。"
+    },
+    {
+      "index": 116,
+      "start": 554.81,
+      "end": 561.79,
+      "en": "This should be a lesson that infectious diseases aren't going anywhere, and we need a very aggressive stance from the United States.",
+      "zh": "这应当成为一个教训：传染病不会消失，我们需要美国采取非常积极的应对立场。"
+    },
+    {
+      "index": 117,
+      "start": 561.79,
+      "end": 574.63,
+      "en": "And the WHO is also seeking more details about the roughly 200 people who had contact with the lab worker and whether Moscow is telling the truth there's no outbreak of the plague in Siberia.",
+      "zh": "世卫组织还在寻求更多细节，涉及约200名与这名实验室工作人员有过接触的人员，以及莫斯科所说西伯利亚没有鼠疫暴发是否属实。"
+    },
+    {
+      "index": 118,
+      "start": 574.63,
+      "end": 575.43,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 119,
+      "start": 575.43,
+      "end": 576.49,
+      "en": "Imtiaz, thank you.",
+      "zh": "伊姆蒂亚兹，谢谢。"
+    },
+    {
+      "index": 120,
+      "start": 576.49,
+      "end": 586.75,
+      "en": "Well, it was a week ago tonight that convicted killer Christa Pike was expected to die by lethal injection, only to survive and, as of yesterday, wake up and start talking.",
+      "zh": "嗯，就在一周前的今晚，已被定罪的杀人犯克丽斯塔·派克本该接受注射死刑，结果却活了下来，而且到昨天已经醒来并能开口说话了。"
+    },
+    {
+      "index": 121,
+      "start": 586.75,
+      "end": 590.11,
+      "en": "CBS's Skyler Henry on what she said.",
+      "zh": "CBS记者斯凯勒·亨利报道她说了什么。"
+    },
+    {
+      "index": 122,
+      "start": 590.11,
+      "end": 594.77,
+      "en": "Our understanding was the first thing she said was, where am I, and who are you?",
+      "zh": "据我们了解，她说的第一句话是：“我在哪儿？你们是谁？”"
+    },
+    {
+      "index": 123,
+      "start": 594.77,
+      "end": 605.38,
+      "en": "SKYLER HENRY: Tonight, Christa Pike's attorneys are accusing Tennessee prison officials of delaying access to their client for more than two hours after she regained consciousness Tuesday, following a failed execution attempt.",
+      "zh": "今晚，克丽斯塔·派克的律师指控田纳西州监狱官员：在周二她恢复意识后，拖延了两个多小时才让他们见到当事人，而此前她刚刚经历了一次失败的死刑执行。"
+    },
+    {
+      "index": 124,
+      "start": 605.38,
+      "end": 612.65,
+      "en": "On Monday night, it was our understanding that Christa was brain-dead and that life support would be removed the next day.",
+      "zh": "周一晚上，据我们了解，克丽斯塔被判定为脑死亡，生命支持系统将在第二天撤除。"
+    },
+    {
+      "index": 125,
+      "start": 612.65,
+      "end": 619.78,
+      "en": "SKYLER HENRY: Pike became the first death-row inmate to survive an execution attempt after receiving two rounds of the lethal drug pentobarbital.",
+      "zh": "派克成为第一个在接受了两轮致命药物戊巴比妥注射后，仍从死刑执行中活下来的死囚。"
+    },
+    {
+      "index": 126,
+      "start": 619.78,
+      "end": 622.54,
+      "en": "Her attorney says she has a blood clot and pneumonia.",
+      "zh": "她的律师说她出现了血栓和肺炎。"
+    },
+    {
+      "index": 127,
+      "start": 622.54,
+      "end": 632.24,
+      "en": "In an emergency court hearing today, a judge ordered the state to preserve all evidence from what Pike's lawyers are calling a botched execution, as they're looking for answers about what went wrong.",
+      "zh": "在今天的紧急法庭听证会上，法官命令州政府保留派克律师所称“执行搞砸”事件的全部证据，因为他们正在查找究竟哪里出了问题。"
+    },
+    {
+      "index": 128,
+      "start": 632.24,
+      "end": 637.12,
+      "en": "The state has made no promises that Ms. Pike will not be subject to a future execution.",
+      "zh": "州政府没有承诺派克女士将来不会再被处决。"
+    },
+    {
+      "index": 129,
+      "start": 637.12,
+      "end": 641.46,
+      "en": "There is no pending execution order for Ms. Pike.",
+      "zh": "目前没有针对派克女士的待执行死刑令。"
+    },
+    {
+      "index": 130,
+      "start": 641.46,
+      "end": 643.75,
+      "en": "There is no allegation that one is coming.",
+      "zh": "也没有任何说法表明会有新的执行令下达。"
+    },
+    {
+      "index": 131,
+      "start": 643.75,
+      "end": 652.44,
+      "en": "SKYLER HENRY: Pike has been on death row for more than 30 years after she was convicted of luring and then brutally torturing and murdering her classmate, 19-year-old Colleen Slemmer.",
+      "zh": "派克已经在死囚牢房待了30多年，她因诱骗并残忍折磨、杀害19岁的同学科琳·斯莱默而被定罪。"
+    },
+    {
+      "index": 132,
+      "start": 652.44,
+      "end": 656.56,
+      "en": "Her failed execution forced the state's top corrections officer to resign.",
+      "zh": "这次失败的死刑执行迫使该州负责监狱系统的最高官员辞职。"
+    },
+    {
+      "index": 133,
+      "start": 656.56,
+      "end": 660.15,
+      "en": "Dr. Joel Zivot consulted as an expert for Pike's legal team.",
+      "zh": "乔尔·齐沃特博士作为专家为派克的律师团队提供咨询。"
+    },
+    {
+      "index": 134,
+      "start": 660.15,
+      "end": 663.73,
+      "en": "Tennessee has said that it has followed the execution protocol to the letter.",
+      "zh": "田纳西州表示，他们一直不折不扣地按照死刑执行规程操作。"
+    },
+    {
+      "index": 135,
+      "start": 663.73,
+      "end": 671.22,
+      "en": "If the protocol is followed to the letter and this is what happens, then clearly you've got a problem.",
+      "zh": "如果规程被不折不扣地执行，结果还是这样，那显然就是有问题了。"
+    },
+    {
+      "index": 136,
+      "start": 671.22,
+      "end": 679.12,
+      "en": "Lawyers for Pike say that she is still struggling to move her arms and has difficulty swallowing and still has a long road ahead in her recovery.",
+      "zh": "派克的律师表示，她仍然很难活动手臂，吞咽困难，康复之路还很漫长。"
+    },
+    {
+      "index": 137,
+      "start": 679.12,
+      "end": 685.58,
+      "en": "Meanwhile, the family of Colleen Slemmer told local media that they still want Pike to remain on death row.",
+      "zh": "与此同时，科琳·斯莱默的家人告诉当地媒体，他们仍然希望派克继续留在死囚牢房。"
+    },
+    {
+      "index": 138,
+      "start": 685.58,
+      "end": 686.3,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 139,
+      "start": 686.3,
+      "end": 687.44,
+      "en": "Skyler, thank you.",
+      "zh": "斯凯勒，谢谢你。"
+    },
+    {
+      "index": 140,
+      "start": 687.44,
+      "end": 701.64,
+      "en": "Now to a CBS News exclusive video showing an Iranian drone strike on a US military installation in Kuwait, one of at least eight different countries to face Iranian fire in this war, which has damaged or destroyed billions in US military property.",
+      "zh": "现在来看CBS新闻独家获得的视频：画面显示一架伊朗无人机袭击了美国在科威特的军事设施。这场战争中，至少八个国家遭到伊朗火力攻击，美军财产损失或损毁已达数十亿美元。"
+    },
+    {
+      "index": 141,
+      "start": 701.64,
+      "end": 704.4,
+      "en": "Here's CBS News correspondent Jonah Kaplan.",
+      "zh": "下面是CBS新闻记者乔纳·卡普兰的报道。"
+    },
+    {
+      "index": 142,
+      "start": 704.4,
+      "end": 709.26,
+      "en": "JONAH KAPLAN: This is an Iranian drone flying against a backdrop of a clear blue sky.",
+      "zh": "这是一架伊朗无人机，背景是晴朗的蓝天。"
+    },
+    {
+      "index": 143,
+      "start": 710.34,
+      "end": 713.92,
+      "en": "Now watch as it strikes its target, Camp Buehring, Kuwait.",
+      "zh": "现在看它击中目标——科威特的布林军营。"
+    },
+    {
+      "index": 144,
+      "start": 715.5,
+      "end": 719.81,
+      "en": "A second video shows another drone, dive-bombing the American post.",
+      "zh": "第二段视频显示另一架无人机俯冲轰炸美军基地。"
+    },
+    {
+      "index": 145,
+      "start": 719.81,
+      "end": 724.53,
+      "en": "At night, footage shows the smoke still billowing after blowing up US assets.",
+      "zh": "夜间画面显示，美军装备被炸毁后，浓烟仍在滚滚升起。"
+    },
+    {
+      "index": 146,
+      "start": 724.53,
+      "end": 726.99,
+      "en": "In more video, a tour of the wreckage.",
+      "zh": "还有更多视频展示了残骸现场。"
+    },
+    {
+      "index": 147,
+      "start": 726.99,
+      "end": 737.99,
+      "en": "The footage, taken in the first few days of the war, was obtained exclusively by CBS News from a person on the ground, who told us he wants to shed light on what's been regarded as an invisible war.",
+      "zh": "这些画面拍摄于战争最初几天，由CBS新闻独家从一名当地人员那里获得。他告诉我们，他想让人们看清这场被视为“看不见的战争”。"
+    },
+    {
+      "index": 148,
+      "start": 737.99,
+      "end": 742.67,
+      "en": "No one was killed in these strikes, but the source told us, \"They hit us bad.",
+      "zh": "这些袭击中没有人死亡，但消息人士告诉我们，他们把我们打得很惨。"
+    },
+    {
+      "index": 149,
+      "start": 742.67,
+      "end": 745.71,
+      "en": "It was horrible and people don't know what happened.",
+      "zh": "太可怕了，而且人们不知道发生了什么。"
+    },
+    {
+      "index": 150,
+      "start": 745.71,
+      "end": 747.51,
+      "en": "We had to abandon the base.\"",
+      "zh": "我们不得不放弃基地。"
+    },
+    {
+      "index": 151,
+      "start": 747.51,
+      "end": 755.37,
+      "en": "I don't think we fully understood the scale of the missile drone strike complex that Iran had amassed.",
+      "zh": "我认为我们当时没有完全搞清楚伊朗已建立起来的导弹和无人机打击体系规模有多大。"
+    },
+    {
+      "index": 152,
+      "start": 755.37,
+      "end": 763.21,
+      "en": "But I think what we have to understand now is that all of our bases are at risk, and we have to really take a fundamentally different approach to defending them.",
+      "zh": "但我认为我们现在必须明白，我们所有基地都面临风险，我们真的必须采取根本不同的方式来防御它们。"
+    },
+    {
+      "index": 153,
+      "start": 763.21,
+      "end": 773.25,
+      "en": "JONAH KAPLAN: The new video from Camp Buehring comes after other soldiers sent us pictures from this and other US bases in the Middle East that were struck in Iranian attacks.",
+      "zh": "在布林军营的新视频出现之前，其他士兵已经给我们发来照片，展示了这个基地以及中东其他遭伊朗袭击的美军基地的情况。"
+    },
+    {
+      "index": 154,
+      "start": 773.25,
+      "end": 783.82,
+      "en": "Pentagon officials did not respond to our questions, but the Defense Department's inspector general wrote in a report last month, the war in Iran has resulted in equipment losses worth up to $3.7 billion.",
+      "zh": "五角大楼官员没有回应我们的提问，但国防部监察长在上个月的一份报告中写道，这场与伊朗的战争已造成高达37亿美元的装备损失。"
+    },
+    {
+      "index": 155,
+      "start": 783.82,
+      "end": 786.52,
+      "en": "And, Tony, we also have to mention the 18 fallen heroes.",
+      "zh": "而且，托尼，我们还必须提到那18位牺牲的英雄。"
+    },
+    {
+      "index": 156,
+      "start": 786.52,
+      "end": 787.1,
+      "en": "Yeah, we do.",
+      "zh": "是的，我们必须提到。"
+    },
+    {
+      "index": 157,
+      "start": 787.1,
+      "end": 788.88,
+      "en": "Jonah, thank you very much.",
+      "zh": "乔纳，非常感谢。"
+    },
+    {
+      "index": 158,
+      "start": 788.88,
+      "end": 797.84,
+      "en": "Well, today marks three years since Hamas terrorists killed more than 1,200 Israelis, including dozens of Americans, and took more than 250 people hostage.",
+      "zh": "今天，是哈马斯恐怖分子杀害1200多名以色列人（包括数十名美国人）并劫持250多名人质事件三周年的日子。"
+    },
+    {
+      "index": 159,
+      "start": 797.84,
+      "end": 811.36,
+      "en": "In the years since, more antisemitic violence has followed, targeting kids at Temple Israel in Michigan, a young couple shot outside a Jewish museum in Washington, and a Hanukkah celebration on Australia's Bondi Beach.",
+      "zh": "在此后的几年里，又发生了更多反犹暴力事件：密歇根州以色列圣殿的孩子们成为袭击目标，一对年轻夫妇在华盛顿一家犹太博物馆外遭枪击，澳大利亚邦迪海滩的光明节庆祝活动也遭到袭击。"
+    },
+    {
+      "index": 160,
+      "start": 811.36,
+      "end": 816.56,
+      "en": "Senior foreign correspondent Holly Williams reports tonight from Tel Aviv.",
+      "zh": "高级驻外记者霍莉·威廉姆斯今晚从特拉维夫发回报道。"
+    },
+    {
+      "index": 161,
+      "start": 816.56,
+      "end": 820.42,
+      "en": "We ran straight into the parking lot and going down closer to Gaza.",
+      "zh": "我们直接跑进了停车场，然后继续往更靠近加沙的方向跑去。"
+    },
+    {
+      "index": 162,
+      "start": 820.42,
+      "end": 821.86,
+      "en": "You ran in that direction?",
+      "zh": "你们朝那个方向跑了？"
+    },
+    {
+      "index": 163,
+      "start": 821.86,
+      "end": 824.02,
+      "en": "Yeah, we ran in a different direction.",
+      "zh": "是的，我们朝另一个方向跑了。"
+    },
+    {
+      "index": 164,
+      "start": 825.24,
+      "end": 828.8,
+      "en": "HOLLY WILLIAMS: Three years ago, a music festival here in southern Israel--",
+      "zh": "三年前，在以色列南部的这里，一场音乐节……"
+    },
+    {
+      "index": 165,
+      "start": 830.36,
+      "end": 833.66,
+      "en": "--became the scene of a massacre led by Hamas.",
+      "zh": "……变成了哈马斯发动的一场屠杀现场。"
+    },
+    {
+      "index": 166,
+      "start": 835.68,
+      "end": 840.79,
+      "en": "HOLLY WILLIAMS: 378 were killed, and 44 were kidnapped.",
+      "zh": "378人遇难，44人被绑架。"
+    },
+    {
+      "index": 167,
+      "start": 840.79,
+      "end": 853.45,
+      "en": "Moran Stela Yanai was one of them, held hostage in Gaza for nearly two months, as Israel's military responded with deadly airstrikes across the Gaza Strip.",
+      "zh": "莫兰·斯泰拉·亚奈就是其中之一，她在加沙被扣为人质近两个月，而以色列军方则在整个加沙地带发动了致命的空袭作为回应。"
+    },
+    {
+      "index": 168,
+      "start": 853.45,
+      "end": 857.17,
+      "en": "There was constant fear that the rockets will come straight to us in the house.",
+      "zh": "当时一直担心火箭弹会直接打到我们所在的房子。"
+    },
+    {
+      "index": 169,
+      "start": 857.17,
+      "end": 859.47,
+      "en": "That's the dance floor.",
+      "zh": "那是舞池。"
+    },
+    {
+      "index": 170,
+      "start": 859.47,
+      "end": 860.65,
+      "en": "That's the dome.",
+      "zh": "那是穹顶。"
+    },
+    {
+      "index": 171,
+      "start": 860.65,
+      "end": 864.27,
+      "en": "HOLLY WILLIAMS: Yanai returned with us to the site of the festival.",
+      "zh": "亚奈和我们一起回到了音乐节现场。"
+    },
+    {
+      "index": 172,
+      "start": 864.27,
+      "end": 866.31,
+      "en": "MORAN STELA YANAI: I felt my legs shivering.",
+      "zh": "我感到自己的双腿在发抖。"
+    },
+    {
+      "index": 173,
+      "start": 866.31,
+      "end": 870.29,
+      "en": "HOLLY WILLIAMS: We reported from the scene just five days after the massacre.",
+      "zh": "屠杀发生仅五天后，我们就在现场进行了报道。"
+    },
+    {
+      "index": 174,
+      "start": 870.29,
+      "end": 875.03,
+      "en": "People's mattresses, their tents, their blankets are still here.",
+      "zh": "人们的床垫、帐篷和毯子还在那里。"
+    },
+    {
+      "index": 175,
+      "start": 875.03,
+      "end": 879.39,
+      "en": "Last time we were here, there were still the remains of some of those killed.",
+      "zh": "我们上次来这里时，还能看到一些遇难者的遗骸。"
+    },
+    {
+      "index": 176,
+      "start": 879.39,
+      "end": 883.75,
+      "en": "Now, as you can see, it's become a memorial.",
+      "zh": "现在，正如你所看到的，这里已经变成了一处纪念地。"
+    },
+    {
+      "index": 177,
+      "start": 883.75,
+      "end": 887.69,
+      "en": "Yanai told us she's focused on what comes next.",
+      "zh": "亚奈告诉我们，她关注的是接下来会发生什么。"
+    },
+    {
+      "index": 178,
+      "start": 887.69,
+      "end": 898.14,
+      "en": "I don't want to let that fear or anxiety rule my world, rule how I breathe, rule how I walk or how I get up in the morning.",
+      "zh": "我不想让那种恐惧或焦虑支配我的世界，支配我如何呼吸、如何走路，或者如何起床。"
+    },
+    {
+      "index": 179,
+      "start": 898.14,
+      "end": 900.1,
+      "en": "I'm still me.",
+      "zh": "我还是我。"
+    },
+    {
+      "index": 180,
+      "start": 900.1,
+      "end": 907.26,
+      "en": "Early this morning here in Israel, there was a nationwide moment of silence to mark when the October 7 attacks began.",
+      "zh": "今天清晨，以色列全国默哀，以纪念10月7日袭击开始的时刻。"
+    },
+    {
+      "index": 181,
+      "start": 907.26,
+      "end": 913.22,
+      "en": "The massacre still casts a long shadow over not just Israel, but the entire Middle East.",
+      "zh": "那场屠杀至今仍给以色列、乃至整个中东投下长长的阴影。"
+    },
+    {
+      "index": 182,
+      "start": 913.22,
+      "end": 914.1,
+      "en": "Tony.",
+      "zh": "托尼。"
+    },
+    {
+      "index": 183,
+      "start": 914.1,
+      "end": 915.22,
+      "en": "Holly, thank you.",
+      "zh": "霍莉，谢谢。"
+    },
+    {
+      "index": 184,
+      "start": 915.22,
+      "end": 922.8,
+      "en": "Still ahead on the broadcast tonight, the hours-long police search for a missing boy and the dog named Bo, who finally helped track him down.",
+      "zh": "今晚节目稍后：警方花了几个小时搜寻一名失踪男孩，最后是一只名叫博的狗帮忙找到了他。"
+    },
+    {
+      "index": 185,
+      "start": 927.46,
+      "end": 933.48,
+      "en": "A little boy is home safe tonight, found just feet from a busy road with help from a bloodhound named Bo.",
+      "zh": "小男孩今晚安全回到家中，他在离一条繁忙公路只有几英尺的地方被发现，多亏了一只叫博的寻血猎犬。"
+    },
+    {
+      "index": 186,
+      "start": 933.48,
+      "end": 936.24,
+      "en": "Tom Hanson has our story.",
+      "zh": "汤姆·汉森带来详细报道。"
+    },
+    {
+      "index": 187,
+      "start": 936.24,
+      "end": 937.16,
+      "en": "OFFICER: Back to work.",
+      "zh": "警员：继续工作。"
+    },
+    {
+      "index": 188,
+      "start": 937.16,
+      "end": 945.22,
+      "en": "TOM HANSON: The three-hour-long search for a missing boy in Maryland began in daylight and stretched into the night, ending with just three words.",
+      "zh": "汤姆·汉森：对马里兰州一名失踪男孩长达三个小时的搜寻从白天持续到夜里，最后只用了三个字收尾。"
+    },
+    {
+      "index": 189,
+      "start": 945.22,
+      "end": 948.07,
+      "en": "OFFICER: I got him!",
+      "zh": "警员：我找到他了！"
+    },
+    {
+      "index": 190,
+      "start": 948.07,
+      "end": 956.99,
+      "en": "TOM HANSON: Police video captured the moment Prince George's county police officers found the little boy in the dark, seen here, hidden under a thicket of branches.",
+      "zh": "汤姆·汉森：警方视频拍下了乔治王子县警察在黑暗中找到小男孩的那一刻，画面里他藏在一丛树枝下面。"
+    },
+    {
+      "index": 191,
+      "start": 956.99,
+      "end": 958.07,
+      "en": "OFFICER: What's up, buddy?",
+      "zh": "警员：怎么了，小家伙？"
+    },
+    {
+      "index": 192,
+      "start": 958.07,
+      "end": 958.89,
+      "en": "I got you.",
+      "zh": "我找到你了。"
+    },
+    {
+      "index": 193,
+      "start": 958.89,
+      "end": 963.61,
+      "en": "The child was located in close proximity to a very busy highway.",
+      "zh": "孩子被发现的位置离一条非常繁忙的高速公路很近。"
+    },
+    {
+      "index": 194,
+      "start": 963.61,
+      "end": 964.89,
+      "en": "OFFICER: Good job, everybody.",
+      "zh": "警员：大家干得好。"
+    },
+    {
+      "index": 195,
+      "start": 964.89,
+      "end": 967.89,
+      "en": "GEORGE NADER: He was located about a half mile from his home.",
+      "zh": "乔治·纳德：他是在离家大约半英里的地方被发现的。"
+    },
+    {
+      "index": 196,
+      "start": 967.89,
+      "end": 973.99,
+      "en": "TOM HANSON: Police first responded to a call just after 5:00 PM that a young boy with a disability was missing.",
+      "zh": "汤姆·汉森：警方在刚过下午5点时接到报警，说一名有残疾的小男孩失踪了。"
+    },
+    {
+      "index": 197,
+      "start": 973.99,
+      "end": 979.63,
+      "en": "More than 20 officers, police K-9s, and a helicopter unit began an exhaustive search.",
+      "zh": "20多名警察、警犬队和一架直升机展开了彻底搜索。"
+    },
+    {
+      "index": 198,
+      "start": 979.63,
+      "end": 982.15,
+      "en": "It was the thick brush, thick thorns.",
+      "zh": "那里灌木丛很密，刺很多。"
+    },
+    {
+      "index": 199,
+      "start": 982.15,
+      "end": 992.01,
+      "en": "It was dark at that point, and I didn't see him until-- the corner of my eye is where I saw a glint and a little murmur of a sound.",
+      "zh": "当时天已经黑了，我一直没看到他，直到——我用眼角余光看到一点反光，还听到很轻微的声音。"
+    },
+    {
+      "index": 200,
+      "start": 992.01,
+      "end": 996.25,
+      "en": "And that's how the storybook ending was concluded.",
+      "zh": "就这样，这个童话般的结局画上了句号。"
+    },
+    {
+      "index": 201,
+      "start": 996.25,
+      "end": 1000.81,
+      "en": "TOM HANSON: A storybook ending recorded by Corporal Jason Carter's body camera.",
+      "zh": "汤姆·汉森：这个童话般的结局被杰森·卡特下士的随身摄像头记录了下来。"
+    },
+    {
+      "index": 202,
+      "start": 1000.81,
+      "end": 1001.81,
+      "en": "JASON CARTER: Good girl.",
+      "zh": "杰森·卡特：好姑娘。"
+    },
+    {
+      "index": 203,
+      "start": 1001.81,
+      "end": 1009.71,
+      "en": "TOM HANSON: He was combing the heavily wooded area with his K9 bloodhound partner and best friend, Bodacious, or Bo, as he calls her.",
+      "zh": "汤姆·汉森：他当时正带着他的警犬搭档兼最好的朋友在茂密林地中搜索，那只寻血猎犬名叫博达舍斯，他叫她博。"
+    },
+    {
+      "index": 204,
+      "start": 1009.71,
+      "end": 1014.03,
+      "en": "Even though she was beyond exhausted, her tail wasn't really wagging.",
+      "zh": "尽管她已经累到极点，尾巴也不怎么摇了。"
+    },
+    {
+      "index": 205,
+      "start": 1014.03,
+      "end": 1017.78,
+      "en": "Her mouth was just constantly with withdrawal of exhaustion.",
+      "zh": "她的嘴一直张着，累得不停喘气。"
+    },
+    {
+      "index": 206,
+      "start": 1017.78,
+      "end": 1019.82,
+      "en": "I knew that she still wanted to go.",
+      "zh": "我知道她还想继续找。"
+    },
+    {
+      "index": 207,
+      "start": 1022.6,
+      "end": 1025.42,
+      "en": "And officers have not yet released the little boy's identity.",
+      "zh": "警方尚未公布小男孩的身份。"
+    },
+    {
+      "index": 208,
+      "start": 1025.42,
+      "end": 1033.48,
+      "en": "And, Tony, police stressed today that when someone goes missing, every second count, urging families to alert authorities immediately.",
+      "zh": "还有，托尼，警方今天强调，有人失踪时每一秒都很关键，敦促家人立即报警。"
+    },
+    {
+      "index": 209,
+      "start": 1033.48,
+      "end": 1034.68,
+      "en": "Tom, thank you.",
+      "zh": "汤姆，谢谢。"
+    },
+    {
+      "index": 210,
+      "start": 1034.68,
+      "end": 1039.14,
+      "en": "Up next, the NFL's big announcement about touchdown celebrations.",
+      "zh": "接下来，NFL关于达阵庆祝动作的重大消息。"
+    },
+    {
+      "index": 211,
+      "start": 1044.68,
+      "end": 1054.16,
+      "en": "A big rule change from the NFL Today, still battling that old reputation as the no-fun league for banning some players' celebrations, like these, involving pretend drinking.",
+      "zh": "NFL今天宣布重大规则调整，它仍在努力摆脱那个“无趣联盟”的老标签，因为此前禁止了一些球员的庆祝动作，比如这些假装喝酒的动作。"
+    },
+    {
+      "index": 212,
+      "start": 1054.16,
+      "end": 1063.1,
+      "en": "Well, in a joint statement today, the league and the NFL Players Association said, quote, \"Imitating drinking a beverage will no longer result in discipline.\"",
+      "zh": "今天联盟和NFL球员工会在一份联合声明中说——“模仿饮酒的动作将不再受到纪律处罚。”"
+    },
+    {
+      "index": 213,
+      "start": 1063.1,
+      "end": 1064.2,
+      "en": "Bottoms up.",
+      "zh": "干杯。"
+    },
+    {
+      "index": 214,
+      "start": 1064.2,
+      "end": 1071.64,
+      "en": "And an early morning explosion shook Tallahassee this week on a street downtown, powerful enough to throw chunks of concrete into the air.",
+      "zh": "本周，塔拉哈西市中心一条街道清晨发生爆炸，冲击力把大块混凝土抛向空中。"
+    },
+    {
+      "index": 215,
+      "start": 1071.64,
+      "end": 1075.94,
+      "en": "The road then shut down for what officials described as an underground electrical fire.",
+      "zh": "随后道路被封闭，官方称是地下电线起火。"
+    },
+    {
+      "index": 216,
+      "start": 1075.94,
+      "end": 1076.97,
+      "en": "No injuries.",
+      "zh": "没有人员伤亡。"
+    },
+    {
+      "index": 217,
+      "start": 1076.97,
+      "end": 1080.31,
+      "en": "Repair work now underway, as well as an investigation.",
+      "zh": "修复工作现已展开，调查也在进行中。"
+    },
+    {
+      "index": 218,
+      "start": 1080.31,
+      "end": 1082.49,
+      "en": "And here's a survival story for you.",
+      "zh": "再给你讲一个幸存故事。"
+    },
+    {
+      "index": 219,
+      "start": 1082.49,
+      "end": 1099.51,
+      "en": "A stray dog in Chile fell into a raging river this week and somehow survived in the water for more than two hours until, after five failed rescue efforts, the dog climbed out on its own before finally being rescued by two of his many new fans.",
+      "zh": "本周，智利一只流浪狗掉进一条湍急的河里，在水中挺了两个多小时；五次救援失败后，它自己爬了出来，最后被它众多新粉丝中的两位救下。"
+    },
+    {
+      "index": 220,
+      "start": 1099.51,
+      "end": 1100.97,
+      "en": "Up next, The Good Stuff.",
+      "zh": "接下来，《好事情》。"
+    },
+    {
+      "index": 221,
+      "start": 1100.97,
+      "end": 1103.77,
+      "en": "A gift from the garden that just kept growing.",
+      "zh": "一份来自花园的礼物，一直不停地长。"
+    },
+    {
+      "index": 222,
+      "start": 1108.34,
+      "end": 1109.71,
+      "en": "We're back with The Good Stuff.",
+      "zh": "欢迎回到《好事情》。"
+    },
+    {
+      "index": 223,
+      "start": 1109.71,
+      "end": 1113.33,
+      "en": "Tonight, an early Halloween story that really begins last Christmas.",
+      "zh": "今晚是一个早早到来的万圣节故事，但其实要从去年圣诞节说起。"
+    },
+    {
+      "index": 224,
+      "start": 1113.33,
+      "end": 1122.95,
+      "en": "That's when 13-year-old Harold Harris got the gift of pumpkin seeds from his grandmother, a gift that, let's be honest, a lot of kids might toss aside and forget about forever.",
+      "zh": "去年圣诞节，13岁的哈罗德·哈里斯从祖母那里收到了一袋南瓜籽。说实话，这种礼物很多孩子可能随手一扔，就再也想不起来了。"
+    },
+    {
+      "index": 225,
+      "start": 1122.95,
+      "end": 1124.69,
+      "en": "But Harold was all in.",
+      "zh": "但哈罗德却全情投入。"
+    },
+    {
+      "index": 226,
+      "start": 1124.69,
+      "end": 1131.93,
+      "en": "Once winter passed and the ground had thawed, he found a patch of soil near his house in Massachusetts, and in went the seeds.",
+      "zh": "冬天过去、土地解冻后，他在马萨诸塞州家附近找到一小块地，把种子种了下去。"
+    },
+    {
+      "index": 227,
+      "start": 1131.93,
+      "end": 1137.04,
+      "en": "They didn't do much at first, even as Harold rode his bike every day over to water them.",
+      "zh": "起初它们没什么动静，尽管哈罗德每天都骑自行车去浇水。"
+    },
+    {
+      "index": 228,
+      "start": 1137.04,
+      "end": 1141.04,
+      "en": "But, finally, he saw his first pumpkin on the vine, and then another.",
+      "zh": "但终于，他在藤上看到了第一个南瓜，接着又长出一个。"
+    },
+    {
+      "index": 229,
+      "start": 1141.04,
+      "end": 1146.18,
+      "en": "And by September, he says, they were growing 4 to 8 pounds per day.",
+      "zh": "他说，到了9月，它们每天能长4到8磅。"
+    },
+    {
+      "index": 230,
+      "start": 1146.18,
+      "end": 1153.7,
+      "en": "Now that little bag of seeds for Christmas has become a 500-pound monster pumpkin, just in time for Halloween.",
+      "zh": "现在，那袋圣诞节的种子已经长成了一个500磅重的巨型南瓜，正好赶上万圣节。"
+    },
+    {
+      "index": 231,
+      "start": 1153.7,
+      "end": 1157.52,
+      "en": "It's so big, it takes a forklift to move it from place to place.",
+      "zh": "它太大了，得用叉车才能把它从一处搬到另一处。"
+    },
+    {
+      "index": 232,
+      "start": 1157.52,
+      "end": 1161.86,
+      "en": "And that's not even including its 300-pound sibling pumpkin.",
+      "zh": "这还没算它那个300磅重的“兄弟”南瓜。"
+    },
+    {
+      "index": 233,
+      "start": 1161.86,
+      "end": 1170.42,
+      "en": "So this week, with the help of a saw and a chisel, Harold did exactly what you might expect with a pair of giant pumpkins in October-- he carved them.",
+      "zh": "于是这周，在锯子和凿子的帮助下，哈罗德对这对巨型南瓜做了你在十月会预料到的事——雕刻它们。"
+    },
+    {
+      "index": 234,
+      "start": 1170.42,
+      "end": 1174.64,
+      "en": "Got good seeds, gave them a lot of water, gave them a good soil.",
+      "zh": "我拿到了好种子，浇了很多水，也用了好土。"
+    },
+    {
+      "index": 235,
+      "start": 1174.64,
+      "end": 1179.94,
+      "en": "And I guess the reason I wanted to do it was, one, to carve a giant jack-o'-lantern.",
+      "zh": "我想做这件事的原因之一，就是雕一个巨型南瓜灯。"
+    },
+    {
+      "index": 236,
+      "start": 1179.94,
+      "end": 1185.42,
+      "en": "Maybe the only problem now, Harold, is finding a front porch big enough to hold them.",
+      "zh": "也许现在唯一的问题是，哈罗德，得找一个足够大的前廊才放得下它们。"
+    },
+    {
+      "index": 237,
+      "start": 1185.42,
+      "end": 1187.04,
+      "en": "That's another day in America.",
+      "zh": "这就是美国的又一天。"
+    },
+    {
+      "index": 238,
+      "start": 1187.04,
+      "end": 1188.08,
+      "en": "I'm Tony Dokoupil.",
+      "zh": "我是托尼·多库皮尔。"
+    },
+    {
+      "index": 239,
+      "start": 1188.08,
+      "end": 1190.62,
+      "en": "For all of us here at CBS News, good night.",
+      "zh": "CBS新闻全体同仁祝各位晚安。"
+    }
+  ],
+  "meta": {
+    "slug": "100726-cbs-evening-news",
+    "generated_at": "2026-10-10T17:43:11",
+    "claude_model": "claude-opus-5",
+    "transcript_source": "cbs-captions",
+    "transcript_detail": "https://prod.vodvideo.cbsnews.com/cbsnews/vr/hls/4877968_hls/subs_en.m3u8",
+    "segment_count": 240,
+    "audio_duration": 1190.62
+  }
+}

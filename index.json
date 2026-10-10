@@ -1,6 +1,58 @@
 {
  "episodes": [
   {
+   "slug": "100926-cbs-evening-news",
+   "title": "10/9: CBS Evening News",
+   "duration": 1183,
+   "upload_date": "2026-10-09T18:30:00-0400",
+   "video_size_mb": null,
+   "transcript_source": "cbs-captions",
+   "claude_model": "claude-opus-5",
+   "segment_count": 269,
+   "vocab_count": 20,
+   "generated_at": "2026-10-10T18:17:16",
+   "webpage_url": "https://www.cbsnews.com/video/100926-cbs-evening-news/"
+  },
+  {
+   "slug": "100826-cbs-evening-news",
+   "title": "10/8: CBS Evening News",
+   "duration": 1165,
+   "upload_date": "2026-10-08T18:30:00-0400",
+   "video_size_mb": null,
+   "transcript_source": "cbs-captions",
+   "claude_model": "claude-opus-5",
+   "segment_count": 230,
+   "vocab_count": 20,
+   "generated_at": "2026-10-10T18:27:10",
+   "webpage_url": "https://www.cbsnews.com/video/100826-cbs-evening-news/"
+  },
+  {
+   "slug": "100726-cbs-evening-news",
+   "title": "10/7: CBS Evening News",
+   "duration": 1197,
+   "upload_date": "2026-10-07T18:30:00-0400",
+   "video_size_mb": null,
+   "transcript_source": "cbs-captions",
+   "claude_model": "claude-opus-5",
+   "segment_count": 240,
+   "vocab_count": 19,
+   "generated_at": "2026-10-10T17:43:11",
+   "webpage_url": "https://www.cbsnews.com/video/100726-cbs-evening-news/"
+  },
+  {
+   "slug": "100526-cbs-evening-news",
+   "title": "10/5: CBS Evening News",
+   "duration": 1174,
+   "upload_date": "2026-10-05T18:30:00-0400",
+   "video_size_mb": null,
+   "transcript_source": "cbs-captions",
+   "claude_model": "claude-opus-5",
+   "segment_count": 244,
+   "vocab_count": 20,
+   "generated_at": "2026-10-10T18:37:30",
+   "webpage_url": "https://www.cbsnews.com/video/100526-cbs-evening-news/"
+  },
+  {
    "slug": "100226-cbs-evening-news",
    "title": "10/2: CBS Evening News",
    "duration": 1194,
@@ -23,7 +75,7 @@
    "claude_model": "claude-opus-5",
    "segment_count": 239,
    "vocab_count": 20,
-   "generated_at": "2026-10-04T02:45:00",
+   "generated_at": "2026-10-10T17:58:22",
    "webpage_url": "https://www.cbsnews.com/video/100126-cbs-evening-news/"
   },
   {

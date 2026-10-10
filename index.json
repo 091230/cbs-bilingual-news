@@ -44,7 +44,7 @@
    "title": "10/7: CBS Evening News (B站来源)",
    "duration": 1237,
    "upload_date": "2026-10-07T18:30:00-0400",
-   "video_size_mb": null,
+   "video_size_mb": 65.2,
    "transcript_source": "bcut_asr",
    "claude_model": null,
    "segment_count": 386,

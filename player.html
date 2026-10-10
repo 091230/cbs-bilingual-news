@@ -848,13 +848,13 @@ applyCueColor();
 
     // 只挂中文字幕轨（画面顶部）。英文字幕用 CBS 流内自带的官方轨（hls.js 自动加载，
     // 画面底部），它和画面严格对齐，页面不再另挂 subs_en.vtt。
-    // B站来源没有流内字幕，需要额外挂英文字幕轨。
+    // 本地mp4（无HLS流）没有流内字幕，需要额外挂英文字幕轨。
     const zhEl = addTrack(withRev(epBase + (VIDEO.local_subs_zh || 'subs_zh.vtt'), revs.subs_zh),
                           'zh', '中文');
     ccZh.toggle = setupTrackToggle(zhEl, $('btn-cc-zh'), true).toggle;
     positionZhOnTop(zhEl);
 
-    if (VIDEO.bilibili_bvid) {
+    if (VIDEO.local_video) {
       const enEl = addTrack(withRev(epBase + 'subs_en.vtt', revs.subs_en), 'en', '英文');
       setupTrackToggle(enEl, $('btn-cc-en'), true);
       $('btn-cc-en').classList.remove('hidden');

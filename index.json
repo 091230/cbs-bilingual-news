@@ -40,6 +40,19 @@
    "webpage_url": "https://www.cbsnews.com/video/100726-cbs-evening-news/"
   },
   {
+   "slug": "100726-bili-cbs",
+   "title": "10/7: CBS Evening News (B站来源)",
+   "duration": 1237,
+   "upload_date": "2026-10-07T18:30:00-0400",
+   "video_size_mb": null,
+   "transcript_source": "bcut_asr",
+   "claude_model": null,
+   "segment_count": 386,
+   "vocab_count": 0,
+   "generated_at": null,
+   "webpage_url": "https://www.bilibili.com/video/BV1RHH163EDX"
+  },
+  {
    "slug": "100526-cbs-evening-news",
    "title": "10/5: CBS Evening News",
    "duration": 1174,

@@ -179,6 +179,7 @@
         <span id="t-dur" class="flex-none text-xs tabular-nums text-slate-400 w-12">0:00</span>
 
         <div class="flex items-center gap-2.5 ml-auto">
+          <button id="btn-cc-en" class="flex-none text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition hidden" title="英文字幕开关">EN</button>
           <button id="btn-cc-zh" class="flex-none text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="中文字幕开关（C）">中</button>
           <div id="cc-wrap" class="relative flex-none">
             <button id="btn-cc-color" class="text-[11px] font-semibold px-2 py-1 rounded-md ring-1 ring-slate-700 hover:bg-slate-700 transition" title="画面内字幕颜色"><span id="cc-swatch">字色</span><span class="text-slate-500 ml-0.5">▾</span></button>
@@ -683,6 +684,18 @@ function setupFullscreen() {
 }
 
 function initPlayer(video) {
+  // B站来源：用iframe嵌入B站播放器
+  if (video.bilibili_bvid) {
+    const stage = $('stage-video');
+    stage.innerHTML = `<iframe
+      src="https://player.bilibili.com/player.html?bvid=${video.bilibili_bvid}&page=1&as_wide=1&high_quality=1&danmaku=0"
+      class="absolute inset-0 w-full h-full"
+      scrolling="no" frameborder="0" allowfullscreen></iframe>`;
+    $('src-badge').textContent = 'B站来源';
+    // 隐藏自定义控制条（B站自带）
+    $('stage-bar').style.display = 'none';
+    return Promise.resolve();
+  }
   if (video.local_video) return initLocal(video.local_video, video.hls_master);
   if (!video.hls_master) {
     playerMsg('缺少视频源<br><span class="text-slate-500 text-xs">' +
@@ -835,10 +848,18 @@ applyCueColor();
 
     // 只挂中文字幕轨（画面顶部）。英文字幕用 CBS 流内自带的官方轨（hls.js 自动加载，
     // 画面底部），它和画面严格对齐，页面不再另挂 subs_en.vtt。
+    // B站来源没有流内字幕，需要额外挂英文字幕轨。
     const zhEl = addTrack(withRev(epBase + (VIDEO.local_subs_zh || 'subs_zh.vtt'), revs.subs_zh),
                           'zh', '中文');
     ccZh.toggle = setupTrackToggle(zhEl, $('btn-cc-zh'), true).toggle;
     positionZhOnTop(zhEl);
+
+    if (VIDEO.bilibili_bvid) {
+      const enEl = addTrack(withRev(epBase + 'subs_en.vtt', revs.subs_en), 'en', '英文');
+      setupTrackToggle(enEl, $('btn-cc-en'), true);
+      $('btn-cc-en').classList.remove('hidden');
+    }
+
     setupFullscreen();
 
     await initPlayer(VIDEO);

@@ -89,18 +89,9 @@
     aspect-ratio: 16/9; background: var(--surface-2);
     display: flex; align-items: center; justify-content: center;
     border-bottom: 1px solid var(--line); position: relative;
-    overflow: hidden;
-  }
-  .card-thumb img {
-    position: absolute; inset: 0; width: 100%; height: 100%;
-    object-fit: cover; z-index: 0;
-  }
-  .thumb-shade {
-    position: absolute; inset: 0; z-index: 1;
-    background: linear-gradient(180deg, rgba(14,13,11,.15) 0%, rgba(14,13,11,0) 40%, rgba(14,13,11,.55) 100%);
+    background-image: radial-gradient(circle at 30% 40%, #221e19, var(--surface-2) 70%);
   }
   .play-btn {
-    position: relative; z-index: 2;
     width: 48px; height: 48px; border-radius: 50%;
     background: rgba(14,13,11,.7); border: 1px solid var(--line-bright);
     display: flex; align-items: center; justify-content: center;
@@ -109,7 +100,6 @@
   .card:hover .play-btn { background: var(--accent); border-color: var(--accent); }
   .play-btn svg { width: 16px; height: 16px; fill: var(--text); margin-left: 2px; }
   .card:hover .play-btn svg { fill: var(--bg); }
-  .badge-date, .badge-src, .badge-dur { z-index: 2; }
   .badge-date {
     position: absolute; top: 12px; left: 12px;
     font-size: 11px; font-weight: 500; color: var(--text);
@@ -146,60 +136,9 @@
     padding: 20px 0; font-size: 12px; color: var(--text-faint);
     display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
   }
-
-  /* ===== 封面落地页 ===== */
-  .cover {
-    position: fixed; inset: 0; z-index: 100;
-    background:
-      radial-gradient(ellipse 80% 60% at 50% 30%, #1a1611 0%, var(--bg) 70%);
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; padding: 24px;
-    transition: opacity .6s ease;
-  }
-  .cover.hidden { opacity: 0; pointer-events: none; }
-  .cover-badge {
-    font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
-    color: var(--accent); display: flex; align-items: center; gap: 8px; margin-bottom: 28px;
-  }
-  .cover-badge .dot {
-    width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
-    animation: pulse 2s ease-in-out infinite;
-  }
-  .cover-title {
-    font-family: "Newsreader", Georgia, serif;
-    font-size: clamp(40px, 8vw, 80px); font-weight: 600; line-height: 1.05;
-    letter-spacing: -0.01em; color: var(--text); max-width: 800px;
-  }
-  .cover-title em { font-style: italic; color: var(--accent-bright); }
-  .cover-sub {
-    margin-top: 20px; color: var(--text-dim); font-size: 15px; max-width: 480px; line-height: 1.7;
-  }
-  .cover-enter {
-    margin-top: 44px;
-    font-family: "Noto Sans SC", sans-serif; font-size: 15px; font-weight: 500;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--bg); background: var(--accent);
-    border: none; padding: 16px 56px; cursor: pointer;
-    transition: background .2s, transform .15s, box-shadow .2s;
-  }
-  .cover-enter:hover { background: var(--accent-bright); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(201,149,94,.25); }
-  .cover-enter:active { transform: translateY(0); }
-  .cover-foot {
-    position: absolute; bottom: 28px; font-size: 11px; color: var(--text-faint);
-    letter-spacing: 0.1em;
-  }
 </style>
 </head>
 <body>
-
-<!-- 封面落地页：首次访问全屏显示，点"进入"后淡出 -->
-<div class="cover" id="cover">
-  <div class="cover-badge"><span class="dot"></span>ON AIR · CBS EVENING NEWS</div>
-  <div class="cover-title">CBS 双语<em>新闻精听</em></div>
-  <p class="cover-sub">每日英语新闻 · 中英对照字幕 · 在线高清流<br>听懂世界，从一期新闻开始</p>
-  <button class="cover-enter" id="cover-enter">进 入</button>
-  <div class="cover-foot">开源项目 · 内容来自 CBS News 公开节目 · 仅供英语学习</div>
-</div>
 
 <header>
   <div class="wrap">
@@ -231,17 +170,6 @@
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 
-// 封面：本次会话已进入过就不再显示
-(function initCover() {
-  const cover = $('cover');
-  if (sessionStorage.getItem('entered') === '1') { cover.remove(); return; }
-  $('cover-enter').addEventListener('click', () => {
-    sessionStorage.setItem('entered', '1');
-    cover.classList.add('hidden');
-    setTimeout(() => cover.remove(), 600);
-  });
-})();
-
 const fmtDur = (s) => {
   if (!isFinite(s) || s <= 0) return '';
   const m = Math.floor(s / 60), x = Math.floor(s % 60);
@@ -259,13 +187,9 @@ function card(ep) {
   const badge = date ? date.slice(5).replace('-', '/') : '—';
   const dur = fmtDur(ep.duration);
   const seg = ep.segment_count ? `${ep.segment_count} 句` : '';
-  const thumb = `assets/thumbs/${encodeURIComponent(ep.slug)}.jpg`;
   return `
     <a href="player.html?slug=${encodeURIComponent(ep.slug)}" class="card">
       <div class="card-thumb">
-        <img src="${thumb}" alt="" loading="lazy"
-             onerror="this.onerror=null;this.src='assets/thumbs/generic.jpg'">
-        <div class="thumb-shade"></div>
         <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
         <span class="badge-date">${esc(badge)}</span>
         ${ep.transcript_source === 'cbs-captions'
